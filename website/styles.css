@@ -1,0 +1,28 @@
+.body{
+  background-color: gray;
+}
+.mainPage{
+  background-color: red;
+  align-content: center;
+  height: 95%;
+  width: 95%;
+}
+.title{
+  font-size: 20;
+  font-style: oblique;
+}
+.text{
+  font-style: normal;
+  color: white;
+}
+.foot{
+  color: black;
+  font-style: italic;
+}
+.form{
+  align-items: center;
+}
+.link{
+  color: blue;
+  font-style: italic;
+}

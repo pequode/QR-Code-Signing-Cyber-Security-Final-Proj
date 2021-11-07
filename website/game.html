@@ -4,6 +4,7 @@
   <head>
     <title>QRteacher</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
   </head>
   <body>
@@ -12,15 +13,9 @@
           You Shouldn't Scan QR codes you dont trust.
       </h1>
 
-      <canvas id="canvas" width="1000" height="1000">
-        <script>
-          var  el = document.getElementById('canvas')
-          let ctx = el.getContext("2d");
-          ctx.fillRect(25, 25, 100, 100);
-          ctx.clearRect(45, 45, 60, 60);
-          ctx.strokeRect(50, 50, 50, 50);
-        </script>
-      </canvas>
+      <canvas id="canvas" style= "position:absolute;"></canvas>
+      <script src="gamecode.js"></script>
+
     </div>
   </body>
 </html>

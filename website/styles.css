@@ -6,6 +6,8 @@
   align-content: center;
   height: 95%;
   width: 95%;
+  overflow: hidden; /*  Disable scrollbars */
+  display: block;  /* No floating content on sides */
 }
 .title{
   font-size: 20;

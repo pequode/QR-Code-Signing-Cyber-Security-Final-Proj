@@ -1,6 +1,4 @@
-const firebase = require("firebase");
-// Required for side-effects
-require("firebase/firestore");
+
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
@@ -15,7 +13,7 @@ require("firebase/firestore");
   
   ga('create', 'UA-XXXXX-Y', {
   'cookieName': 'gaCookie',
-  'cookieDomain': 'http://localhost:3000/',
+  'cookieDomain': 'auto',
   'cookieExpires': 60 * 60 * 24 * 28,  // Time in seconds.
   'cookieUpdate': 'false',
   'cookieFlags': 'SameSite=None; Secure',
@@ -27,6 +25,7 @@ require("firebase/firestore");
   var clientId = tracker.get('clientId');
   console.log(tracker.get('name'));
   console.log(tracker.get('clientId'));
+  console.log(tracker.get('ga.Cookie'));
   console.log(tracker.get('title'));
 
 var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
@@ -49,6 +48,8 @@ ga('send', 'pageview');
   
 
 });
+
+
 </script>
 
 <!DOCTYPE html>

@@ -25,8 +25,8 @@
   var clientId = tracker.get('clientId');
   console.log(tracker.get('name'));
   console.log(tracker.get('clientId'));
-  console.log(tracker.get('ga.Cookie'));
   console.log(tracker.get('title'));
+ 
 
 var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
 
@@ -50,6 +50,17 @@ ga('send', 'pageview');
 });
 
 
+</script>
+
+<script src="./app.js">
+  function sendCookie(clientID){
+  db.collection("clientID").add({clientCookie: clientID});
+  }
+  
+  $(document).ready(function () {
+      sendCookie(clientId);
+      console.log(`Sent Cookie ${clientId}`);
+    });
 </script>
 
 <!DOCTYPE html>

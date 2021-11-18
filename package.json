@@ -3,6 +3,7 @@
   "name": "Cyber_Security_Project-",
   "version": "1.0.0",
   "description": "A study on how QR code cyber security needs to be improved.",
+  
   "main": "index.js",
   
   "scripts": {

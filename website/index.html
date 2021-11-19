@@ -5,19 +5,19 @@
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
 <script>
-  
-  const firebase = require("firebase");
-// Required for side-effects
-  require("firebase/firestore");
 
-  firebase.initializeApp({
-    apiKey: "AIzaSyBF2qjk9bdvX_QINMEJYiOY1Oxa1tr0Bjo",
-    authDomain: "ec521project.firebaseapp.com",
-    projectId: "ec521project"
-  });
-
-
-  var db = firebase.firestore();
+//   const firebase = require("firebase");
+// // Required for side-effects
+//   require("firebase/firestore");
+//
+//   firebase.initializeApp({
+//     apiKey: "AIzaSyBF2qjk9bdvX_QINMEJYiOY1Oxa1tr0Bjo",
+//     authDomain: "ec521project.firebaseapp.com",
+//     projectId: "ec521project"
+//   });
+//
+//
+//   var db = firebase.firestore();
 
   db.collection("clientID").add({clientCookie: "test"});
 
@@ -25,7 +25,7 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
+
   ga('create', 'UA-XXXXX-Y', {
   'cookieName': 'gaCookie',
   'cookieDomain': 'auto',
@@ -41,7 +41,7 @@
   console.log(tracker.get('name'));
   console.log(tracker.get('clientId'));
   console.log(tracker.get('title'));
- 
+
 
 var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
 
@@ -59,7 +59,7 @@ else {
 }
 
 ga('send', 'pageview');
-  
+
 
 
 console.log("hello");
@@ -86,7 +86,7 @@ console.log("writing to db");
 </head>
 <body class="body">
   <div class="mainPage">
-    
+
     <h1 class="title">
         YSSQCYDT (You Shouldn't Scan QR Codes You Don't Trust)
     </h1>
@@ -111,7 +111,7 @@ console.log("writing to db");
       We are interested in finding out why you scanned this QR code. <br>
       Please fill out the below form to help us get an idea of who you are in the context of our research.<br>
     </p>
-    <form class="form" action="index.html" method="post">
+    <form class="form" action="/gottaDash" method="post">
         <label for="cars">How did you get this link?:</label>
         <select id="from" name="other">
           <option value="Other">Other</option>
@@ -137,10 +137,10 @@ console.log("writing to db");
     </p>
     <a href="./gotcha.html" class="link">https://www.washingtonpost.com/technology/2021/10/07/are-qr-codes-safe/</a>
     <p class="text">play the game</p>
-    <a href="./game.html" class="link"> <img src="./play.png" height="100px"> </a>
+    <a href="./game.html" class="link"> <img src="./images/play.png" height="100px"> </a>
   </div>
 
-  
+
 </body>
 <footer>
   <h2 class="foot">

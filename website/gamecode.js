@@ -11,9 +11,9 @@ var pmoneyLocations = [...Array(20)].map(e => Array(3));
 var amoneyLocations = [...Array(50)].map(e => Array(3));
 
 cashimg = new Image();
-cashimg.src = "cash.png"
+cashimg.src = "./images/cash.png"
 background = new Image();
-background.src = "BUmap.gif"
+background.src = "./images/BUmap.gif"
 var i = 0;
 for(i=0;i<20;i++){
   pmoneyLocations[i] = [-1,-1,-1];
@@ -62,7 +62,7 @@ class Alumi {
     this.topx = alumiSize;
     this.topy = alumiSize;
     this.color = "gray";
-    this.imgSrc = "alumniGame.png"
+    this.imgSrc = "./images/alumniGame.png"
     this.sprite = new Image();
     this.sprite.src =this.imgSrc;
     this.in = true
@@ -105,7 +105,7 @@ class player{
     this.tuition = 100
     this.dropAmt = 10;
     this.alive = true;
-    this.imgSrc = "playerGame.png"
+    this.imgSrc = "./images/playerGame.png"
     this.sprite = new Image();
     this.sprite.src =this.imgSrc;
   }
@@ -179,7 +179,7 @@ class pressBrown{
     this.color = "black";
     this.burgerFund = 0;
 
-    this.imgSrc = "pbrown.gif"
+    this.imgSrc = "./images/pbrown.gif"
     this.sprite = new Image();
     this.sprite.src =this.imgSrc;
 

@@ -22,7 +22,10 @@ app.listen(3000, () => {
 });
 
 app.use(express.static(__dirname));
+
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.raw());
 //think this maybe incorrect paridime
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
@@ -33,7 +36,7 @@ app.get("/", (req, res) => {
 });
 app.post('/gottaDash', function (req, res) {
 
-   console.log(req);
+   console.log(req.body);
    // console.log(req,res);
    res.sendStatus(200);
    // res.send(__dirname + "/index.html");

@@ -83,6 +83,10 @@ console.log("writing to db");
 </script>
 <title>QRteacher</title>
 <link rel="stylesheet" href="styles.css">
+<script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script src="source.js"></script>
 </head>
 <body class="body">
   <div class="mainPage">
@@ -111,7 +115,7 @@ console.log("writing to db");
       We are interested in finding out why you scanned this QR code. <br>
       Please fill out the below form to help us get an idea of who you are in the context of our research.<br>
     </p>
-    <form class="form" action="/gottaDash" method="post">
+    <form class="form" action="/formSubmit" method="POST" onsubmit="window.location.replace("./index.html");">
         <label for="cars">How did you get this link?:</label>
         <select id="from" name="other">
           <option value="Other">Other</option>

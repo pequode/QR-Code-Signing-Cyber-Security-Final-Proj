@@ -17,8 +17,11 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
 function makeData(req,res,source){
-  var data = req
-  console.log(data,source);
+  var data = [req.body]
+  data.push(req.headers)
+  data.push(source)
+  //
+  console.log(data);
 }
 app.listen(3000, () => {
   console.log("Application started and Listening on port 3000");
@@ -35,7 +38,6 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/gotcha.html");
   res.sendFile(__dirname + "/game.html");
   res.sendFile(__dirname + "/BasketBall.html");
-  console.log(req,res);
 });
 
 app.post('/basketBall', function (req, res) {

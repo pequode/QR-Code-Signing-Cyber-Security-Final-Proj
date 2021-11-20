@@ -19,63 +19,7 @@
 //
 //   var db = firebase.firestore();
 
-  db.collection("clientID").add({clientCookie: "test"});
-
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-XXXXX-Y', {
-  'cookieName': 'gaCookie',
-  'cookieDomain': 'auto',
-  'cookieExpires': 60 * 60 * 24 * 28,  // Time in seconds.
-  'cookieUpdate': 'false',
-  'cookieFlags': 'SameSite=None; Secure',
-});
-  ga('send', 'pageview');
-
-  ga(function(tracker) {
-  // Logs the tracker created above to the console.
-  var clientId = tracker.get('clientId');
-  console.log(tracker.get('name'));
-  console.log(tracker.get('clientId'));
-  console.log(tracker.get('title'));
-
-
-var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
-
-if (window.localStorage) {
-  ga('create', 'UA-XXXXX-Y', {
-    'storage': 'none',
-    'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
-  });
-  ga(function(tracker) {
-    localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
-  });
-}
-else {
-  ga('create', 'UA-XXXXX-Y', 'auto');
-}
-
-ga('send', 'pageview');
-
-
-
-console.log("hello");
-//function sendCookie(clientId){
-
-
-//}
-
-//window.onload = function() {
-  //sendCookie(clientId);
-//};
-
-});
-
-console.log("writing to db");
-
+  // db.collection("clientID").add({clientCookie: "test"});
 </script>
 <head>
 <script>
@@ -83,34 +27,33 @@ console.log("writing to db");
 </script>
 <title>QRteacher</title>
 <link rel="stylesheet" href="styles.css">
-<script src=
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="source.js"></script>
 </head>
 <body class="body">
   <div class="mainPage">
+    <center>
+      <h1 class="title">
+          YSSQCYDT (You Shouldn't Scan QR Codes You Don't Trust)
+      </h1>
+    </center>
+      <p class="text">
+         QR codes are a media for storing arbitrary information. <br>
+         They contain no security at all. <br>
+         Scanning them blindly may leave you vulnerable to:
+      </p>
+      <ul>
+        <li>Malicious Javascript
+        <li>Malware downloads
+        <li>BotNets( an attack that uses your computer or phone for its processing power, i.e. to mine bitcoin)
+        <li>Man-in-the-middle attacks( an attack where the attacker pretends to be the website you expected and steals your inputs and the websites outputs)
+        <li>Cross site scripting attacks ( an attack that allows websites to steal your cookies)
+        <li>Phishing scams
+        <li>Cross site Request forgery( an attack that uses your cookies to gain access to a different site you are authenticated to.)
+        <li>Arbitrary code execution.
+        <li> And Many more
+      </ul>
 
-    <h1 class="title">
-        YSSQCYDT (You Shouldn't Scan QR Codes You Don't Trust)
-    </h1>
-
-    <p class="text">
-       QR codes are a media for storing arbitrary information. <br>
-       They contain no security at all. <br>
-       Scanning them blindly may leave you vulnerable to:
-    </p>
-    <ul>
-      <li>Malicious Javascript
-      <li>Malware downloads
-      <li>BotNets( an attack that uses your computer or phone for its processing power, i.e. to mine bitcoin)
-      <li>Man-in-the-middle attacks( an attack where the attacker pretends to be the website you expected and steals your inputs and the websites outputs)
-      <li>Cross site scripting attacks ( an attack that allows websites to steal your cookies)
-      <li>Phishing scams
-      <li>Cross site Request forgery( an attack that uses your cookies to gain access to a different site you are authenticated to.)
-      <li>Arbitrary code execution.
-      <li> And Many more
-    </ul>
     <p class="text">
       We are interested in finding out why you scanned this QR code. <br>
       Please fill out the below form to help us get an idea of who you are in the context of our research.<br>

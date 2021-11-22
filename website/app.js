@@ -33,7 +33,14 @@ function makeData(req,res,source){
   data["Src"] = source;
   //
   console.log(data);
-  db.collection("clientID").add({client: JSON.stringify(data)});
+  db.collection("clientInfo").add({
+    Cookies: JSON.stringify(req.headers.cookie),
+    IP: req.body,
+    Mobile: JSON.stringify(req.headers['sec-ch-ua-mobile']),
+    Platform: JSON.stringify(req.headers['sec-ch-ua-platform']),
+    Source: JSON.stringify(source),
+    User: JSON.stringify(req.headers['user-agent']),
+    });
   console.log("Cookie sent");
 }
 app.listen(3000, () => {
@@ -57,17 +64,17 @@ app.get("/", (req, res) => {
 });
 
 app.post('/basketBall', function (req, res) {
-   makeData(req,res,"BBall");
+   makeData(req,res,"BBall QRCode");
 
 });
 app.post('/Amazon', function (req, res) {
-   makeData(req,res,"Amazon");
+   makeData(req,res,"Amazon QRCode");
 });
 app.post('/gamers', function (req, res) {
-  makeData(req,res,"gamers");
+  makeData(req,res,"Game Link");
 });
 app.post('/party', function (req, res) {
-   makeData(req,res,"party");
+   makeData(req,res,"Party QRCode");
 });
 // app.post('/formSubmit', function (req, res) {
 app.post('/formSubmit', (req, res) => {

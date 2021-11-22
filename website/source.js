@@ -1,4 +1,4 @@
-debug = false
+debug = true
 async function postData(url = '', data = {}) {
   // Default options are marked with *
   parsedData = JSON.stringify(data)

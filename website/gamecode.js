@@ -5,7 +5,7 @@ var canvDems = [canvas.width, canvas.height];
 var playerSize = 50;
 var alumiSize = 30;
 var prezSize = 20;
-
+var GameStarted = false;
 
 var pmoneyLocations = [...Array(20)].map(e => Array(3));
 var amoneyLocations = [...Array(50)].map(e => Array(3));
@@ -187,11 +187,11 @@ class pressBrown{
     this.alive = true;
   }
   gobbleGobble(players){
-    var amt = [this.topx/2,this.topy/2]
-    var min = [distance(this.x+amt[0],this.y+amt[1],players.x,players.y)/(players.tuition/2),players.x,players.y]
+    var amt = [this.topx/2,this.topy/2];
+    var min = [1000,500,500];
+    //var min = [distance(this.x+amt[0],this.y+amt[1],players.x,players.y)/(players.tuition/2,players.x,players.y]
     for(i=0;i<20;i++){
       var k = pmoneyLocations[i];
-
       var dis = distance(this.x+amt[0],this.y+amt[1],k[0],k[1])
       if (checkIntersection(this.x,this.y,this.topx,this.topy,k[0],k[1],k[0]+k[2],k[1]+k[2])){
         pmoneyLocations[i] =[-1,-1,-1];
@@ -211,7 +211,7 @@ class pressBrown{
     for(i=0;i<50;i++){
       var k = amoneyLocations[i];
       var dis = distance(this.x+amt[0],this.y+amt[1],k[0],k[1])
-      if (dis<k[2]/2+(this.topx+this.topy)/4){
+      if (checkIntersection(this.x,this.y,this.topx,this.topy,k[0],k[1],k[0]+k[2],k[1]+k[2])){
         amoneyLocations[i] =[-1,-1,-1];
         var growth = Math.sqrt(k[2]);
         this.topx += growth;
@@ -247,8 +247,10 @@ class pressBrown{
      if(checkIntersection(this.x,this.y,this.topx,this.topy,fuckUp.x,fuckUp.y,fuckUp.topx,fuckUp.topy) ){
         this.justPayed = true;
         var cost = Math.sqrt(fuckUp.cost)
-        this.topx -= cost/2;
-        this.topy -= cost/2;
+        if(this.topx>prezSize)
+          {this.topx -= cost/2;
+          this.topy -= cost/2;
+          }
         this.burgerFund -= fuckUp.cost;
         if(this.burgerFund<0){
           this.alive = false;
@@ -267,6 +269,9 @@ class PresFuckUps{
     this.topy = size;
     this.color = "aqua";
     this.cost = 5;
+    this.imgSrc = "./images/protesters.png"
+    this.sprite = new Image();
+    this.sprite.src =this.imgSrc;
   }
 }
 const player1 = new player(10,0,canvDems[0]/2,canvDems[1]/2)
@@ -274,8 +279,9 @@ const pressBrown1 = new pressBrown(2,1,0,canvDems[1]/2)
 const Alum1 = new Alumi(3);
 const Covid = new PresFuckUps(getRandomInt(20,50),getRandomInt(0,canvDems[0]),getRandomInt(0,canvDems[1]))
 function drawFuckUp(ctx){
-  ctx.fillStyle = Covid.color;
-  ctx.fillRect(Covid.x, Covid.y, Covid.topy, Covid.topx);
+  // ctx.fillStyle = Covid.color;
+  // ctx.fillRect(Covid.x, Covid.y, Covid.topy, Covid.topx);
+  ctx.drawImage(Covid.sprite,Covid.x, Covid.y, Covid.topy, Covid.topx);
 }
 function drawplayer(ctx){
   // ctx.fillStyle = player1.color;
@@ -360,9 +366,24 @@ function drawEndGame(ctx,gameState){
 
 
 }
+ctx = canvas.getContext('2d');
+function drawStart(ctx){
+  var centver = 300;
+  ctx.fillStyle = "grey";
+  var str1 ="President Brown's Burger Fund.";
+  var str2 = "President brown is after your tuition! Press {space} to lead him";
+  var str3 = "to step on student protesters so that he's exposed.";
+  ctx.fillRect(0, 0, canvDems[0],canvDems[1]);
+  ctx.fillStyle = "black";
+  ctx.font = "40px bold Arial";
+  ctx.fillText(str1, canvDems[0]/2 - 200,centver+ 10 );
+  ctx.font = "20px Arial";
+  ctx.fillText(str2, canvDems[0]/2 - 200,centver+40);
+  ctx.fillText(str3, canvDems[0]/2 - 200,centver+70);
+  ctx.fillText("{c} to increaseDrops {d} to decreaseDrop. {s} to start", canvDems[0]/2 - 200,centver+100);
+}
 var gameOver = [false,0];
 function update(){
-  ctx = canvas.getContext('2d');
   if(!gameOver[0]){
     // ctx.fillStyle = "red";
     // ctx.fillRect(0, 0, canvDems[0],canvDems[1]);
@@ -375,7 +396,7 @@ function update(){
     Alum1.dropAndDash();
     pressBrown1.gobbleGobble(player1);
     pressBrown1.losingMoney(Covid);
-    console.log(pressBrown1.burgerFund)
+    // console.log(pressBrown1.burgerFund)
     gameOver[0] = !pressBrown1.alive||!player1.alive;
   }
   else{
@@ -387,15 +408,12 @@ function update(){
     }
     drawEndGame(ctx,gameOver);
   }
-
-
-
 }
 document.onkeydown = function (event) {
-      console.log(event.keyCode)
+      // console.log(event.keyCode)
       switch (event.keyCode) {
-         case 13:
-
+         case 83:
+            GameStarted=true;
             break;
          case 32:
             player1.dropCash();
@@ -431,5 +449,10 @@ document.onkeydown = function (event) {
 
 };
 const run = setInterval(function() {
-   update();
+  if(GameStarted){
+    update();
+  }
+  else{
+    drawStart(ctx)
+  }
  }, 30);

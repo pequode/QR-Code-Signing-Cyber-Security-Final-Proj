@@ -22,7 +22,7 @@ async function postData(url = '', data = {}) {
 
 }
 async function sendData(srcs,data){
-  await postData(srcs, {"key":JSON.stringify(data)})
+  await postData(srcs,data)
 }
 async function getIP() {
     dat = "";
@@ -32,14 +32,14 @@ async function getIP() {
     return dat;
 }
 async function getData(){
-      var data = ["placeHolder"];
+      var data = {};
       ip = await getIP();
-      data.push(ip);
+      data["IP"] = ip;
+
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
       ga('create', 'UA-XXXXX-Y', {
       'cookieName': 'gaCookie',
       'cookieDomain': 'auto',
@@ -48,16 +48,19 @@ async function getData(){
       'cookieFlags': 'SameSite=None; Secure',
     });
       ga('send', 'pageview');
-
-      ga(function(tracker) {
+      await ga(function(tracker) {
       // Logs the tracker created above to the console.
         var clientId = tracker.get('clientId');
         addData = {
            "name": tracker.get('name'),
            "CID" : tracker.get('clientId'),
-           "title":tracker.get('title')
+           // "title":tracker.get('title')
         }
-        data.push(addData)
+        data["ga_data"] = JSON.stringify(addData);
+        // data.push({
+        //   key: "ga_data",
+        //   value: addData
+        // })
         var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
         if (window.localStorage) {
           ga('create', 'UA-XXXXX-Y', {
@@ -102,10 +105,10 @@ function setCookie(cname, cvalue, exdays) {
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-function beenHere() {
-    var myCookie = getCookie("beenToPage");
+function beenHere(src) {
+    var myCookie = getCookie("beenToPage"+src);
     if (myCookie == null) {
-        setCookie("beenToPage", "True", 100);
+        setCookie("beenToPage"+src, "True", 100);
         return false;
     }
     else{
@@ -117,13 +120,18 @@ async function main(srcs){
   if(!beenHere()||debug){
     data1 = await getData();
     if(debug){
-      console.log(beenHere(),"been to page")
+      console.log(beenHere(srcs),"been to page")
       console.log(data1)
     }
-    sendData(srcs,data1)
-    window.location.replace("./index.html");
+    await sendData(srcs,data1)
   }
   else{
+    if(debug){
+      console.log("neverBeenHere")
+    }
+
+  }
+  if(!debug){
     window.location.replace("./index.html");
   }
 }

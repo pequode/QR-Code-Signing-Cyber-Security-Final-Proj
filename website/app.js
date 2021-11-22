@@ -17,9 +17,17 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
 function makeData(req,res,source){
-  var data = [req.body]
-  data.push(req.headers)
-  data.push(source)
+  var data = {};
+
+  data["From_POST"] = req.body;
+  data["HOST"] = req.headers.host;
+  data["cookies"]=req.headers.cookie;
+  data["platform"]=req.headers['sec-ch-ua-platform'];
+  data["userA"] = req.headers['user-agent'];
+  data["mobile"] = req.headers['sec-ch-ua-mobile'];
+  data["browser"] = req.headers['sec-ch-uass'];
+  // data["headers"] = req.headers;
+  data["Src"] = source;
   //
   console.log(data);
 }

@@ -53,10 +53,10 @@ class Alumi {
     this.x =((sidex==1)? 0: canvDems[0]);
     var diry = ((sidey==1)? 1: -1);
     var dirx = ((sidex==1)? 1: -1);
-    this.speedy = diry*getRandomInt(1,10);
-    this.speedx = dirx*getRandomInt(1,10);
+    this.speedy = diry*getRandomInt(1,5);
+    this.speedx = dirx*getRandomInt(1,5);
     this.dropInterval =getRandomInt(5,20);
-    this.donations = getRandomInt(5,50);
+    this.donations = getRandomInt(5,20);
     this.count = 0;
     this.id = id;
     this.topx = alumiSize;
@@ -72,7 +72,6 @@ class Alumi {
     var inbounds = k[0]&&k[1];
     if (inbounds){
       if(this.count%this.dropInterval==0&&this.count<100){
-        console.log(amoneyLocations)
         for(i=0;i<50;i++){
           var k = amoneyLocations[i];
           var amt = [this.topx/2,this.topy/2]
@@ -82,7 +81,6 @@ class Alumi {
           }
         }
       }
-      console.log(this.count,this.dropInterval,this.donations,this.count%this.dropInterval==0)
       this.x +=this.speedx;
       this.y +=this.speedy;
       this.count+=1;
@@ -120,9 +118,7 @@ class player{
           this.y = this.y+this.speed;
         }
       }
-      else{
-        console.log("invalid Dir");
-      }
+
 
   }
   moveHorz(dir){
@@ -136,10 +132,6 @@ class player{
           this.x = this.x+this.speed;
         }
       }
-      else{
-        console.log("invalid Dir");
-      }
-
   }
   dropCash(){
     var i = 0;
@@ -228,17 +220,18 @@ class pressBrown{
     }
 
     if(min[0] != 1000 ){
-      if (this.x-min[1]> 0){
+
+      if (this.x-min[1]> 0 && INBounds(this.x-this.speed)){
         this.x= this.x-this.speed;
       }
-      else{
+      else if (INBounds(this.x+this.speed)){
         this.x= this.x+this.speed;
       }
 
-      if (this.y-min[2]> 0){
+      if (this.y-min[2]> 0 && INBounds(this.x-this.speed)){
         this.y= this.y-this.speed;
       }
-      else{
+      else if (INBounds(this.y+this.speed)){
         this.y= this.y+this.speed;
       }
     }
@@ -279,13 +272,9 @@ const pressBrown1 = new pressBrown(2,1,0,canvDems[1]/2)
 const Alum1 = new Alumi(3);
 const Covid = new PresFuckUps(getRandomInt(20,50),getRandomInt(0,canvDems[0]),getRandomInt(0,canvDems[1]))
 function drawFuckUp(ctx){
-  // ctx.fillStyle = Covid.color;
-  // ctx.fillRect(Covid.x, Covid.y, Covid.topy, Covid.topx);
   ctx.drawImage(Covid.sprite,Covid.x, Covid.y, Covid.topy, Covid.topx);
 }
 function drawplayer(ctx){
-  // ctx.fillStyle = player1.color;
-  // ctx.fillRect(player1.x, player1.y, player1.topy, player1.topx);
   ctx.drawImage(player1.sprite,player1.x, player1.y, player1.topy, player1.topx);
   var str = "Tuition: "+ player1.tuition.toString();
   var str1 = "Semester Payment: "+ player1.dropAmt.toString();
@@ -381,12 +370,12 @@ function drawStart(ctx){
   ctx.fillText(str2, canvDems[0]/2 - 200,centver+40);
   ctx.fillText(str3, canvDems[0]/2 - 200,centver+70);
   ctx.fillText("{c} to increaseDrops {d} to decreaseDrop. {s} to start", canvDems[0]/2 - 200,centver+100);
+  ctx.fillText("{arrow keys} to move and restart at any time with {r}. Enjoy!", canvDems[0]/2 - 200,centver+100);
 }
 var gameOver = [false,0];
 function update(){
   if(!gameOver[0]){
-    // ctx.fillStyle = "red";
-    // ctx.fillRect(0, 0, canvDems[0],canvDems[1]);
+
     ctx.drawImage(background,0, 0, canvDems[0],canvDems[1]);
     drawCash(ctx);
     drawprez(ctx);
@@ -396,7 +385,6 @@ function update(){
     Alum1.dropAndDash();
     pressBrown1.gobbleGobble(player1);
     pressBrown1.losingMoney(Covid);
-    // console.log(pressBrown1.burgerFund)
     gameOver[0] = !pressBrown1.alive||!player1.alive;
   }
   else{
@@ -410,7 +398,6 @@ function update(){
   }
 }
 document.onkeydown = function (event) {
-      // console.log(event.keyCode)
       switch (event.keyCode) {
          case 83:
             GameStarted=true;
@@ -419,30 +406,25 @@ document.onkeydown = function (event) {
             player1.dropCash();
             break;
          case 37:
-            // console.log("Left key is pressed.");
             player1.moveHorz(-1);
             break;
          case 38:
-            // console.log("Up key is pressed.");
             player1.moveVert(-1);
             break;
          case 39:
-            // console.log("Right key is pressed.");
             player1.moveHorz(1);
             break;
          case 40:
-            // console.log("Down key is pressed.");
             player1.moveVert(1);
             break;
          case 82:
             window.location.reload(true);
             break;
          case 90:
-               // console.log("Down key is pressed.");
                player1.decreaseDrop();
                break;
          case 88:
-               // console.log("Down key is pressed.");
+
                player1.increaseDrop();
                break;
       }

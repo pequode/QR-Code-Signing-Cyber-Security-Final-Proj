@@ -1,32 +1,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-
-<script>
-
-//   const firebase = require("firebase");
-// // Required for side-effects
-//   require("firebase/firestore");
-//
-//   firebase.initializeApp({
-//     apiKey: "AIzaSyBF2qjk9bdvX_QINMEJYiOY1Oxa1tr0Bjo",
-//     authDomain: "ec521project.firebaseapp.com",
-//     projectId: "ec521project"
-//   });
-//
-//
-//   var db = firebase.firestore();
-
-  // db.collection("clientID").add({clientCookie: "test"});
-</script>
 <head>
 <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 <title>QRteacher</title>
 <link rel="stylesheet" href="styles.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="source.js"></script>
+
 </head>
 <body class="body">
   <div class="mainPage">
@@ -56,7 +35,7 @@
       We are interested in finding out why you scanned this QR code. <br>
       Please fill out the below form to help us get an idea of who you are in the context of our research.<br>
     </p>
-    <form class="form" action="/formSubmit" method="POST" onsubmit="window.location.replace("./index.html");>
+    <form class="form" action="/formSubmit" method="POST" onsubmit="window.location.replace(\"./index.html\")";>
         <label for="cars">How did you get this link?:</label>
         <select id="from" name="other">
           <option value="Other">Other</option>

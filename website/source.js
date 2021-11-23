@@ -76,7 +76,7 @@ async function getData(){
         }
         ga('send', 'pageview');
       });
-      return data;
+      return JSON.stringify(data);
 }
 
 function getCookie(name) {
@@ -116,7 +116,6 @@ function beenHere(src) {
     }
 }
 async function main(srcs){
-
   if(!beenHere()||debug){
     data1 = await getData();
     if(debug){

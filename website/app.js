@@ -31,10 +31,25 @@ function makeData(req,res,source){
   data["browser"] = req.headers['sec-ch-uass'];
   // data["headers"] = req.headers;
   data["Src"] = source;
+  cookieNeeded = JSON.stringify(req.headers.cookie);
+  //JOHNS PROUD WORK
+  i = cookieNeeded.indexOf("gaCookie");
+  str1 = "";
+  //str1 = cookieNeeded[i, (cookieNeeded.length)-1];
+  //console.log(str1);
+  for(j = i+15; j < cookieNeeded.length; j++){
+    if(cookieNeeded[j] == ";"){
+      break;
+    }
+    else{
+      str1 += cookieNeeded[j];
+    }
+  }
   //
+  console.log(str1);
   console.log(data);
   db.collection("clientInfo").add({
-    Cookies: JSON.stringify(req.headers.cookie),
+    Cookies: str1,
     IP: req.body,
     Mobile: JSON.stringify(req.headers['sec-ch-ua-mobile']),
     Platform: JSON.stringify(req.headers['sec-ch-ua-platform']),
@@ -78,6 +93,7 @@ app.post('/party', function (req, res) {
 });
 // app.post('/formSubmit', function (req, res) {
 app.post('/formSubmit', (req, res) => {
+  
   res.sendFile(__dirname + "/index.html");
   res.sendFile(__dirname + "/gotcha.html");
   res.sendFile(__dirname + "/game.html");
@@ -86,6 +102,11 @@ app.post('/formSubmit', (req, res) => {
     });
   res.end();
   var data = req.body
+  db.collection("surveyInfo").add({
+    How: JSON.stringify(data.other[0]),
+    Level: JSON.stringify(data.other[1]),
+    Thoughts: JSON.stringify(data.misc)
+    });
   console.log(data);
 });
 

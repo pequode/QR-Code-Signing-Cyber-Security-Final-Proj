@@ -75,7 +75,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/BasketBall.html");
   res.sendFile(__dirname + "/source.js");
 
-  
+
 });
 
 app.post('/basketBall', function (req, res) {
@@ -91,9 +91,9 @@ app.post('/gamers', function (req, res) {
 app.post('/party', function (req, res) {
    makeData(req,res,"Party QRCode");
 });
-// app.post('/formSubmit', function (req, res) {
+
 app.post('/formSubmit', (req, res) => {
-  
+
   res.sendFile(__dirname + "/index.html");
   res.sendFile(__dirname + "/gotcha.html");
   res.sendFile(__dirname + "/game.html");
@@ -109,5 +109,3 @@ app.post('/formSubmit', (req, res) => {
     });
   console.log(data);
 });
-
-

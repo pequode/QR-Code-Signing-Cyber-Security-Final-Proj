@@ -3,29 +3,15 @@ canvas.width = window.innerWidth*0.95;
 canvas.height = window.innerHeight*0.85;
 var canvDems = [canvas.width, canvas.height];
 var playerSize = 50;
-var alumiSize = 30;
+var alumiSize = 50;
 var prezSize = 20;
 var GameStarted = false;
 
 ctx = canvas.getContext('2d');
-// var pmoneyLocations = [...Array(20)].map(e => Array(3));
-var amoneyLocations = [...Array(50)].map(e => Array(3));
-
-
-//
-// var i = 0;
-// for(i=0;i<20;i++){
-//   pmoneyLocations[i] = [-1,-1,-1];
-// }
-// for(i=0;i<50;i++){
-//   amoneyLocations[i] = [-1,-1,-1];
-// }
-
 function getRandomInt(min,max) {
   return min + Math.floor(Math.random() * max);
 }
 function distance(x1,y1,x2,y2){
-
   var d = Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2))
   if(d==0){
     d = 1;
@@ -37,11 +23,8 @@ function INBounds(posX,posY){
   return k;
 }
 function checkIntersection (x,y,topx,topy,x1,y1,topx1,topy1){
-  // rangex1 = (x1>x && x1 <x+topx) || (x>x1 && x <x1+topx1)
-
   rangex = (x1 <=x+topx) && (x1+topx1 >= x)
   rangey = (y <= y1+topy1)&&(y+topy >=y1)
-  // rangey = (y1>y && y1 <y+topy) || (y>y1 && y <y1+topy1)
   return  rangex&&rangey;
 }
 function objectInter(ob1,ob2){
@@ -357,14 +340,6 @@ const pressBrown1 = new pressBrown(2,1,0,canvDems[1]/2);
 const Alum1 = new Alumi(3);
 const Covid = new PresFuckUps(getRandomInt(20,50),getRandomInt(0,canvDems[0]),getRandomInt(0,canvDems[1]))
 
-function drawprez(ctx){
-  // ctx.fillStyle = pressBrown1.color;
-  // ctx.fillRect(pressBrown1.x, pressBrown1.y, pressBrown1.topy, pressBrown1.topx);
-  //var healthAmt=pressBrown1.
-  //ctx.fillStyle
-  ctx.drawImage(pressBrown1.sprite,pressBrown1.x, pressBrown1.y, pressBrown1.topy, pressBrown1.topx);
-}
-
 function drawEndGame(ctx,gameState){
   var str = "";
   var centver = 300;
@@ -421,18 +396,14 @@ var gameOver = [false,0];
 
 function update(){
   if(!gameOver[0]){
-
     back.draw(ctx,player1)
     pressBrown1.drawprez(ctx);
     Alum1.draw(ctx);
     player1.draw(ctx);
     Covid.draw(ctx);
-
     if(Alum1.in){Alum1.dropAndDash(back);}
-
     pressBrown1.gobbleGobble(player1,back);
     pressBrown1.losingMoney(Covid);
-
     gameOver[0] = !pressBrown1.alive||!player1.alive;
 
   }

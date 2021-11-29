@@ -72,7 +72,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
   res.sendFile(__dirname + "/gotcha.html");
   res.sendFile(__dirname + "/game.html");
-  res.sendFile(__dirname + "/BasketBall.html");
+  res.sendFile(__dirname + "/basketBall.html");
   res.sendFile(__dirname + "/source.js");
 
 
@@ -98,7 +98,7 @@ app.post('/formSubmit', (req, res) => {
   res.sendFile(__dirname + "/gotcha.html");
   res.sendFile(__dirname + "/game.html");
   res.writeHead(302, {
-      location: "salty-peak-17003.herokuapp.com"+__dirname + "/index.html",
+      location: "localhost:3000"+__dirname + "/index.html",
     });
   res.end();
   var data = req.body

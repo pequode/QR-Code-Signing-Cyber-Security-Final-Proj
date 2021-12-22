@@ -1,11 +1,12 @@
-debug = true
+debug = false
 async function postData(url = '', data = {}) {
   // Default options are marked with *
-  parsedData = JSON.stringify(data)
+  parsedData = data
   const response = await fetch(url, {
+
     method: 'POST', // *GET, POST, PUT, DELETE, etc.
     // mode: 'cors', // no-cors, *cors, same-origin
-    // cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    // cache: 'no-cache', // *default, nofalse-cache, reload, force-cache, only-if-cached
     // credentials: 'same-origin', // include, *same-origin, omit
     headers: {
       'Content-Type': 'application/json'
@@ -21,6 +22,8 @@ async function postData(url = '', data = {}) {
     });
 
 }
+
+
 async function sendData(srcs,data){
   await postData(srcs,data)
 }
@@ -46,7 +49,7 @@ async function getData(){
       'cookieExpires': 60 * 60 * 24 * 28,  // Time in seconds.
       'cookieUpdate': 'false',
       'cookieFlags': 'SameSite=None; Secure',
-    });
+      });
       ga('send', 'pageview');
       await ga(function(tracker) {
       // Logs the tracker created above to the console.
@@ -57,10 +60,6 @@ async function getData(){
            // "title":tracker.get('title')
         }
         data["ga_data"] = JSON.stringify(addData);
-        // data.push({
-        //   key: "ga_data",
-        //   value: addData
-        // })
         var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
         if (window.localStorage) {
           ga('create', 'UA-XXXXX-Y', {
@@ -95,8 +94,6 @@ function getCookie(name) {
         end = dc.length;
         }
     }
-    // because unescape has been deprecated, replaced with decodeURI
-    //return unescape(dc.substring(begin + prefix.length, end));
     return decodeURI(dc.substring(begin + prefix.length, end));
 }
 function setCookie(cname, cvalue, exdays) {
@@ -115,14 +112,17 @@ function beenHere(src) {
       return true
     }
 }
-async function main(srcs){
-  if(!beenHere()||debug){
+async function main(srcs,ind = 0){
+  if(!beenHere(srcs)||debug){
     data1 = await getData();
     if(debug){
       console.log(beenHere(srcs),"been to page")
       console.log(data1)
     }
-    await sendData(srcs,data1)
+    if(debug){
+      console.log("what the heck",ind,ind==0)
+    }
+    sendData(srcs,data1)
   }
   else{
     if(debug){
@@ -130,7 +130,8 @@ async function main(srcs){
     }
 
   }
-  if(!debug){
+  if(!debug && ind == 0){
     window.location.replace("./index.html");
+
   }
 }

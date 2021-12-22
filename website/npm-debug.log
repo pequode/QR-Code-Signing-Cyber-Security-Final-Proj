@@ -1,0 +1,3410 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData firebase
+20 silly mapToRegistry name firebase
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/firebase
+24 verbose request uri https://registry.npmjs.org/firebase
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 10:35:05 AM
+27 verbose request id 442f78935962a2df
+28 verbose etag W/"2c7d3bddee83adcf5e0f07798dbd5022"
+29 verbose lastModified Mon, 22 Nov 2021 20:13:47 GMT
+30 http request GET https://registry.npmjs.org/firebase
+31 http 304 https://registry.npmjs.org/firebase
+32 verbose headers { date: 'Tue, 23 Nov 2021 15:35:06 GMT',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'cf-ray': '6b2b7726df5f300c-BOS',
+32 verbose headers   age: '84',
+32 verbose headers   'cache-control': 'public, max-age=300',
+32 verbose headers   etag: '"2c7d3bddee83adcf5e0f07798dbd5022"',
+32 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:13:47 GMT',
+32 verbose headers   vary: 'Accept-Encoding',
+32 verbose headers   'cf-cache-status': 'HIT',
+32 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+32 verbose headers   'x-amz-replication-status': 'COMPLETED',
+32 verbose headers   server: 'cloudflare' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Tue, 23 Nov 2021 15:35:06 GMT',
+33 silly get     connection: 'keep-alive',
+33 silly get     'cf-ray': '6b2b7726df5f300c-BOS',
+33 silly get     age: '84',
+33 silly get     'cache-control': 'public, max-age=300',
+33 silly get     etag: '"2c7d3bddee83adcf5e0f07798dbd5022"',
+33 silly get     'last-modified': 'Mon, 22 Nov 2021 20:13:47 GMT',
+33 silly get     vary: 'Accept-Encoding',
+33 silly get     'cf-cache-status': 'HIT',
+33 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 silly get     'x-amz-replication-status': 'COMPLETED',
+33 silly get     server: 'cloudflare' } ]
+34 verbose etag https://registry.npmjs.org/firebase from cache
+35 verbose get saving firebase to /home/whorehay/.npm/registry.npmjs.org/firebase/.cache.json
+36 silly resolveWithNewModule firebase@8.10.0 checking installable status
+37 silly cache add args [ 'firebase@^8.10.0', null ]
+38 verbose cache add spec firebase@^8.10.0
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'firebase@^8.10.0',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'firebase',
+39 silly cache add   rawSpec: '^8.10.0',
+39 silly cache add   spec: '>=8.10.0 <9.0.0',
+39 silly cache add   type: 'range' }
+40 silly addNamed firebase@>=8.10.0 <9.0.0
+41 verbose addNamed ">=8.10.0 <9.0.0" is a valid semver range for firebase
+42 silly addNameRange { name: 'firebase', range: '>=8.10.0 <9.0.0', hasData: false }
+43 silly mapToRegistry name firebase
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/firebase
+47 verbose addNameRange registry:https://registry.npmjs.org/firebase not in flight; fetching
+48 verbose get https://registry.npmjs.org/firebase not expired, no request
+49 silly addNameRange number 2 { name: 'firebase', range: '>=8.10.0 <9.0.0', hasData: true }
+50 silly addNameRange versions [ 'firebase',
+50 silly addNameRange   [ '0.0.0',
+50 silly addNameRange     '0.5.0',
+50 silly addNameRange     '0.5.1',
+50 silly addNameRange     '0.5.2',
+50 silly addNameRange     '0.5.3',
+50 silly addNameRange     '0.5.4',
+50 silly addNameRange     '0.6.0',
+50 silly addNameRange     '0.6.1',
+50 silly addNameRange     '0.6.2',
+50 silly addNameRange     '0.6.3',
+50 silly addNameRange     '0.6.4',
+50 silly addNameRange     '0.6.5',
+50 silly addNameRange     '0.6.6',
+50 silly addNameRange     '0.6.7',
+50 silly addNameRange     '0.6.8',
+50 silly addNameRange     '0.6.9',
+50 silly addNameRange     '0.6.10',
+50 silly addNameRange     '0.6.11',
+50 silly addNameRange     '0.6.14',
+50 silly addNameRange     '0.6.15',
+50 silly addNameRange     '0.6.16',
+50 silly addNameRange     '0.6.17',
+50 silly addNameRange     '0.6.19',
+50 silly addNameRange     '0.6.21',
+50 silly addNameRange     '0.6.22',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.1-npm',
+50 silly addNameRange     '1.0.2',
+50 silly addNameRange     '1.0.3',
+50 silly addNameRange     '1.0.4',
+50 silly addNameRange     '1.0.5',
+50 silly addNameRange     '1.0.10',
+50 silly addNameRange     '1.0.10-2',
+50 silly addNameRange     '1.0.11',
+50 silly addNameRange     '1.0.12',
+50 silly addNameRange     '1.0.13',
+50 silly addNameRange     '1.0.14',
+50 silly addNameRange     '1.0.15',
+50 silly addNameRange     '1.0.15-2',
+50 silly addNameRange     '1.0.15-3',
+50 silly addNameRange     '1.0.17',
+50 silly addNameRange     '1.0.18',
+50 silly addNameRange     '1.0.19',
+50 silly addNameRange     '1.0.20',
+50 silly addNameRange     '1.0.21',
+50 silly addNameRange     '1.0.23',
+50 silly addNameRange     '1.0.24',
+50 silly addNameRange     '1.1.0',
+50 silly addNameRange     '1.1.1',
+50 silly addNameRange     '1.1.2',
+50 silly addNameRange     '1.2.0-beta.1-0',
+50 silly addNameRange     '1.2.0-beta.2',
+50 silly addNameRange     '1.1.3',
+50 silly addNameRange     '1.2.0-beta.3',
+50 silly addNameRange     '2.0.0',
+50 silly addNameRange     '2.0.1',
+50 silly addNameRange     '2.0.2',
+50 silly addNameRange     '2.0.3',
+50 silly addNameRange     '2.0.4',
+50 silly addNameRange     '2.0.5',
+50 silly addNameRange     '2.0.6',
+50 silly addNameRange     '2.1.0',
+50 silly addNameRange     '2.1.1',
+50 silly addNameRange     '2.1.2',
+50 silly addNameRange     '1.2.0',
+50 silly addNameRange     '2.2.0',
+50 silly addNameRange     '2.2.1',
+50 silly addNameRange     '2.2.2',
+50 silly addNameRange     '2.2.3',
+50 silly addNameRange     '2.2.4',
+50 silly addNameRange     '2.2.5',
+50 silly addNameRange     '2.2.6',
+50 silly addNameRange     '2.2.7',
+50 silly addNameRange     '2.2.8',
+50 silly addNameRange     '2.2.9',
+50 silly addNameRange     '2.3.0',
+50 silly addNameRange     '2.3.1',
+50 silly addNameRange     '2.3.2',
+50 silly addNameRange     '2.4.0',
+50 silly addNameRange     '2.4.1',
+50 silly addNameRange     '2.4.2',
+50 silly addNameRange     '3.0.0',
+50 silly addNameRange     '3.0.1',
+50 silly addNameRange     '3.0.2',
+50 silly addNameRange     '3.0.3',
+50 silly addNameRange     '3.0.4',
+50 silly addNameRange     '3.0.5',
+50 silly addNameRange     '3.1.0',
+50 silly addNameRange     '3.2.0',
+50 silly addNameRange     '3.2.1',
+50 silly addNameRange     '3.3.0',
+50 silly addNameRange     '3.3.1',
+50 silly addNameRange     '3.3.2',
+50 silly addNameRange     '3.4.0',
+50 silly addNameRange     '3.4.1',
+50 silly addNameRange     '3.5.0',
+50 silly addNameRange     '3.5.1',
+50 silly addNameRange     '3.5.2',
+50 silly addNameRange     '3.5.3',
+50 silly addNameRange     '3.6.0',
+50 silly addNameRange     ... 2561 more items ] ]
+51 silly addNamed firebase@8.10.0
+52 verbose addNamed "8.10.0" is a plain semver version for firebase
+53 silly cache afterAdd firebase@8.10.0
+54 verbose afterAdd /home/whorehay/.npm/firebase/8.10.0/package/package.json not in flight; writing
+55 verbose afterAdd /home/whorehay/.npm/firebase/8.10.0/package/package.json written
+56 silly fetchNamedPackageData @firebase/app
+57 silly mapToRegistry name @firebase/app
+58 silly mapToRegistry scope (from package name) @firebase
+59 verbose mapToRegistry no registry URL found in name for scope @firebase
+60 silly mapToRegistry using default registry
+61 silly mapToRegistry registry https://registry.npmjs.org/
+62 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp
+63 silly fetchNamedPackageData @firebase/app-types
+64 silly mapToRegistry name @firebase/app-types
+65 silly mapToRegistry scope (from package name) @firebase
+66 verbose mapToRegistry no registry URL found in name for scope @firebase
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npmjs.org/
+69 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-types
+70 silly fetchNamedPackageData @firebase/auth
+71 silly mapToRegistry name @firebase/auth
+72 silly mapToRegistry scope (from package name) @firebase
+73 verbose mapToRegistry no registry URL found in name for scope @firebase
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fauth
+77 silly fetchNamedPackageData @firebase/database
+78 silly mapToRegistry name @firebase/database
+79 silly mapToRegistry scope (from package name) @firebase
+80 verbose mapToRegistry no registry URL found in name for scope @firebase
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fdatabase
+84 silly fetchNamedPackageData @firebase/firestore
+85 silly mapToRegistry name @firebase/firestore
+86 silly mapToRegistry scope (from package name) @firebase
+87 verbose mapToRegistry no registry URL found in name for scope @firebase
+88 silly mapToRegistry using default registry
+89 silly mapToRegistry registry https://registry.npmjs.org/
+90 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2ffirestore
+91 silly fetchNamedPackageData @firebase/functions
+92 silly mapToRegistry name @firebase/functions
+93 silly mapToRegistry scope (from package name) @firebase
+94 verbose mapToRegistry no registry URL found in name for scope @firebase
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2ffunctions
+98 silly fetchNamedPackageData @firebase/installations
+99 silly mapToRegistry name @firebase/installations
+100 silly mapToRegistry scope (from package name) @firebase
+101 verbose mapToRegistry no registry URL found in name for scope @firebase
+102 silly mapToRegistry using default registry
+103 silly mapToRegistry registry https://registry.npmjs.org/
+104 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2finstallations
+105 silly fetchNamedPackageData @firebase/messaging
+106 silly mapToRegistry name @firebase/messaging
+107 silly mapToRegistry scope (from package name) @firebase
+108 verbose mapToRegistry no registry URL found in name for scope @firebase
+109 silly mapToRegistry using default registry
+110 silly mapToRegistry registry https://registry.npmjs.org/
+111 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fmessaging
+112 silly fetchNamedPackageData @firebase/polyfill
+113 silly mapToRegistry name @firebase/polyfill
+114 silly mapToRegistry scope (from package name) @firebase
+115 verbose mapToRegistry no registry URL found in name for scope @firebase
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fpolyfill
+119 silly fetchNamedPackageData @firebase/storage
+120 silly mapToRegistry name @firebase/storage
+121 silly mapToRegistry scope (from package name) @firebase
+122 verbose mapToRegistry no registry URL found in name for scope @firebase
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fstorage
+126 silly fetchNamedPackageData @firebase/performance
+127 silly mapToRegistry name @firebase/performance
+128 silly mapToRegistry scope (from package name) @firebase
+129 verbose mapToRegistry no registry URL found in name for scope @firebase
+130 silly mapToRegistry using default registry
+131 silly mapToRegistry registry https://registry.npmjs.org/
+132 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fperformance
+133 silly fetchNamedPackageData @firebase/remote-config
+134 silly mapToRegistry name @firebase/remote-config
+135 silly mapToRegistry scope (from package name) @firebase
+136 verbose mapToRegistry no registry URL found in name for scope @firebase
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fremote-config
+140 silly fetchNamedPackageData @firebase/analytics
+141 silly mapToRegistry name @firebase/analytics
+142 silly mapToRegistry scope (from package name) @firebase
+143 verbose mapToRegistry no registry URL found in name for scope @firebase
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fanalytics
+147 silly fetchNamedPackageData @firebase/app-check
+148 silly mapToRegistry name @firebase/app-check
+149 silly mapToRegistry scope (from package name) @firebase
+150 verbose mapToRegistry no registry URL found in name for scope @firebase
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-check
+154 silly fetchNamedPackageData @firebase/util
+155 silly mapToRegistry name @firebase/util
+156 silly mapToRegistry scope (from package name) @firebase
+157 verbose mapToRegistry no registry URL found in name for scope @firebase
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2futil
+161 verbose request uri https://registry.npmjs.org/@firebase%2fapp-types
+162 verbose request no auth needed
+163 info attempt registry request try #1 at 10:35:07 AM
+164 verbose etag W/"0556bc6e5c7180028214953db0633bd6"
+165 verbose lastModified Mon, 22 Nov 2021 20:11:20 GMT
+166 http request GET https://registry.npmjs.org/@firebase%2fapp-types
+167 verbose request uri https://registry.npmjs.org/@firebase%2fapp
+168 verbose request no auth needed
+169 info attempt registry request try #1 at 10:35:07 AM
+170 verbose etag W/"993f7c019613acd2dfe0940548757fa4"
+171 verbose lastModified Mon, 22 Nov 2021 20:07:58 GMT
+172 http request GET https://registry.npmjs.org/@firebase%2fapp
+173 verbose request uri https://registry.npmjs.org/@firebase%2fauth
+174 verbose request no auth needed
+175 info attempt registry request try #1 at 10:35:07 AM
+176 verbose etag W/"514e867ec2791fe161f62144a6b985e9"
+177 verbose lastModified Mon, 22 Nov 2021 20:09:15 GMT
+178 http request GET https://registry.npmjs.org/@firebase%2fauth
+179 verbose request uri https://registry.npmjs.org/@firebase%2fdatabase
+180 verbose request no auth needed
+181 info attempt registry request try #1 at 10:35:07 AM
+182 verbose etag W/"314be4a1705bd0a2e23491d672b6cf1c"
+183 verbose lastModified Mon, 22 Nov 2021 20:11:34 GMT
+184 http request GET https://registry.npmjs.org/@firebase%2fdatabase
+185 verbose request uri https://registry.npmjs.org/@firebase%2finstallations
+186 verbose request no auth needed
+187 info attempt registry request try #1 at 10:35:07 AM
+188 verbose etag W/"286451ca2057779d8fe16ccf4ec9cc6e"
+189 verbose lastModified Mon, 22 Nov 2021 20:08:09 GMT
+190 http request GET https://registry.npmjs.org/@firebase%2finstallations
+191 verbose request uri https://registry.npmjs.org/@firebase%2ffunctions
+192 verbose request no auth needed
+193 info attempt registry request try #1 at 10:35:07 AM
+194 verbose etag W/"34904c1583cae956b770198ebb0fad68"
+195 verbose lastModified Mon, 22 Nov 2021 20:09:58 GMT
+196 http request GET https://registry.npmjs.org/@firebase%2ffunctions
+197 verbose request uri https://registry.npmjs.org/@firebase%2fmessaging
+198 verbose request no auth needed
+199 info attempt registry request try #1 at 10:35:07 AM
+200 verbose etag W/"1cf31850acaa3076461eb5db498e286a"
+201 verbose lastModified Mon, 22 Nov 2021 20:10:25 GMT
+202 http request GET https://registry.npmjs.org/@firebase%2fmessaging
+203 verbose request uri https://registry.npmjs.org/@firebase%2fpolyfill
+204 verbose request no auth needed
+205 info attempt registry request try #1 at 10:35:08 AM
+206 verbose etag W/"5c9bf2056406cc2ccde6b0743d5f5443"
+207 verbose lastModified Tue, 24 Aug 2021 19:43:43 GMT
+208 http request GET https://registry.npmjs.org/@firebase%2fpolyfill
+209 verbose request uri https://registry.npmjs.org/@firebase%2ffirestore
+210 verbose request no auth needed
+211 info attempt registry request try #1 at 10:35:08 AM
+212 verbose etag W/"19b529ef02b09c0b0f059b0c47a97d0b"
+213 verbose lastModified Mon, 22 Nov 2021 20:12:24 GMT
+214 http request GET https://registry.npmjs.org/@firebase%2ffirestore
+215 verbose request uri https://registry.npmjs.org/@firebase%2fstorage
+216 verbose request no auth needed
+217 info attempt registry request try #1 at 10:35:08 AM
+218 verbose etag W/"912bb79a8b3ef9786747dc99e89d5ce1"
+219 verbose lastModified Mon, 22 Nov 2021 20:12:49 GMT
+220 http request GET https://registry.npmjs.org/@firebase%2fstorage
+221 verbose request uri https://registry.npmjs.org/@firebase%2fperformance
+222 verbose request no auth needed
+223 info attempt registry request try #1 at 10:35:08 AM
+224 verbose etag W/"f2a115c4b4ddf5078136a622794df237"
+225 verbose lastModified Mon, 22 Nov 2021 20:10:40 GMT
+226 http request GET https://registry.npmjs.org/@firebase%2fperformance
+227 verbose request uri https://registry.npmjs.org/@firebase%2fremote-config
+228 verbose request no auth needed
+229 info attempt registry request try #1 at 10:35:08 AM
+230 verbose etag W/"43674753a2ae1c6b9e8b84955cf3135c"
+231 verbose lastModified Mon, 22 Nov 2021 20:11:00 GMT
+232 http request GET https://registry.npmjs.org/@firebase%2fremote-config
+233 verbose request uri https://registry.npmjs.org/@firebase%2fanalytics
+234 verbose request no auth needed
+235 info attempt registry request try #1 at 10:35:08 AM
+236 verbose etag W/"2eaff7e57c51fded72b09cead32b478e"
+237 verbose lastModified Mon, 22 Nov 2021 20:08:49 GMT
+238 http request GET https://registry.npmjs.org/@firebase%2fanalytics
+239 verbose request uri https://registry.npmjs.org/@firebase%2fapp-check
+240 verbose request no auth needed
+241 info attempt registry request try #1 at 10:35:08 AM
+242 verbose etag W/"963f4c9fccf77fb0ed78596e6da6a9b1"
+243 verbose lastModified Mon, 22 Nov 2021 20:13:11 GMT
+244 http request GET https://registry.npmjs.org/@firebase%2fapp-check
+245 verbose request uri https://registry.npmjs.org/@firebase%2futil
+246 verbose request no auth needed
+247 info attempt registry request try #1 at 10:35:08 AM
+248 verbose etag W/"a52b7e01f5ec7cc5865b3637c694389b"
+249 verbose lastModified Mon, 22 Nov 2021 20:07:28 GMT
+250 http request GET https://registry.npmjs.org/@firebase%2futil
+251 http 304 https://registry.npmjs.org/@firebase%2fapp-types
+252 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+252 verbose headers   connection: 'keep-alive',
+252 verbose headers   'cf-ray': '6b2b773cf9d1300c-BOS',
+252 verbose headers   age: '79',
+252 verbose headers   'cache-control': 'public, max-age=300',
+252 verbose headers   etag: '"0556bc6e5c7180028214953db0633bd6"',
+252 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:11:20 GMT',
+252 verbose headers   vary: 'Accept-Encoding',
+252 verbose headers   'cf-cache-status': 'HIT',
+252 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+252 verbose headers   'x-amz-replication-status': 'COMPLETED',
+252 verbose headers   server: 'cloudflare' }
+253 silly get cb [ 304,
+253 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+253 silly get     connection: 'keep-alive',
+253 silly get     'cf-ray': '6b2b773cf9d1300c-BOS',
+253 silly get     age: '79',
+253 silly get     'cache-control': 'public, max-age=300',
+253 silly get     etag: '"0556bc6e5c7180028214953db0633bd6"',
+253 silly get     'last-modified': 'Mon, 22 Nov 2021 20:11:20 GMT',
+253 silly get     vary: 'Accept-Encoding',
+253 silly get     'cf-cache-status': 'HIT',
+253 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+253 silly get     'x-amz-replication-status': 'COMPLETED',
+253 silly get     server: 'cloudflare' } ]
+254 verbose etag https://registry.npmjs.org/@firebase%2fapp-types from cache
+255 verbose get saving @firebase/app-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fapp-types/.cache.json
+256 silly resolveWithNewModule @firebase/app-types@0.6.3 checking installable status
+257 silly cache add args [ '@firebase/app-types@0.6.3', null ]
+258 verbose cache add spec @firebase/app-types@0.6.3
+259 silly cache add parsed spec Result {
+259 silly cache add   raw: '@firebase/app-types@0.6.3',
+259 silly cache add   scope: '@firebase',
+259 silly cache add   name: '@firebase/app-types',
+259 silly cache add   rawSpec: '0.6.3',
+259 silly cache add   spec: '0.6.3',
+259 silly cache add   type: 'version' }
+260 silly addNamed @firebase/app-types@0.6.3
+261 verbose addNamed "0.6.3" is a plain semver version for @firebase/app-types
+262 silly mapToRegistry name @firebase/app-types
+263 silly mapToRegistry scope (from package name) @firebase
+264 verbose mapToRegistry no registry URL found in name for scope @firebase
+265 silly mapToRegistry using default registry
+266 silly mapToRegistry registry https://registry.npmjs.org/
+267 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-types
+268 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fapp-types not in flight; fetching
+269 http 304 https://registry.npmjs.org/@firebase%2fanalytics
+270 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+270 verbose headers   connection: 'keep-alive',
+270 verbose headers   'cf-ray': '6b2b773e384e3b7b-BOS',
+270 verbose headers   age: '79',
+270 verbose headers   'cache-control': 'public, max-age=300',
+270 verbose headers   etag: '"2eaff7e57c51fded72b09cead32b478e"',
+270 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:08:49 GMT',
+270 verbose headers   vary: 'Accept-Encoding',
+270 verbose headers   'cf-cache-status': 'HIT',
+270 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+270 verbose headers   'x-amz-replication-status': 'COMPLETED',
+270 verbose headers   server: 'cloudflare' }
+271 silly get cb [ 304,
+271 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+271 silly get     connection: 'keep-alive',
+271 silly get     'cf-ray': '6b2b773e384e3b7b-BOS',
+271 silly get     age: '79',
+271 silly get     'cache-control': 'public, max-age=300',
+271 silly get     etag: '"2eaff7e57c51fded72b09cead32b478e"',
+271 silly get     'last-modified': 'Mon, 22 Nov 2021 20:08:49 GMT',
+271 silly get     vary: 'Accept-Encoding',
+271 silly get     'cf-cache-status': 'HIT',
+271 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+271 silly get     'x-amz-replication-status': 'COMPLETED',
+271 silly get     server: 'cloudflare' } ]
+272 verbose etag https://registry.npmjs.org/@firebase%2fanalytics from cache
+273 verbose get saving @firebase/analytics to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fanalytics/.cache.json
+274 http 304 https://registry.npmjs.org/@firebase%2fapp
+275 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+275 verbose headers   connection: 'keep-alive',
+275 verbose headers   'cf-ray': '6b2b773e2ea83b94-BOS',
+275 verbose headers   age: '80',
+275 verbose headers   'cache-control': 'public, max-age=300',
+275 verbose headers   etag: '"993f7c019613acd2dfe0940548757fa4"',
+275 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:07:58 GMT',
+275 verbose headers   vary: 'Accept-Encoding',
+275 verbose headers   'cf-cache-status': 'HIT',
+275 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+275 verbose headers   'x-amz-replication-status': 'COMPLETED',
+275 verbose headers   server: 'cloudflare' }
+276 silly get cb [ 304,
+276 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+276 silly get     connection: 'keep-alive',
+276 silly get     'cf-ray': '6b2b773e2ea83b94-BOS',
+276 silly get     age: '80',
+276 silly get     'cache-control': 'public, max-age=300',
+276 silly get     etag: '"993f7c019613acd2dfe0940548757fa4"',
+276 silly get     'last-modified': 'Mon, 22 Nov 2021 20:07:58 GMT',
+276 silly get     vary: 'Accept-Encoding',
+276 silly get     'cf-cache-status': 'HIT',
+276 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+276 silly get     'x-amz-replication-status': 'COMPLETED',
+276 silly get     server: 'cloudflare' } ]
+277 verbose etag https://registry.npmjs.org/@firebase%2fapp from cache
+278 verbose get saving @firebase/app to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fapp/.cache.json
+279 http 304 https://registry.npmjs.org/@firebase%2finstallations
+280 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+280 verbose headers   connection: 'keep-alive',
+280 verbose headers   'cf-ray': '6b2b773e2b35306b-BOS',
+280 verbose headers   age: '79',
+280 verbose headers   'cache-control': 'public, max-age=300',
+280 verbose headers   etag: '"286451ca2057779d8fe16ccf4ec9cc6e"',
+280 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:08:09 GMT',
+280 verbose headers   vary: 'Accept-Encoding',
+280 verbose headers   'cf-cache-status': 'HIT',
+280 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+280 verbose headers   'x-amz-replication-status': 'COMPLETED',
+280 verbose headers   server: 'cloudflare' }
+281 silly get cb [ 304,
+281 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+281 silly get     connection: 'keep-alive',
+281 silly get     'cf-ray': '6b2b773e2b35306b-BOS',
+281 silly get     age: '79',
+281 silly get     'cache-control': 'public, max-age=300',
+281 silly get     etag: '"286451ca2057779d8fe16ccf4ec9cc6e"',
+281 silly get     'last-modified': 'Mon, 22 Nov 2021 20:08:09 GMT',
+281 silly get     vary: 'Accept-Encoding',
+281 silly get     'cf-cache-status': 'HIT',
+281 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+281 silly get     'x-amz-replication-status': 'COMPLETED',
+281 silly get     server: 'cloudflare' } ]
+282 verbose etag https://registry.npmjs.org/@firebase%2finstallations from cache
+283 verbose get saving @firebase/installations to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252finstallations/.cache.json
+284 http 304 https://registry.npmjs.org/@firebase%2ffunctions
+285 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+285 verbose headers   connection: 'keep-alive',
+285 verbose headers   'cf-ray': '6b2b773e3aa53b7c-BOS',
+285 verbose headers   age: '79',
+285 verbose headers   'cache-control': 'public, max-age=300',
+285 verbose headers   etag: '"34904c1583cae956b770198ebb0fad68"',
+285 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:09:58 GMT',
+285 verbose headers   vary: 'Accept-Encoding',
+285 verbose headers   'cf-cache-status': 'HIT',
+285 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+285 verbose headers   'x-amz-replication-status': 'COMPLETED',
+285 verbose headers   server: 'cloudflare' }
+286 silly get cb [ 304,
+286 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+286 silly get     connection: 'keep-alive',
+286 silly get     'cf-ray': '6b2b773e3aa53b7c-BOS',
+286 silly get     age: '79',
+286 silly get     'cache-control': 'public, max-age=300',
+286 silly get     etag: '"34904c1583cae956b770198ebb0fad68"',
+286 silly get     'last-modified': 'Mon, 22 Nov 2021 20:09:58 GMT',
+286 silly get     vary: 'Accept-Encoding',
+286 silly get     'cf-cache-status': 'HIT',
+286 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+286 silly get     'x-amz-replication-status': 'COMPLETED',
+286 silly get     server: 'cloudflare' } ]
+287 verbose etag https://registry.npmjs.org/@firebase%2ffunctions from cache
+288 verbose get saving @firebase/functions to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252ffunctions/.cache.json
+289 http 304 https://registry.npmjs.org/@firebase%2fstorage
+290 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+290 verbose headers   connection: 'keep-alive',
+290 verbose headers   'cf-ray': '6b2b773e3b3c3b88-BOS',
+290 verbose headers   age: '79',
+290 verbose headers   'cache-control': 'public, max-age=300',
+290 verbose headers   etag: '"912bb79a8b3ef9786747dc99e89d5ce1"',
+290 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:12:49 GMT',
+290 verbose headers   vary: 'Accept-Encoding',
+290 verbose headers   'cf-cache-status': 'HIT',
+290 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+290 verbose headers   'x-amz-replication-status': 'COMPLETED',
+290 verbose headers   server: 'cloudflare' }
+291 silly get cb [ 304,
+291 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+291 silly get     connection: 'keep-alive',
+291 silly get     'cf-ray': '6b2b773e3b3c3b88-BOS',
+291 silly get     age: '79',
+291 silly get     'cache-control': 'public, max-age=300',
+291 silly get     etag: '"912bb79a8b3ef9786747dc99e89d5ce1"',
+291 silly get     'last-modified': 'Mon, 22 Nov 2021 20:12:49 GMT',
+291 silly get     vary: 'Accept-Encoding',
+291 silly get     'cf-cache-status': 'HIT',
+291 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+291 silly get     'x-amz-replication-status': 'COMPLETED',
+291 silly get     server: 'cloudflare' } ]
+292 verbose etag https://registry.npmjs.org/@firebase%2fstorage from cache
+293 verbose get saving @firebase/storage to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fstorage/.cache.json
+294 http 304 https://registry.npmjs.org/@firebase%2fapp-check
+295 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+295 verbose headers   connection: 'keep-alive',
+295 verbose headers   'cf-ray': '6b2b773e2cd03b82-BOS',
+295 verbose headers   age: '79',
+295 verbose headers   'cache-control': 'public, max-age=300',
+295 verbose headers   etag: '"963f4c9fccf77fb0ed78596e6da6a9b1"',
+295 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:13:11 GMT',
+295 verbose headers   vary: 'Accept-Encoding',
+295 verbose headers   'cf-cache-status': 'HIT',
+295 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+295 verbose headers   'x-amz-replication-status': 'COMPLETED',
+295 verbose headers   server: 'cloudflare' }
+296 silly get cb [ 304,
+296 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+296 silly get     connection: 'keep-alive',
+296 silly get     'cf-ray': '6b2b773e2cd03b82-BOS',
+296 silly get     age: '79',
+296 silly get     'cache-control': 'public, max-age=300',
+296 silly get     etag: '"963f4c9fccf77fb0ed78596e6da6a9b1"',
+296 silly get     'last-modified': 'Mon, 22 Nov 2021 20:13:11 GMT',
+296 silly get     vary: 'Accept-Encoding',
+296 silly get     'cf-cache-status': 'HIT',
+296 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+296 silly get     'x-amz-replication-status': 'COMPLETED',
+296 silly get     server: 'cloudflare' } ]
+297 verbose etag https://registry.npmjs.org/@firebase%2fapp-check from cache
+298 verbose get saving @firebase/app-check to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fapp-check/.cache.json
+299 http 304 https://registry.npmjs.org/@firebase%2fpolyfill
+300 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+300 verbose headers   connection: 'keep-alive',
+300 verbose headers   'cf-ray': '6b2b773e2fcc3035-BOS',
+300 verbose headers   age: '79',
+300 verbose headers   'cache-control': 'public, max-age=300',
+300 verbose headers   etag: '"5c9bf2056406cc2ccde6b0743d5f5443"',
+300 verbose headers   'last-modified': 'Tue, 24 Aug 2021 19:43:43 GMT',
+300 verbose headers   vary: 'Accept-Encoding',
+300 verbose headers   'cf-cache-status': 'HIT',
+300 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+300 verbose headers   'x-amz-replication-status': 'COMPLETED',
+300 verbose headers   server: 'cloudflare' }
+301 silly get cb [ 304,
+301 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+301 silly get     connection: 'keep-alive',
+301 silly get     'cf-ray': '6b2b773e2fcc3035-BOS',
+301 silly get     age: '79',
+301 silly get     'cache-control': 'public, max-age=300',
+301 silly get     etag: '"5c9bf2056406cc2ccde6b0743d5f5443"',
+301 silly get     'last-modified': 'Tue, 24 Aug 2021 19:43:43 GMT',
+301 silly get     vary: 'Accept-Encoding',
+301 silly get     'cf-cache-status': 'HIT',
+301 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+301 silly get     'x-amz-replication-status': 'COMPLETED',
+301 silly get     server: 'cloudflare' } ]
+302 verbose etag https://registry.npmjs.org/@firebase%2fpolyfill from cache
+303 verbose get saving @firebase/polyfill to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fpolyfill/.cache.json
+304 http 304 https://registry.npmjs.org/@firebase%2fauth
+305 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+305 verbose headers   connection: 'keep-alive',
+305 verbose headers   'cf-ray': '6b2b773e2a13ff90-BOS',
+305 verbose headers   age: '79',
+305 verbose headers   'cache-control': 'public, max-age=300',
+305 verbose headers   etag: '"514e867ec2791fe161f62144a6b985e9"',
+305 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:09:15 GMT',
+305 verbose headers   vary: 'Accept-Encoding',
+305 verbose headers   'cf-cache-status': 'HIT',
+305 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+305 verbose headers   'x-amz-replication-status': 'COMPLETED',
+305 verbose headers   server: 'cloudflare' }
+306 silly get cb [ 304,
+306 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+306 silly get     connection: 'keep-alive',
+306 silly get     'cf-ray': '6b2b773e2a13ff90-BOS',
+306 silly get     age: '79',
+306 silly get     'cache-control': 'public, max-age=300',
+306 silly get     etag: '"514e867ec2791fe161f62144a6b985e9"',
+306 silly get     'last-modified': 'Mon, 22 Nov 2021 20:09:15 GMT',
+306 silly get     vary: 'Accept-Encoding',
+306 silly get     'cf-cache-status': 'HIT',
+306 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+306 silly get     'x-amz-replication-status': 'COMPLETED',
+306 silly get     server: 'cloudflare' } ]
+307 verbose etag https://registry.npmjs.org/@firebase%2fauth from cache
+308 verbose get saving @firebase/auth to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fauth/.cache.json
+309 http 304 https://registry.npmjs.org/@firebase%2ffirestore
+310 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+310 verbose headers   connection: 'keep-alive',
+310 verbose headers   'cf-ray': '6b2b773e2ce7ebec-BOS',
+310 verbose headers   age: '79',
+310 verbose headers   'cache-control': 'public, max-age=300',
+310 verbose headers   etag: '"19b529ef02b09c0b0f059b0c47a97d0b"',
+310 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:12:24 GMT',
+310 verbose headers   vary: 'Accept-Encoding',
+310 verbose headers   'cf-cache-status': 'HIT',
+310 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+310 verbose headers   'x-amz-replication-status': 'COMPLETED',
+310 verbose headers   server: 'cloudflare' }
+311 silly get cb [ 304,
+311 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+311 silly get     connection: 'keep-alive',
+311 silly get     'cf-ray': '6b2b773e2ce7ebec-BOS',
+311 silly get     age: '79',
+311 silly get     'cache-control': 'public, max-age=300',
+311 silly get     etag: '"19b529ef02b09c0b0f059b0c47a97d0b"',
+311 silly get     'last-modified': 'Mon, 22 Nov 2021 20:12:24 GMT',
+311 silly get     vary: 'Accept-Encoding',
+311 silly get     'cf-cache-status': 'HIT',
+311 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+311 silly get     'x-amz-replication-status': 'COMPLETED',
+311 silly get     server: 'cloudflare' } ]
+312 verbose etag https://registry.npmjs.org/@firebase%2ffirestore from cache
+313 verbose get saving @firebase/firestore to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252ffirestore/.cache.json
+314 http 304 https://registry.npmjs.org/@firebase%2fmessaging
+315 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+315 verbose headers   connection: 'keep-alive',
+315 verbose headers   'cf-ray': '6b2b773e3eb22ffc-BOS',
+315 verbose headers   age: '79',
+315 verbose headers   'cache-control': 'public, max-age=300',
+315 verbose headers   etag: '"1cf31850acaa3076461eb5db498e286a"',
+315 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:10:25 GMT',
+315 verbose headers   vary: 'Accept-Encoding',
+315 verbose headers   'cf-cache-status': 'HIT',
+315 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+315 verbose headers   'x-amz-replication-status': 'COMPLETED',
+315 verbose headers   server: 'cloudflare' }
+316 silly get cb [ 304,
+316 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+316 silly get     connection: 'keep-alive',
+316 silly get     'cf-ray': '6b2b773e3eb22ffc-BOS',
+316 silly get     age: '79',
+316 silly get     'cache-control': 'public, max-age=300',
+316 silly get     etag: '"1cf31850acaa3076461eb5db498e286a"',
+316 silly get     'last-modified': 'Mon, 22 Nov 2021 20:10:25 GMT',
+316 silly get     vary: 'Accept-Encoding',
+316 silly get     'cf-cache-status': 'HIT',
+316 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+316 silly get     'x-amz-replication-status': 'COMPLETED',
+316 silly get     server: 'cloudflare' } ]
+317 verbose etag https://registry.npmjs.org/@firebase%2fmessaging from cache
+318 verbose get saving @firebase/messaging to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fmessaging/.cache.json
+319 http 304 https://registry.npmjs.org/@firebase%2fremote-config
+320 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+320 verbose headers   connection: 'keep-alive',
+320 verbose headers   'cf-ray': '6b2b773e2d23ae06-BOS',
+320 verbose headers   age: '79',
+320 verbose headers   'cache-control': 'public, max-age=300',
+320 verbose headers   etag: '"43674753a2ae1c6b9e8b84955cf3135c"',
+320 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:11:00 GMT',
+320 verbose headers   vary: 'Accept-Encoding',
+320 verbose headers   'cf-cache-status': 'HIT',
+320 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+320 verbose headers   'x-amz-replication-status': 'COMPLETED',
+320 verbose headers   server: 'cloudflare' }
+321 silly get cb [ 304,
+321 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+321 silly get     connection: 'keep-alive',
+321 silly get     'cf-ray': '6b2b773e2d23ae06-BOS',
+321 silly get     age: '79',
+321 silly get     'cache-control': 'public, max-age=300',
+321 silly get     etag: '"43674753a2ae1c6b9e8b84955cf3135c"',
+321 silly get     'last-modified': 'Mon, 22 Nov 2021 20:11:00 GMT',
+321 silly get     vary: 'Accept-Encoding',
+321 silly get     'cf-cache-status': 'HIT',
+321 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+321 silly get     'x-amz-replication-status': 'COMPLETED',
+321 silly get     server: 'cloudflare' } ]
+322 verbose etag https://registry.npmjs.org/@firebase%2fremote-config from cache
+323 verbose get saving @firebase/remote-config to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fremote-config/.cache.json
+324 http 304 https://registry.npmjs.org/@firebase%2fdatabase
+325 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+325 verbose headers   connection: 'keep-alive',
+325 verbose headers   'cf-ray': '6b2b773e2f213021-BOS',
+325 verbose headers   age: '79',
+325 verbose headers   'cache-control': 'public, max-age=300',
+325 verbose headers   etag: '"314be4a1705bd0a2e23491d672b6cf1c"',
+325 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:11:34 GMT',
+325 verbose headers   vary: 'Accept-Encoding',
+325 verbose headers   'cf-cache-status': 'HIT',
+325 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+325 verbose headers   'x-amz-replication-status': 'COMPLETED',
+325 verbose headers   server: 'cloudflare' }
+326 silly get cb [ 304,
+326 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+326 silly get     connection: 'keep-alive',
+326 silly get     'cf-ray': '6b2b773e2f213021-BOS',
+326 silly get     age: '79',
+326 silly get     'cache-control': 'public, max-age=300',
+326 silly get     etag: '"314be4a1705bd0a2e23491d672b6cf1c"',
+326 silly get     'last-modified': 'Mon, 22 Nov 2021 20:11:34 GMT',
+326 silly get     vary: 'Accept-Encoding',
+326 silly get     'cf-cache-status': 'HIT',
+326 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+326 silly get     'x-amz-replication-status': 'COMPLETED',
+326 silly get     server: 'cloudflare' } ]
+327 verbose etag https://registry.npmjs.org/@firebase%2fdatabase from cache
+328 verbose get saving @firebase/database to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fdatabase/.cache.json
+329 http 304 https://registry.npmjs.org/@firebase%2fperformance
+330 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+330 verbose headers   connection: 'keep-alive',
+330 verbose headers   'cf-ray': '6b2b773e2a883049-BOS',
+330 verbose headers   age: '79',
+330 verbose headers   'cache-control': 'public, max-age=300',
+330 verbose headers   etag: '"f2a115c4b4ddf5078136a622794df237"',
+330 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:10:40 GMT',
+330 verbose headers   vary: 'Accept-Encoding',
+330 verbose headers   'cf-cache-status': 'HIT',
+330 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+330 verbose headers   'x-amz-replication-status': 'COMPLETED',
+330 verbose headers   server: 'cloudflare' }
+331 silly get cb [ 304,
+331 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+331 silly get     connection: 'keep-alive',
+331 silly get     'cf-ray': '6b2b773e2a883049-BOS',
+331 silly get     age: '79',
+331 silly get     'cache-control': 'public, max-age=300',
+331 silly get     etag: '"f2a115c4b4ddf5078136a622794df237"',
+331 silly get     'last-modified': 'Mon, 22 Nov 2021 20:10:40 GMT',
+331 silly get     vary: 'Accept-Encoding',
+331 silly get     'cf-cache-status': 'HIT',
+331 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+331 silly get     'x-amz-replication-status': 'COMPLETED',
+331 silly get     server: 'cloudflare' } ]
+332 verbose etag https://registry.npmjs.org/@firebase%2fperformance from cache
+333 verbose get saving @firebase/performance to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fperformance/.cache.json
+334 http 304 https://registry.npmjs.org/@firebase%2futil
+335 verbose headers { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+335 verbose headers   connection: 'keep-alive',
+335 verbose headers   'cf-ray': '6b2b773f1aa9303d-BOS',
+335 verbose headers   age: '79',
+335 verbose headers   'cache-control': 'public, max-age=300',
+335 verbose headers   etag: '"a52b7e01f5ec7cc5865b3637c694389b"',
+335 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:07:28 GMT',
+335 verbose headers   vary: 'Accept-Encoding',
+335 verbose headers   'cf-cache-status': 'HIT',
+335 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+335 verbose headers   'x-amz-replication-status': 'COMPLETED',
+335 verbose headers   server: 'cloudflare' }
+336 silly get cb [ 304,
+336 silly get   { date: 'Tue, 23 Nov 2021 15:35:09 GMT',
+336 silly get     connection: 'keep-alive',
+336 silly get     'cf-ray': '6b2b773f1aa9303d-BOS',
+336 silly get     age: '79',
+336 silly get     'cache-control': 'public, max-age=300',
+336 silly get     etag: '"a52b7e01f5ec7cc5865b3637c694389b"',
+336 silly get     'last-modified': 'Mon, 22 Nov 2021 20:07:28 GMT',
+336 silly get     vary: 'Accept-Encoding',
+336 silly get     'cf-cache-status': 'HIT',
+336 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+336 silly get     'x-amz-replication-status': 'COMPLETED',
+336 silly get     server: 'cloudflare' } ]
+337 verbose etag https://registry.npmjs.org/@firebase%2futil from cache
+338 verbose get saving @firebase/util to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252futil/.cache.json
+339 verbose get https://registry.npmjs.org/@firebase%2fapp-types not expired, no request
+340 silly resolveWithNewModule @firebase/analytics@0.6.18 checking installable status
+341 silly cache add args [ '@firebase/analytics@0.6.18', null ]
+342 verbose cache add spec @firebase/analytics@0.6.18
+343 silly cache add parsed spec Result {
+343 silly cache add   raw: '@firebase/analytics@0.6.18',
+343 silly cache add   scope: '@firebase',
+343 silly cache add   name: '@firebase/analytics',
+343 silly cache add   rawSpec: '0.6.18',
+343 silly cache add   spec: '0.6.18',
+343 silly cache add   type: 'version' }
+344 silly addNamed @firebase/analytics@0.6.18
+345 verbose addNamed "0.6.18" is a plain semver version for @firebase/analytics
+346 silly mapToRegistry name @firebase/analytics
+347 silly mapToRegistry scope (from package name) @firebase
+348 verbose mapToRegistry no registry URL found in name for scope @firebase
+349 silly mapToRegistry using default registry
+350 silly mapToRegistry registry https://registry.npmjs.org/
+351 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fanalytics
+352 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fanalytics not in flight; fetching
+353 silly resolveWithNewModule @firebase/app@0.6.30 checking installable status
+354 silly cache add args [ '@firebase/app@0.6.30', null ]
+355 verbose cache add spec @firebase/app@0.6.30
+356 silly cache add parsed spec Result {
+356 silly cache add   raw: '@firebase/app@0.6.30',
+356 silly cache add   scope: '@firebase',
+356 silly cache add   name: '@firebase/app',
+356 silly cache add   rawSpec: '0.6.30',
+356 silly cache add   spec: '0.6.30',
+356 silly cache add   type: 'version' }
+357 silly addNamed @firebase/app@0.6.30
+358 verbose addNamed "0.6.30" is a plain semver version for @firebase/app
+359 silly mapToRegistry name @firebase/app
+360 silly mapToRegistry scope (from package name) @firebase
+361 verbose mapToRegistry no registry URL found in name for scope @firebase
+362 silly mapToRegistry using default registry
+363 silly mapToRegistry registry https://registry.npmjs.org/
+364 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp
+365 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fapp not in flight; fetching
+366 silly resolveWithNewModule @firebase/app-check@0.3.2 checking installable status
+367 silly cache add args [ '@firebase/app-check@0.3.2', null ]
+368 verbose cache add spec @firebase/app-check@0.3.2
+369 silly cache add parsed spec Result {
+369 silly cache add   raw: '@firebase/app-check@0.3.2',
+369 silly cache add   scope: '@firebase',
+369 silly cache add   name: '@firebase/app-check',
+369 silly cache add   rawSpec: '0.3.2',
+369 silly cache add   spec: '0.3.2',
+369 silly cache add   type: 'version' }
+370 silly addNamed @firebase/app-check@0.3.2
+371 verbose addNamed "0.3.2" is a plain semver version for @firebase/app-check
+372 silly mapToRegistry name @firebase/app-check
+373 silly mapToRegistry scope (from package name) @firebase
+374 verbose mapToRegistry no registry URL found in name for scope @firebase
+375 silly mapToRegistry using default registry
+376 silly mapToRegistry registry https://registry.npmjs.org/
+377 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-check
+378 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fapp-check not in flight; fetching
+379 silly resolveWithNewModule @firebase/polyfill@0.3.36 checking installable status
+380 silly cache add args [ '@firebase/polyfill@0.3.36', null ]
+381 verbose cache add spec @firebase/polyfill@0.3.36
+382 silly cache add parsed spec Result {
+382 silly cache add   raw: '@firebase/polyfill@0.3.36',
+382 silly cache add   scope: '@firebase',
+382 silly cache add   name: '@firebase/polyfill',
+382 silly cache add   rawSpec: '0.3.36',
+382 silly cache add   spec: '0.3.36',
+382 silly cache add   type: 'version' }
+383 silly addNamed @firebase/polyfill@0.3.36
+384 verbose addNamed "0.3.36" is a plain semver version for @firebase/polyfill
+385 silly mapToRegistry name @firebase/polyfill
+386 silly mapToRegistry scope (from package name) @firebase
+387 verbose mapToRegistry no registry URL found in name for scope @firebase
+388 silly mapToRegistry using default registry
+389 silly mapToRegistry registry https://registry.npmjs.org/
+390 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fpolyfill
+391 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fpolyfill not in flight; fetching
+392 silly resolveWithNewModule @firebase/installations@0.4.32 checking installable status
+393 silly cache add args [ '@firebase/installations@0.4.32', null ]
+394 verbose cache add spec @firebase/installations@0.4.32
+395 silly cache add parsed spec Result {
+395 silly cache add   raw: '@firebase/installations@0.4.32',
+395 silly cache add   scope: '@firebase',
+395 silly cache add   name: '@firebase/installations',
+395 silly cache add   rawSpec: '0.4.32',
+395 silly cache add   spec: '0.4.32',
+395 silly cache add   type: 'version' }
+396 silly addNamed @firebase/installations@0.4.32
+397 verbose addNamed "0.4.32" is a plain semver version for @firebase/installations
+398 silly mapToRegistry name @firebase/installations
+399 silly mapToRegistry scope (from package name) @firebase
+400 verbose mapToRegistry no registry URL found in name for scope @firebase
+401 silly mapToRegistry using default registry
+402 silly mapToRegistry registry https://registry.npmjs.org/
+403 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2finstallations
+404 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2finstallations not in flight; fetching
+405 silly resolveWithNewModule @firebase/storage@0.7.0 checking installable status
+406 silly cache add args [ '@firebase/storage@0.7.0', null ]
+407 verbose cache add spec @firebase/storage@0.7.0
+408 silly cache add parsed spec Result {
+408 silly cache add   raw: '@firebase/storage@0.7.0',
+408 silly cache add   scope: '@firebase',
+408 silly cache add   name: '@firebase/storage',
+408 silly cache add   rawSpec: '0.7.0',
+408 silly cache add   spec: '0.7.0',
+408 silly cache add   type: 'version' }
+409 silly addNamed @firebase/storage@0.7.0
+410 verbose addNamed "0.7.0" is a plain semver version for @firebase/storage
+411 silly mapToRegistry name @firebase/storage
+412 silly mapToRegistry scope (from package name) @firebase
+413 verbose mapToRegistry no registry URL found in name for scope @firebase
+414 silly mapToRegistry using default registry
+415 silly mapToRegistry registry https://registry.npmjs.org/
+416 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fstorage
+417 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fstorage not in flight; fetching
+418 silly resolveWithNewModule @firebase/functions@0.6.15 checking installable status
+419 silly cache add args [ '@firebase/functions@0.6.15', null ]
+420 verbose cache add spec @firebase/functions@0.6.15
+421 silly cache add parsed spec Result {
+421 silly cache add   raw: '@firebase/functions@0.6.15',
+421 silly cache add   scope: '@firebase',
+421 silly cache add   name: '@firebase/functions',
+421 silly cache add   rawSpec: '0.6.15',
+421 silly cache add   spec: '0.6.15',
+421 silly cache add   type: 'version' }
+422 silly addNamed @firebase/functions@0.6.15
+423 verbose addNamed "0.6.15" is a plain semver version for @firebase/functions
+424 silly mapToRegistry name @firebase/functions
+425 silly mapToRegistry scope (from package name) @firebase
+426 verbose mapToRegistry no registry URL found in name for scope @firebase
+427 silly mapToRegistry using default registry
+428 silly mapToRegistry registry https://registry.npmjs.org/
+429 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2ffunctions
+430 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2ffunctions not in flight; fetching
+431 silly cache afterAdd @firebase/app-types@0.6.3
+432 verbose afterAdd /home/whorehay/.npm/@firebase/app-types/0.6.3/package/package.json not in flight; writing
+433 silly resolveWithNewModule @firebase/messaging@0.8.0 checking installable status
+434 silly cache add args [ '@firebase/messaging@0.8.0', null ]
+435 verbose cache add spec @firebase/messaging@0.8.0
+436 silly cache add parsed spec Result {
+436 silly cache add   raw: '@firebase/messaging@0.8.0',
+436 silly cache add   scope: '@firebase',
+436 silly cache add   name: '@firebase/messaging',
+436 silly cache add   rawSpec: '0.8.0',
+436 silly cache add   spec: '0.8.0',
+436 silly cache add   type: 'version' }
+437 silly addNamed @firebase/messaging@0.8.0
+438 verbose addNamed "0.8.0" is a plain semver version for @firebase/messaging
+439 silly mapToRegistry name @firebase/messaging
+440 silly mapToRegistry scope (from package name) @firebase
+441 verbose mapToRegistry no registry URL found in name for scope @firebase
+442 silly mapToRegistry using default registry
+443 silly mapToRegistry registry https://registry.npmjs.org/
+444 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fmessaging
+445 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fmessaging not in flight; fetching
+446 silly resolveWithNewModule @firebase/remote-config@0.1.43 checking installable status
+447 silly cache add args [ '@firebase/remote-config@0.1.43', null ]
+448 verbose cache add spec @firebase/remote-config@0.1.43
+449 silly cache add parsed spec Result {
+449 silly cache add   raw: '@firebase/remote-config@0.1.43',
+449 silly cache add   scope: '@firebase',
+449 silly cache add   name: '@firebase/remote-config',
+449 silly cache add   rawSpec: '0.1.43',
+449 silly cache add   spec: '0.1.43',
+449 silly cache add   type: 'version' }
+450 silly addNamed @firebase/remote-config@0.1.43
+451 verbose addNamed "0.1.43" is a plain semver version for @firebase/remote-config
+452 silly mapToRegistry name @firebase/remote-config
+453 silly mapToRegistry scope (from package name) @firebase
+454 verbose mapToRegistry no registry URL found in name for scope @firebase
+455 silly mapToRegistry using default registry
+456 silly mapToRegistry registry https://registry.npmjs.org/
+457 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fremote-config
+458 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fremote-config not in flight; fetching
+459 silly resolveWithNewModule @firebase/auth@0.16.8 checking installable status
+460 silly cache add args [ '@firebase/auth@0.16.8', null ]
+461 verbose cache add spec @firebase/auth@0.16.8
+462 silly cache add parsed spec Result {
+462 silly cache add   raw: '@firebase/auth@0.16.8',
+462 silly cache add   scope: '@firebase',
+462 silly cache add   name: '@firebase/auth',
+462 silly cache add   rawSpec: '0.16.8',
+462 silly cache add   spec: '0.16.8',
+462 silly cache add   type: 'version' }
+463 silly addNamed @firebase/auth@0.16.8
+464 verbose addNamed "0.16.8" is a plain semver version for @firebase/auth
+465 silly mapToRegistry name @firebase/auth
+466 silly mapToRegistry scope (from package name) @firebase
+467 verbose mapToRegistry no registry URL found in name for scope @firebase
+468 silly mapToRegistry using default registry
+469 silly mapToRegistry registry https://registry.npmjs.org/
+470 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fauth
+471 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fauth not in flight; fetching
+472 silly resolveWithNewModule @firebase/firestore@2.4.0 checking installable status
+473 silly cache add args [ '@firebase/firestore@2.4.0', null ]
+474 verbose cache add spec @firebase/firestore@2.4.0
+475 silly cache add parsed spec Result {
+475 silly cache add   raw: '@firebase/firestore@2.4.0',
+475 silly cache add   scope: '@firebase',
+475 silly cache add   name: '@firebase/firestore',
+475 silly cache add   rawSpec: '2.4.0',
+475 silly cache add   spec: '2.4.0',
+475 silly cache add   type: 'version' }
+476 silly addNamed @firebase/firestore@2.4.0
+477 verbose addNamed "2.4.0" is a plain semver version for @firebase/firestore
+478 silly mapToRegistry name @firebase/firestore
+479 silly mapToRegistry scope (from package name) @firebase
+480 verbose mapToRegistry no registry URL found in name for scope @firebase
+481 silly mapToRegistry using default registry
+482 silly mapToRegistry registry https://registry.npmjs.org/
+483 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2ffirestore
+484 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2ffirestore not in flight; fetching
+485 verbose get https://registry.npmjs.org/@firebase%2fanalytics not expired, no request
+486 silly resolveWithNewModule @firebase/util@1.3.0 checking installable status
+487 silly cache add args [ '@firebase/util@1.3.0', null ]
+488 verbose cache add spec @firebase/util@1.3.0
+489 silly cache add parsed spec Result {
+489 silly cache add   raw: '@firebase/util@1.3.0',
+489 silly cache add   scope: '@firebase',
+489 silly cache add   name: '@firebase/util',
+489 silly cache add   rawSpec: '1.3.0',
+489 silly cache add   spec: '1.3.0',
+489 silly cache add   type: 'version' }
+490 silly addNamed @firebase/util@1.3.0
+491 verbose addNamed "1.3.0" is a plain semver version for @firebase/util
+492 silly mapToRegistry name @firebase/util
+493 silly mapToRegistry scope (from package name) @firebase
+494 verbose mapToRegistry no registry URL found in name for scope @firebase
+495 silly mapToRegistry using default registry
+496 silly mapToRegistry registry https://registry.npmjs.org/
+497 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2futil
+498 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2futil not in flight; fetching
+499 silly resolveWithNewModule @firebase/performance@0.4.18 checking installable status
+500 silly cache add args [ '@firebase/performance@0.4.18', null ]
+501 verbose cache add spec @firebase/performance@0.4.18
+502 silly cache add parsed spec Result {
+502 silly cache add   raw: '@firebase/performance@0.4.18',
+502 silly cache add   scope: '@firebase',
+502 silly cache add   name: '@firebase/performance',
+502 silly cache add   rawSpec: '0.4.18',
+502 silly cache add   spec: '0.4.18',
+502 silly cache add   type: 'version' }
+503 silly addNamed @firebase/performance@0.4.18
+504 verbose addNamed "0.4.18" is a plain semver version for @firebase/performance
+505 silly mapToRegistry name @firebase/performance
+506 silly mapToRegistry scope (from package name) @firebase
+507 verbose mapToRegistry no registry URL found in name for scope @firebase
+508 silly mapToRegistry using default registry
+509 silly mapToRegistry registry https://registry.npmjs.org/
+510 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fperformance
+511 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fperformance not in flight; fetching
+512 verbose get https://registry.npmjs.org/@firebase%2fapp-check not expired, no request
+513 verbose get https://registry.npmjs.org/@firebase%2fpolyfill not expired, no request
+514 verbose get https://registry.npmjs.org/@firebase%2finstallations not expired, no request
+515 verbose get https://registry.npmjs.org/@firebase%2fapp not expired, no request
+516 silly resolveWithNewModule @firebase/database@0.11.0 checking installable status
+517 silly cache add args [ '@firebase/database@0.11.0', null ]
+518 verbose cache add spec @firebase/database@0.11.0
+519 silly cache add parsed spec Result {
+519 silly cache add   raw: '@firebase/database@0.11.0',
+519 silly cache add   scope: '@firebase',
+519 silly cache add   name: '@firebase/database',
+519 silly cache add   rawSpec: '0.11.0',
+519 silly cache add   spec: '0.11.0',
+519 silly cache add   type: 'version' }
+520 silly addNamed @firebase/database@0.11.0
+521 verbose addNamed "0.11.0" is a plain semver version for @firebase/database
+522 silly mapToRegistry name @firebase/database
+523 silly mapToRegistry scope (from package name) @firebase
+524 verbose mapToRegistry no registry URL found in name for scope @firebase
+525 silly mapToRegistry using default registry
+526 silly mapToRegistry registry https://registry.npmjs.org/
+527 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fdatabase
+528 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fdatabase not in flight; fetching
+529 verbose get https://registry.npmjs.org/@firebase%2fstorage not expired, no request
+530 verbose get https://registry.npmjs.org/@firebase%2ffunctions not expired, no request
+531 verbose afterAdd /home/whorehay/.npm/@firebase/app-types/0.6.3/package/package.json written
+532 verbose get https://registry.npmjs.org/@firebase%2fmessaging not expired, no request
+533 verbose get https://registry.npmjs.org/@firebase%2fremote-config not expired, no request
+534 verbose get https://registry.npmjs.org/@firebase%2fauth not expired, no request
+535 verbose get https://registry.npmjs.org/@firebase%2ffirestore not expired, no request
+536 verbose get https://registry.npmjs.org/@firebase%2fperformance not expired, no request
+537 verbose get https://registry.npmjs.org/@firebase%2futil not expired, no request
+538 silly cache afterAdd @firebase/analytics@0.6.18
+539 verbose afterAdd /home/whorehay/.npm/@firebase/analytics/0.6.18/package/package.json not in flight; writing
+540 silly cache afterAdd @firebase/app-check@0.3.2
+541 verbose afterAdd /home/whorehay/.npm/@firebase/app-check/0.3.2/package/package.json not in flight; writing
+542 silly cache afterAdd @firebase/polyfill@0.3.36
+543 verbose afterAdd /home/whorehay/.npm/@firebase/polyfill/0.3.36/package/package.json not in flight; writing
+544 verbose get https://registry.npmjs.org/@firebase%2fdatabase not expired, no request
+545 silly cache afterAdd @firebase/installations@0.4.32
+546 verbose afterAdd /home/whorehay/.npm/@firebase/installations/0.4.32/package/package.json not in flight; writing
+547 silly cache afterAdd @firebase/app@0.6.30
+548 verbose afterAdd /home/whorehay/.npm/@firebase/app/0.6.30/package/package.json not in flight; writing
+549 silly cache afterAdd @firebase/functions@0.6.15
+550 verbose afterAdd /home/whorehay/.npm/@firebase/functions/0.6.15/package/package.json not in flight; writing
+551 silly cache afterAdd @firebase/storage@0.7.0
+552 verbose afterAdd /home/whorehay/.npm/@firebase/storage/0.7.0/package/package.json not in flight; writing
+553 silly cache afterAdd @firebase/messaging@0.8.0
+554 verbose afterAdd /home/whorehay/.npm/@firebase/messaging/0.8.0/package/package.json not in flight; writing
+555 silly cache afterAdd @firebase/remote-config@0.1.43
+556 verbose afterAdd /home/whorehay/.npm/@firebase/remote-config/0.1.43/package/package.json not in flight; writing
+557 silly cache afterAdd @firebase/auth@0.16.8
+558 verbose afterAdd /home/whorehay/.npm/@firebase/auth/0.16.8/package/package.json not in flight; writing
+559 silly cache afterAdd @firebase/firestore@2.4.0
+560 verbose afterAdd /home/whorehay/.npm/@firebase/firestore/2.4.0/package/package.json not in flight; writing
+561 verbose afterAdd /home/whorehay/.npm/@firebase/analytics/0.6.18/package/package.json written
+562 verbose afterAdd /home/whorehay/.npm/@firebase/app-check/0.3.2/package/package.json written
+563 verbose afterAdd /home/whorehay/.npm/@firebase/polyfill/0.3.36/package/package.json written
+564 verbose afterAdd /home/whorehay/.npm/@firebase/installations/0.4.32/package/package.json written
+565 silly cache afterAdd @firebase/performance@0.4.18
+566 verbose afterAdd /home/whorehay/.npm/@firebase/performance/0.4.18/package/package.json not in flight; writing
+567 silly cache afterAdd @firebase/util@1.3.0
+568 verbose afterAdd /home/whorehay/.npm/@firebase/util/1.3.0/package/package.json not in flight; writing
+569 verbose afterAdd /home/whorehay/.npm/@firebase/app/0.6.30/package/package.json written
+570 silly cache afterAdd @firebase/database@0.11.0
+571 verbose afterAdd /home/whorehay/.npm/@firebase/database/0.11.0/package/package.json not in flight; writing
+572 verbose afterAdd /home/whorehay/.npm/@firebase/functions/0.6.15/package/package.json written
+573 verbose afterAdd /home/whorehay/.npm/@firebase/messaging/0.8.0/package/package.json written
+574 verbose afterAdd /home/whorehay/.npm/@firebase/storage/0.7.0/package/package.json written
+575 verbose afterAdd /home/whorehay/.npm/@firebase/remote-config/0.1.43/package/package.json written
+576 verbose afterAdd /home/whorehay/.npm/@firebase/auth/0.16.8/package/package.json written
+577 verbose afterAdd /home/whorehay/.npm/@firebase/firestore/2.4.0/package/package.json written
+578 verbose afterAdd /home/whorehay/.npm/@firebase/util/1.3.0/package/package.json written
+579 verbose afterAdd /home/whorehay/.npm/@firebase/performance/0.4.18/package/package.json written
+580 verbose afterAdd /home/whorehay/.npm/@firebase/database/0.11.0/package/package.json written
+581 silly fetchNamedPackageData @firebase/analytics-types
+582 silly mapToRegistry name @firebase/analytics-types
+583 silly mapToRegistry scope (from package name) @firebase
+584 verbose mapToRegistry no registry URL found in name for scope @firebase
+585 silly mapToRegistry using default registry
+586 silly mapToRegistry registry https://registry.npmjs.org/
+587 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fanalytics-types
+588 silly fetchNamedPackageData @firebase/logger
+589 silly mapToRegistry name @firebase/logger
+590 silly mapToRegistry scope (from package name) @firebase
+591 verbose mapToRegistry no registry URL found in name for scope @firebase
+592 silly mapToRegistry using default registry
+593 silly mapToRegistry registry https://registry.npmjs.org/
+594 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2flogger
+595 silly fetchNamedPackageData @firebase/component
+596 silly mapToRegistry name @firebase/component
+597 silly mapToRegistry scope (from package name) @firebase
+598 verbose mapToRegistry no registry URL found in name for scope @firebase
+599 silly mapToRegistry using default registry
+600 silly mapToRegistry registry https://registry.npmjs.org/
+601 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fcomponent
+602 silly fetchNamedPackageData tslib
+603 silly mapToRegistry name tslib
+604 silly mapToRegistry using default registry
+605 silly mapToRegistry registry https://registry.npmjs.org/
+606 silly mapToRegistry uri https://registry.npmjs.org/tslib
+607 verbose request uri https://registry.npmjs.org/tslib
+608 verbose request no auth needed
+609 info attempt registry request try #1 at 10:35:16 AM
+610 verbose etag W/"ea88fcea82c94329959a4d1791952b54"
+611 verbose lastModified Wed, 11 Aug 2021 22:55:37 GMT
+612 http request GET https://registry.npmjs.org/tslib
+613 verbose request uri https://registry.npmjs.org/@firebase%2fcomponent
+614 verbose request no auth needed
+615 info attempt registry request try #1 at 10:35:16 AM
+616 verbose etag W/"1ed35120633059c19ddfac646c600eda"
+617 verbose lastModified Mon, 22 Nov 2021 20:07:35 GMT
+618 http request GET https://registry.npmjs.org/@firebase%2fcomponent
+619 verbose request uri https://registry.npmjs.org/@firebase%2flogger
+620 verbose request no auth needed
+621 info attempt registry request try #1 at 10:35:16 AM
+622 verbose etag W/"709215afde223aa3a99286700d5e52d4"
+623 verbose lastModified Mon, 22 Nov 2021 20:07:46 GMT
+624 http request GET https://registry.npmjs.org/@firebase%2flogger
+625 verbose request uri https://registry.npmjs.org/@firebase%2fanalytics-types
+626 verbose request no auth needed
+627 info attempt registry request try #1 at 10:35:16 AM
+628 verbose etag W/"d5a3416d538c1c08e8742034baa08660"
+629 verbose lastModified Mon, 22 Nov 2021 20:08:55 GMT
+630 http request GET https://registry.npmjs.org/@firebase%2fanalytics-types
+631 http 304 https://registry.npmjs.org/tslib
+632 verbose headers { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+632 verbose headers   connection: 'keep-alive',
+632 verbose headers   'cf-ray': '6b2b776ba95f300c-BOS',
+632 verbose headers   age: '189',
+632 verbose headers   'cache-control': 'public, max-age=300',
+632 verbose headers   etag: '"ea88fcea82c94329959a4d1791952b54"',
+632 verbose headers   'last-modified': 'Wed, 11 Aug 2021 22:55:37 GMT',
+632 verbose headers   vary: 'Accept-Encoding',
+632 verbose headers   'cf-cache-status': 'HIT',
+632 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+632 verbose headers   'x-amz-replication-status': 'COMPLETED',
+632 verbose headers   server: 'cloudflare' }
+633 silly get cb [ 304,
+633 silly get   { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+633 silly get     connection: 'keep-alive',
+633 silly get     'cf-ray': '6b2b776ba95f300c-BOS',
+633 silly get     age: '189',
+633 silly get     'cache-control': 'public, max-age=300',
+633 silly get     etag: '"ea88fcea82c94329959a4d1791952b54"',
+633 silly get     'last-modified': 'Wed, 11 Aug 2021 22:55:37 GMT',
+633 silly get     vary: 'Accept-Encoding',
+633 silly get     'cf-cache-status': 'HIT',
+633 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+633 silly get     'x-amz-replication-status': 'COMPLETED',
+633 silly get     server: 'cloudflare' } ]
+634 verbose etag https://registry.npmjs.org/tslib from cache
+635 verbose get saving tslib to /home/whorehay/.npm/registry.npmjs.org/tslib/.cache.json
+636 http 304 https://registry.npmjs.org/@firebase%2fcomponent
+637 verbose headers { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+637 verbose headers   connection: 'keep-alive',
+637 verbose headers   'cf-ray': '6b2b776c0d803b7b-BOS',
+637 verbose headers   age: '72',
+637 verbose headers   'cache-control': 'public, max-age=300',
+637 verbose headers   etag: '"1ed35120633059c19ddfac646c600eda"',
+637 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:07:35 GMT',
+637 verbose headers   vary: 'Accept-Encoding',
+637 verbose headers   'cf-cache-status': 'HIT',
+637 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+637 verbose headers   'x-amz-replication-status': 'COMPLETED',
+637 verbose headers   server: 'cloudflare' }
+638 silly get cb [ 304,
+638 silly get   { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+638 silly get     connection: 'keep-alive',
+638 silly get     'cf-ray': '6b2b776c0d803b7b-BOS',
+638 silly get     age: '72',
+638 silly get     'cache-control': 'public, max-age=300',
+638 silly get     etag: '"1ed35120633059c19ddfac646c600eda"',
+638 silly get     'last-modified': 'Mon, 22 Nov 2021 20:07:35 GMT',
+638 silly get     vary: 'Accept-Encoding',
+638 silly get     'cf-cache-status': 'HIT',
+638 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+638 silly get     'x-amz-replication-status': 'COMPLETED',
+638 silly get     server: 'cloudflare' } ]
+639 verbose etag https://registry.npmjs.org/@firebase%2fcomponent from cache
+640 verbose get saving @firebase/component to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fcomponent/.cache.json
+641 http 304 https://registry.npmjs.org/@firebase%2flogger
+642 verbose headers { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+642 verbose headers   connection: 'keep-alive',
+642 verbose headers   'cf-ray': '6b2b776e3fb73b94-BOS',
+642 verbose headers   age: '72',
+642 verbose headers   'cache-control': 'public, max-age=300',
+642 verbose headers   etag: '"709215afde223aa3a99286700d5e52d4"',
+642 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:07:46 GMT',
+642 verbose headers   vary: 'Accept-Encoding',
+642 verbose headers   'cf-cache-status': 'HIT',
+642 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+642 verbose headers   'x-amz-replication-status': 'COMPLETED',
+642 verbose headers   server: 'cloudflare' }
+643 silly get cb [ 304,
+643 silly get   { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+643 silly get     connection: 'keep-alive',
+643 silly get     'cf-ray': '6b2b776e3fb73b94-BOS',
+643 silly get     age: '72',
+643 silly get     'cache-control': 'public, max-age=300',
+643 silly get     etag: '"709215afde223aa3a99286700d5e52d4"',
+643 silly get     'last-modified': 'Mon, 22 Nov 2021 20:07:46 GMT',
+643 silly get     vary: 'Accept-Encoding',
+643 silly get     'cf-cache-status': 'HIT',
+643 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+643 silly get     'x-amz-replication-status': 'COMPLETED',
+643 silly get     server: 'cloudflare' } ]
+644 verbose etag https://registry.npmjs.org/@firebase%2flogger from cache
+645 verbose get saving @firebase/logger to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252flogger/.cache.json
+646 http 304 https://registry.npmjs.org/@firebase%2fanalytics-types
+647 verbose headers { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+647 verbose headers   connection: 'keep-alive',
+647 verbose headers   'cf-ray': '6b2b776e4934306b-BOS',
+647 verbose headers   age: '72',
+647 verbose headers   'cache-control': 'public, max-age=300',
+647 verbose headers   etag: '"d5a3416d538c1c08e8742034baa08660"',
+647 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:08:55 GMT',
+647 verbose headers   vary: 'Accept-Encoding',
+647 verbose headers   'cf-cache-status': 'HIT',
+647 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+647 verbose headers   'x-amz-replication-status': 'COMPLETED',
+647 verbose headers   server: 'cloudflare' }
+648 silly get cb [ 304,
+648 silly get   { date: 'Tue, 23 Nov 2021 15:35:17 GMT',
+648 silly get     connection: 'keep-alive',
+648 silly get     'cf-ray': '6b2b776e4934306b-BOS',
+648 silly get     age: '72',
+648 silly get     'cache-control': 'public, max-age=300',
+648 silly get     etag: '"d5a3416d538c1c08e8742034baa08660"',
+648 silly get     'last-modified': 'Mon, 22 Nov 2021 20:08:55 GMT',
+648 silly get     vary: 'Accept-Encoding',
+648 silly get     'cf-cache-status': 'HIT',
+648 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+648 silly get     'x-amz-replication-status': 'COMPLETED',
+648 silly get     server: 'cloudflare' } ]
+649 verbose etag https://registry.npmjs.org/@firebase%2fanalytics-types from cache
+650 verbose get saving @firebase/analytics-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fanalytics-types/.cache.json
+651 silly resolveWithNewModule tslib@2.3.1 checking installable status
+652 silly cache add args [ 'tslib@^2.1.0', null ]
+653 verbose cache add spec tslib@^2.1.0
+654 silly cache add parsed spec Result {
+654 silly cache add   raw: 'tslib@^2.1.0',
+654 silly cache add   scope: null,
+654 silly cache add   name: 'tslib',
+654 silly cache add   rawSpec: '^2.1.0',
+654 silly cache add   spec: '>=2.1.0 <3.0.0',
+654 silly cache add   type: 'range' }
+655 silly addNamed tslib@>=2.1.0 <3.0.0
+656 verbose addNamed ">=2.1.0 <3.0.0" is a valid semver range for tslib
+657 silly addNameRange { name: 'tslib', range: '>=2.1.0 <3.0.0', hasData: false }
+658 silly mapToRegistry name tslib
+659 silly mapToRegistry using default registry
+660 silly mapToRegistry registry https://registry.npmjs.org/
+661 silly mapToRegistry uri https://registry.npmjs.org/tslib
+662 verbose addNameRange registry:https://registry.npmjs.org/tslib not in flight; fetching
+663 silly resolveWithNewModule @firebase/component@0.5.6 checking installable status
+664 silly cache add args [ '@firebase/component@0.5.6', null ]
+665 verbose cache add spec @firebase/component@0.5.6
+666 silly cache add parsed spec Result {
+666 silly cache add   raw: '@firebase/component@0.5.6',
+666 silly cache add   scope: '@firebase',
+666 silly cache add   name: '@firebase/component',
+666 silly cache add   rawSpec: '0.5.6',
+666 silly cache add   spec: '0.5.6',
+666 silly cache add   type: 'version' }
+667 silly addNamed @firebase/component@0.5.6
+668 verbose addNamed "0.5.6" is a plain semver version for @firebase/component
+669 silly mapToRegistry name @firebase/component
+670 silly mapToRegistry scope (from package name) @firebase
+671 verbose mapToRegistry no registry URL found in name for scope @firebase
+672 silly mapToRegistry using default registry
+673 silly mapToRegistry registry https://registry.npmjs.org/
+674 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fcomponent
+675 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fcomponent not in flight; fetching
+676 verbose get https://registry.npmjs.org/tslib not expired, no request
+677 silly addNameRange number 2 { name: 'tslib', range: '>=2.1.0 <3.0.0', hasData: true }
+678 silly addNameRange versions [ 'tslib',
+678 silly addNameRange   [ '0.0.1-security',
+678 silly addNameRange     '1.0.0',
+678 silly addNameRange     '1.1.0',
+678 silly addNameRange     '1.2.0',
+678 silly addNameRange     '1.3.0',
+678 silly addNameRange     '1.4.0',
+678 silly addNameRange     '1.5.0',
+678 silly addNameRange     '1.6.0',
+678 silly addNameRange     '1.6.1',
+678 silly addNameRange     '1.7.0',
+678 silly addNameRange     '1.7.1',
+678 silly addNameRange     '1.8.0',
+678 silly addNameRange     '1.8.1',
+678 silly addNameRange     '1.9.0',
+678 silly addNameRange     '1.9.1',
+678 silly addNameRange     '1.9.2',
+678 silly addNameRange     '1.9.3',
+678 silly addNameRange     '1.10.0',
+678 silly addNameRange     '1.11.0',
+678 silly addNameRange     '1.11.1',
+678 silly addNameRange     '1.11.2',
+678 silly addNameRange     '1.12.0',
+678 silly addNameRange     '1.13.0',
+678 silly addNameRange     '2.0.0',
+678 silly addNameRange     '2.0.1',
+678 silly addNameRange     '1.14.0',
+678 silly addNameRange     '2.0.2',
+678 silly addNameRange     '1.14.1',
+678 silly addNameRange     '2.0.3',
+678 silly addNameRange     '2.1.0',
+678 silly addNameRange     '2.2.0',
+678 silly addNameRange     '2.3.0',
+678 silly addNameRange     '2.3.1' ] ]
+679 silly addNamed tslib@2.3.1
+680 verbose addNamed "2.3.1" is a plain semver version for tslib
+681 silly resolveWithNewModule @firebase/logger@0.2.6 checking installable status
+682 silly cache add args [ '@firebase/logger@0.2.6', null ]
+683 verbose cache add spec @firebase/logger@0.2.6
+684 silly cache add parsed spec Result {
+684 silly cache add   raw: '@firebase/logger@0.2.6',
+684 silly cache add   scope: '@firebase',
+684 silly cache add   name: '@firebase/logger',
+684 silly cache add   rawSpec: '0.2.6',
+684 silly cache add   spec: '0.2.6',
+684 silly cache add   type: 'version' }
+685 silly addNamed @firebase/logger@0.2.6
+686 verbose addNamed "0.2.6" is a plain semver version for @firebase/logger
+687 silly mapToRegistry name @firebase/logger
+688 silly mapToRegistry scope (from package name) @firebase
+689 verbose mapToRegistry no registry URL found in name for scope @firebase
+690 silly mapToRegistry using default registry
+691 silly mapToRegistry registry https://registry.npmjs.org/
+692 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2flogger
+693 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2flogger not in flight; fetching
+694 silly resolveWithNewModule @firebase/analytics-types@0.6.0 checking installable status
+695 silly cache add args [ '@firebase/analytics-types@0.6.0', null ]
+696 verbose cache add spec @firebase/analytics-types@0.6.0
+697 silly cache add parsed spec Result {
+697 silly cache add   raw: '@firebase/analytics-types@0.6.0',
+697 silly cache add   scope: '@firebase',
+697 silly cache add   name: '@firebase/analytics-types',
+697 silly cache add   rawSpec: '0.6.0',
+697 silly cache add   spec: '0.6.0',
+697 silly cache add   type: 'version' }
+698 silly addNamed @firebase/analytics-types@0.6.0
+699 verbose addNamed "0.6.0" is a plain semver version for @firebase/analytics-types
+700 silly mapToRegistry name @firebase/analytics-types
+701 silly mapToRegistry scope (from package name) @firebase
+702 verbose mapToRegistry no registry URL found in name for scope @firebase
+703 silly mapToRegistry using default registry
+704 silly mapToRegistry registry https://registry.npmjs.org/
+705 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fanalytics-types
+706 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fanalytics-types not in flight; fetching
+707 silly cache afterAdd tslib@2.3.1
+708 verbose afterAdd /home/whorehay/.npm/tslib/2.3.1/package/package.json not in flight; writing
+709 verbose get https://registry.npmjs.org/@firebase%2fcomponent not expired, no request
+710 verbose get https://registry.npmjs.org/@firebase%2flogger not expired, no request
+711 verbose get https://registry.npmjs.org/@firebase%2fanalytics-types not expired, no request
+712 verbose afterAdd /home/whorehay/.npm/tslib/2.3.1/package/package.json written
+713 silly cache afterAdd @firebase/component@0.5.6
+714 verbose afterAdd /home/whorehay/.npm/@firebase/component/0.5.6/package/package.json not in flight; writing
+715 silly cache afterAdd @firebase/logger@0.2.6
+716 verbose afterAdd /home/whorehay/.npm/@firebase/logger/0.2.6/package/package.json not in flight; writing
+717 silly cache afterAdd @firebase/analytics-types@0.6.0
+718 verbose afterAdd /home/whorehay/.npm/@firebase/analytics-types/0.6.0/package/package.json not in flight; writing
+719 verbose afterAdd /home/whorehay/.npm/@firebase/component/0.5.6/package/package.json written
+720 verbose afterAdd /home/whorehay/.npm/@firebase/logger/0.2.6/package/package.json written
+721 verbose afterAdd /home/whorehay/.npm/@firebase/analytics-types/0.6.0/package/package.json written
+722 silly fetchNamedPackageData @firebase/installations-types
+723 silly mapToRegistry name @firebase/installations-types
+724 silly mapToRegistry scope (from package name) @firebase
+725 verbose mapToRegistry no registry URL found in name for scope @firebase
+726 silly mapToRegistry using default registry
+727 silly mapToRegistry registry https://registry.npmjs.org/
+728 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2finstallations-types
+729 silly fetchNamedPackageData idb
+730 silly mapToRegistry name idb
+731 silly mapToRegistry using default registry
+732 silly mapToRegistry registry https://registry.npmjs.org/
+733 silly mapToRegistry uri https://registry.npmjs.org/idb
+734 verbose request uri https://registry.npmjs.org/idb
+735 verbose request no auth needed
+736 info attempt registry request try #1 at 10:35:17 AM
+737 verbose etag W/"78671bc4b2681d52a76ee6d5852ee12c"
+738 verbose lastModified Mon, 22 Nov 2021 14:48:09 GMT
+739 http request GET https://registry.npmjs.org/idb
+740 verbose request uri https://registry.npmjs.org/@firebase%2finstallations-types
+741 verbose request no auth needed
+742 info attempt registry request try #1 at 10:35:17 AM
+743 verbose etag W/"189b179217b3bc71bc641c450760c063"
+744 verbose lastModified Mon, 22 Nov 2021 20:08:15 GMT
+745 http request GET https://registry.npmjs.org/@firebase%2finstallations-types
+746 http 304 https://registry.npmjs.org/idb
+747 verbose headers { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+747 verbose headers   connection: 'keep-alive',
+747 verbose headers   'cf-ray': '6b2b7772cd1a3b7c-BOS',
+747 verbose headers   age: '70',
+747 verbose headers   'cache-control': 'public, max-age=300',
+747 verbose headers   etag: '"78671bc4b2681d52a76ee6d5852ee12c"',
+747 verbose headers   'last-modified': 'Mon, 22 Nov 2021 14:48:09 GMT',
+747 verbose headers   vary: 'Accept-Encoding',
+747 verbose headers   'cf-cache-status': 'HIT',
+747 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+747 verbose headers   'x-amz-replication-status': 'PENDING',
+747 verbose headers   server: 'cloudflare' }
+748 silly get cb [ 304,
+748 silly get   { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+748 silly get     connection: 'keep-alive',
+748 silly get     'cf-ray': '6b2b7772cd1a3b7c-BOS',
+748 silly get     age: '70',
+748 silly get     'cache-control': 'public, max-age=300',
+748 silly get     etag: '"78671bc4b2681d52a76ee6d5852ee12c"',
+748 silly get     'last-modified': 'Mon, 22 Nov 2021 14:48:09 GMT',
+748 silly get     vary: 'Accept-Encoding',
+748 silly get     'cf-cache-status': 'HIT',
+748 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+748 silly get     'x-amz-replication-status': 'PENDING',
+748 silly get     server: 'cloudflare' } ]
+749 verbose etag https://registry.npmjs.org/idb from cache
+750 verbose get saving idb to /home/whorehay/.npm/registry.npmjs.org/idb/.cache.json
+751 silly resolveWithNewModule idb@3.0.2 checking installable status
+752 silly cache add args [ 'idb@3.0.2', null ]
+753 verbose cache add spec idb@3.0.2
+754 silly cache add parsed spec Result {
+754 silly cache add   raw: 'idb@3.0.2',
+754 silly cache add   scope: null,
+754 silly cache add   name: 'idb',
+754 silly cache add   rawSpec: '3.0.2',
+754 silly cache add   spec: '3.0.2',
+754 silly cache add   type: 'version' }
+755 silly addNamed idb@3.0.2
+756 verbose addNamed "3.0.2" is a plain semver version for idb
+757 silly mapToRegistry name idb
+758 silly mapToRegistry using default registry
+759 silly mapToRegistry registry https://registry.npmjs.org/
+760 silly mapToRegistry uri https://registry.npmjs.org/idb
+761 verbose addNameVersion registry:https://registry.npmjs.org/idb not in flight; fetching
+762 verbose get https://registry.npmjs.org/idb not expired, no request
+763 silly cache afterAdd idb@3.0.2
+764 verbose afterAdd /home/whorehay/.npm/idb/3.0.2/package/package.json not in flight; writing
+765 verbose afterAdd /home/whorehay/.npm/idb/3.0.2/package/package.json written
+766 http 304 https://registry.npmjs.org/@firebase%2finstallations-types
+767 verbose headers { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+767 verbose headers   connection: 'keep-alive',
+767 verbose headers   'cf-ray': '6b2b77730aea3b88-BOS',
+767 verbose headers   age: '70',
+767 verbose headers   'cache-control': 'public, max-age=300',
+767 verbose headers   etag: '"189b179217b3bc71bc641c450760c063"',
+767 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:08:15 GMT',
+767 verbose headers   vary: 'Accept-Encoding',
+767 verbose headers   'cf-cache-status': 'HIT',
+767 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+767 verbose headers   'x-amz-replication-status': 'COMPLETED',
+767 verbose headers   server: 'cloudflare' }
+768 silly get cb [ 304,
+768 silly get   { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+768 silly get     connection: 'keep-alive',
+768 silly get     'cf-ray': '6b2b77730aea3b88-BOS',
+768 silly get     age: '70',
+768 silly get     'cache-control': 'public, max-age=300',
+768 silly get     etag: '"189b179217b3bc71bc641c450760c063"',
+768 silly get     'last-modified': 'Mon, 22 Nov 2021 20:08:15 GMT',
+768 silly get     vary: 'Accept-Encoding',
+768 silly get     'cf-cache-status': 'HIT',
+768 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+768 silly get     'x-amz-replication-status': 'COMPLETED',
+768 silly get     server: 'cloudflare' } ]
+769 verbose etag https://registry.npmjs.org/@firebase%2finstallations-types from cache
+770 verbose get saving @firebase/installations-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252finstallations-types/.cache.json
+771 silly resolveWithNewModule @firebase/installations-types@0.3.4 checking installable status
+772 silly cache add args [ '@firebase/installations-types@0.3.4', null ]
+773 verbose cache add spec @firebase/installations-types@0.3.4
+774 silly cache add parsed spec Result {
+774 silly cache add   raw: '@firebase/installations-types@0.3.4',
+774 silly cache add   scope: '@firebase',
+774 silly cache add   name: '@firebase/installations-types',
+774 silly cache add   rawSpec: '0.3.4',
+774 silly cache add   spec: '0.3.4',
+774 silly cache add   type: 'version' }
+775 silly addNamed @firebase/installations-types@0.3.4
+776 verbose addNamed "0.3.4" is a plain semver version for @firebase/installations-types
+777 silly mapToRegistry name @firebase/installations-types
+778 silly mapToRegistry scope (from package name) @firebase
+779 verbose mapToRegistry no registry URL found in name for scope @firebase
+780 silly mapToRegistry using default registry
+781 silly mapToRegistry registry https://registry.npmjs.org/
+782 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2finstallations-types
+783 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2finstallations-types not in flight; fetching
+784 verbose get https://registry.npmjs.org/@firebase%2finstallations-types not expired, no request
+785 silly cache afterAdd @firebase/installations-types@0.3.4
+786 verbose afterAdd /home/whorehay/.npm/@firebase/installations-types/0.3.4/package/package.json not in flight; writing
+787 verbose afterAdd /home/whorehay/.npm/@firebase/installations-types/0.3.4/package/package.json written
+788 silly fetchNamedPackageData dom-storage
+789 silly mapToRegistry name dom-storage
+790 silly mapToRegistry using default registry
+791 silly mapToRegistry registry https://registry.npmjs.org/
+792 silly mapToRegistry uri https://registry.npmjs.org/dom-storage
+793 silly fetchNamedPackageData xmlhttprequest
+794 silly mapToRegistry name xmlhttprequest
+795 silly mapToRegistry using default registry
+796 silly mapToRegistry registry https://registry.npmjs.org/
+797 silly mapToRegistry uri https://registry.npmjs.org/xmlhttprequest
+798 verbose request uri https://registry.npmjs.org/xmlhttprequest
+799 verbose request no auth needed
+800 info attempt registry request try #1 at 10:35:17 AM
+801 verbose etag W/"5ad7b5164475a830db475fa03734cdf9"
+802 verbose lastModified Sun, 27 May 2018 22:28:52 GMT
+803 http request GET https://registry.npmjs.org/xmlhttprequest
+804 verbose request uri https://registry.npmjs.org/dom-storage
+805 verbose request no auth needed
+806 info attempt registry request try #1 at 10:35:17 AM
+807 verbose etag W/"668c3c7b12a9497eb0d3449fa56f6df0"
+808 verbose lastModified Sat, 26 May 2018 22:20:57 GMT
+809 http request GET https://registry.npmjs.org/dom-storage
+810 http 304 https://registry.npmjs.org/xmlhttprequest
+811 verbose headers { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+811 verbose headers   connection: 'keep-alive',
+811 verbose headers   'cf-ray': '6b2b77757fa13b82-BOS',
+811 verbose headers   age: '263',
+811 verbose headers   'cache-control': 'public, max-age=300',
+811 verbose headers   etag: '"5ad7b5164475a830db475fa03734cdf9"',
+811 verbose headers   'last-modified': 'Sun, 27 May 2018 22:28:52 GMT',
+811 verbose headers   vary: 'Accept-Encoding',
+811 verbose headers   'cf-cache-status': 'HIT',
+811 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+811 verbose headers   server: 'cloudflare' }
+812 silly get cb [ 304,
+812 silly get   { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+812 silly get     connection: 'keep-alive',
+812 silly get     'cf-ray': '6b2b77757fa13b82-BOS',
+812 silly get     age: '263',
+812 silly get     'cache-control': 'public, max-age=300',
+812 silly get     etag: '"5ad7b5164475a830db475fa03734cdf9"',
+812 silly get     'last-modified': 'Sun, 27 May 2018 22:28:52 GMT',
+812 silly get     vary: 'Accept-Encoding',
+812 silly get     'cf-cache-status': 'HIT',
+812 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+812 silly get     server: 'cloudflare' } ]
+813 verbose etag https://registry.npmjs.org/xmlhttprequest from cache
+814 verbose get saving xmlhttprequest to /home/whorehay/.npm/registry.npmjs.org/xmlhttprequest/.cache.json
+815 http 304 https://registry.npmjs.org/dom-storage
+816 verbose headers { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+816 verbose headers   connection: 'keep-alive',
+816 verbose headers   'cf-ray': '6b2b77757d8c3035-BOS',
+816 verbose headers   age: '68',
+816 verbose headers   'cache-control': 'public, max-age=300',
+816 verbose headers   etag: '"668c3c7b12a9497eb0d3449fa56f6df0"',
+816 verbose headers   'last-modified': 'Sat, 26 May 2018 22:20:57 GMT',
+816 verbose headers   vary: 'Accept-Encoding',
+816 verbose headers   'cf-cache-status': 'HIT',
+816 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+816 verbose headers   server: 'cloudflare' }
+817 silly get cb [ 304,
+817 silly get   { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+817 silly get     connection: 'keep-alive',
+817 silly get     'cf-ray': '6b2b77757d8c3035-BOS',
+817 silly get     age: '68',
+817 silly get     'cache-control': 'public, max-age=300',
+817 silly get     etag: '"668c3c7b12a9497eb0d3449fa56f6df0"',
+817 silly get     'last-modified': 'Sat, 26 May 2018 22:20:57 GMT',
+817 silly get     vary: 'Accept-Encoding',
+817 silly get     'cf-cache-status': 'HIT',
+817 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+817 silly get     server: 'cloudflare' } ]
+818 verbose etag https://registry.npmjs.org/dom-storage from cache
+819 verbose get saving dom-storage to /home/whorehay/.npm/registry.npmjs.org/dom-storage/.cache.json
+820 silly resolveWithNewModule xmlhttprequest@1.8.0 checking installable status
+821 silly cache add args [ 'xmlhttprequest@1.8.0', null ]
+822 verbose cache add spec xmlhttprequest@1.8.0
+823 silly cache add parsed spec Result {
+823 silly cache add   raw: 'xmlhttprequest@1.8.0',
+823 silly cache add   scope: null,
+823 silly cache add   name: 'xmlhttprequest',
+823 silly cache add   rawSpec: '1.8.0',
+823 silly cache add   spec: '1.8.0',
+823 silly cache add   type: 'version' }
+824 silly addNamed xmlhttprequest@1.8.0
+825 verbose addNamed "1.8.0" is a plain semver version for xmlhttprequest
+826 silly mapToRegistry name xmlhttprequest
+827 silly mapToRegistry using default registry
+828 silly mapToRegistry registry https://registry.npmjs.org/
+829 silly mapToRegistry uri https://registry.npmjs.org/xmlhttprequest
+830 verbose addNameVersion registry:https://registry.npmjs.org/xmlhttprequest not in flight; fetching
+831 silly resolveWithNewModule dom-storage@2.1.0 checking installable status
+832 silly cache add args [ 'dom-storage@2.1.0', null ]
+833 verbose cache add spec dom-storage@2.1.0
+834 silly cache add parsed spec Result {
+834 silly cache add   raw: 'dom-storage@2.1.0',
+834 silly cache add   scope: null,
+834 silly cache add   name: 'dom-storage',
+834 silly cache add   rawSpec: '2.1.0',
+834 silly cache add   spec: '2.1.0',
+834 silly cache add   type: 'version' }
+835 silly addNamed dom-storage@2.1.0
+836 verbose addNamed "2.1.0" is a plain semver version for dom-storage
+837 silly mapToRegistry name dom-storage
+838 silly mapToRegistry using default registry
+839 silly mapToRegistry registry https://registry.npmjs.org/
+840 silly mapToRegistry uri https://registry.npmjs.org/dom-storage
+841 verbose addNameVersion registry:https://registry.npmjs.org/dom-storage not in flight; fetching
+842 verbose get https://registry.npmjs.org/xmlhttprequest not expired, no request
+843 verbose get https://registry.npmjs.org/dom-storage not expired, no request
+844 silly cache afterAdd xmlhttprequest@1.8.0
+845 verbose afterAdd /home/whorehay/.npm/xmlhttprequest/1.8.0/package/package.json not in flight; writing
+846 silly cache afterAdd dom-storage@2.1.0
+847 verbose afterAdd /home/whorehay/.npm/dom-storage/2.1.0/package/package.json not in flight; writing
+848 verbose afterAdd /home/whorehay/.npm/dom-storage/2.1.0/package/package.json written
+849 verbose afterAdd /home/whorehay/.npm/xmlhttprequest/1.8.0/package/package.json written
+850 silly fetchNamedPackageData @firebase/app-check-types
+851 silly mapToRegistry name @firebase/app-check-types
+852 silly mapToRegistry scope (from package name) @firebase
+853 verbose mapToRegistry no registry URL found in name for scope @firebase
+854 silly mapToRegistry using default registry
+855 silly mapToRegistry registry https://registry.npmjs.org/
+856 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-check-types
+857 silly fetchNamedPackageData @firebase/app-check-interop-types
+858 silly mapToRegistry name @firebase/app-check-interop-types
+859 silly mapToRegistry scope (from package name) @firebase
+860 verbose mapToRegistry no registry URL found in name for scope @firebase
+861 silly mapToRegistry using default registry
+862 silly mapToRegistry registry https://registry.npmjs.org/
+863 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-check-interop-types
+864 verbose request uri https://registry.npmjs.org/@firebase%2fapp-check-interop-types
+865 verbose request no auth needed
+866 info attempt registry request try #1 at 10:35:17 AM
+867 verbose etag W/"e615d7fd37a1219cca4b9dc4a6140b1b"
+868 verbose lastModified Mon, 22 Nov 2021 20:09:47 GMT
+869 http request GET https://registry.npmjs.org/@firebase%2fapp-check-interop-types
+870 verbose request uri https://registry.npmjs.org/@firebase%2fapp-check-types
+871 verbose request no auth needed
+872 info attempt registry request try #1 at 10:35:17 AM
+873 verbose etag W/"677fd31a0e3a3e5f80864e0bb8c04687"
+874 verbose lastModified Mon, 22 Nov 2021 20:07:17 GMT
+875 http request GET https://registry.npmjs.org/@firebase%2fapp-check-types
+876 http 304 https://registry.npmjs.org/@firebase%2fapp-check-interop-types
+877 verbose headers { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+877 verbose headers   connection: 'keep-alive',
+877 verbose headers   'cf-ray': '6b2b7775ef41ff90-BOS',
+877 verbose headers   age: '66',
+877 verbose headers   'cache-control': 'public, max-age=300',
+877 verbose headers   etag: '"e615d7fd37a1219cca4b9dc4a6140b1b"',
+877 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:09:47 GMT',
+877 verbose headers   vary: 'Accept-Encoding',
+877 verbose headers   'cf-cache-status': 'HIT',
+877 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+877 verbose headers   'x-amz-replication-status': 'COMPLETED',
+877 verbose headers   server: 'cloudflare' }
+878 silly get cb [ 304,
+878 silly get   { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+878 silly get     connection: 'keep-alive',
+878 silly get     'cf-ray': '6b2b7775ef41ff90-BOS',
+878 silly get     age: '66',
+878 silly get     'cache-control': 'public, max-age=300',
+878 silly get     etag: '"e615d7fd37a1219cca4b9dc4a6140b1b"',
+878 silly get     'last-modified': 'Mon, 22 Nov 2021 20:09:47 GMT',
+878 silly get     vary: 'Accept-Encoding',
+878 silly get     'cf-cache-status': 'HIT',
+878 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+878 silly get     'x-amz-replication-status': 'COMPLETED',
+878 silly get     server: 'cloudflare' } ]
+879 verbose etag https://registry.npmjs.org/@firebase%2fapp-check-interop-types from cache
+880 verbose get saving @firebase/app-check-interop-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fapp-check-interop-types/.cache.json
+881 silly resolveWithNewModule @firebase/app-check-interop-types@0.1.0 checking installable status
+882 silly cache add args [ '@firebase/app-check-interop-types@0.1.0', null ]
+883 verbose cache add spec @firebase/app-check-interop-types@0.1.0
+884 silly cache add parsed spec Result {
+884 silly cache add   raw: '@firebase/app-check-interop-types@0.1.0',
+884 silly cache add   scope: '@firebase',
+884 silly cache add   name: '@firebase/app-check-interop-types',
+884 silly cache add   rawSpec: '0.1.0',
+884 silly cache add   spec: '0.1.0',
+884 silly cache add   type: 'version' }
+885 silly addNamed @firebase/app-check-interop-types@0.1.0
+886 verbose addNamed "0.1.0" is a plain semver version for @firebase/app-check-interop-types
+887 silly mapToRegistry name @firebase/app-check-interop-types
+888 silly mapToRegistry scope (from package name) @firebase
+889 verbose mapToRegistry no registry URL found in name for scope @firebase
+890 silly mapToRegistry using default registry
+891 silly mapToRegistry registry https://registry.npmjs.org/
+892 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-check-interop-types
+893 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fapp-check-interop-types not in flight; fetching
+894 verbose get https://registry.npmjs.org/@firebase%2fapp-check-interop-types not expired, no request
+895 http 304 https://registry.npmjs.org/@firebase%2fapp-check-types
+896 verbose headers { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+896 verbose headers   connection: 'keep-alive',
+896 verbose headers   'cf-ray': '6b2b7775efaeebec-BOS',
+896 verbose headers   age: '66',
+896 verbose headers   'cache-control': 'public, max-age=300',
+896 verbose headers   etag: '"677fd31a0e3a3e5f80864e0bb8c04687"',
+896 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:07:17 GMT',
+896 verbose headers   vary: 'Accept-Encoding',
+896 verbose headers   'cf-cache-status': 'HIT',
+896 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+896 verbose headers   'x-amz-replication-status': 'COMPLETED',
+896 verbose headers   server: 'cloudflare' }
+897 silly get cb [ 304,
+897 silly get   { date: 'Tue, 23 Nov 2021 15:35:18 GMT',
+897 silly get     connection: 'keep-alive',
+897 silly get     'cf-ray': '6b2b7775efaeebec-BOS',
+897 silly get     age: '66',
+897 silly get     'cache-control': 'public, max-age=300',
+897 silly get     etag: '"677fd31a0e3a3e5f80864e0bb8c04687"',
+897 silly get     'last-modified': 'Mon, 22 Nov 2021 20:07:17 GMT',
+897 silly get     vary: 'Accept-Encoding',
+897 silly get     'cf-cache-status': 'HIT',
+897 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+897 silly get     'x-amz-replication-status': 'COMPLETED',
+897 silly get     server: 'cloudflare' } ]
+898 verbose etag https://registry.npmjs.org/@firebase%2fapp-check-types from cache
+899 verbose get saving @firebase/app-check-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fapp-check-types/.cache.json
+900 silly cache afterAdd @firebase/app-check-interop-types@0.1.0
+901 verbose afterAdd /home/whorehay/.npm/@firebase/app-check-interop-types/0.1.0/package/package.json not in flight; writing
+902 verbose afterAdd /home/whorehay/.npm/@firebase/app-check-interop-types/0.1.0/package/package.json written
+903 silly resolveWithNewModule @firebase/app-check-types@0.3.1 checking installable status
+904 silly cache add args [ '@firebase/app-check-types@0.3.1', null ]
+905 verbose cache add spec @firebase/app-check-types@0.3.1
+906 silly cache add parsed spec Result {
+906 silly cache add   raw: '@firebase/app-check-types@0.3.1',
+906 silly cache add   scope: '@firebase',
+906 silly cache add   name: '@firebase/app-check-types',
+906 silly cache add   rawSpec: '0.3.1',
+906 silly cache add   spec: '0.3.1',
+906 silly cache add   type: 'version' }
+907 silly addNamed @firebase/app-check-types@0.3.1
+908 verbose addNamed "0.3.1" is a plain semver version for @firebase/app-check-types
+909 silly mapToRegistry name @firebase/app-check-types
+910 silly mapToRegistry scope (from package name) @firebase
+911 verbose mapToRegistry no registry URL found in name for scope @firebase
+912 silly mapToRegistry using default registry
+913 silly mapToRegistry registry https://registry.npmjs.org/
+914 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fapp-check-types
+915 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fapp-check-types not in flight; fetching
+916 verbose get https://registry.npmjs.org/@firebase%2fapp-check-types not expired, no request
+917 silly cache afterAdd @firebase/app-check-types@0.3.1
+918 verbose afterAdd /home/whorehay/.npm/@firebase/app-check-types/0.3.1/package/package.json not in flight; writing
+919 verbose afterAdd /home/whorehay/.npm/@firebase/app-check-types/0.3.1/package/package.json written
+920 silly fetchNamedPackageData @firebase/auth-types
+921 silly mapToRegistry name @firebase/auth-types
+922 silly mapToRegistry scope (from package name) @firebase
+923 verbose mapToRegistry no registry URL found in name for scope @firebase
+924 silly mapToRegistry using default registry
+925 silly mapToRegistry registry https://registry.npmjs.org/
+926 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fauth-types
+927 verbose request uri https://registry.npmjs.org/@firebase%2fauth-types
+928 verbose request no auth needed
+929 info attempt registry request try #1 at 10:35:18 AM
+930 verbose etag W/"8a93435ee65e27a8afd513d4ed5923ce"
+931 verbose lastModified Mon, 22 Nov 2021 20:09:23 GMT
+932 http request GET https://registry.npmjs.org/@firebase%2fauth-types
+933 http 304 https://registry.npmjs.org/@firebase%2fauth-types
+934 verbose headers { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+934 verbose headers   connection: 'keep-alive',
+934 verbose headers   'cf-ray': '6b2b7777ddda2ffc-BOS',
+934 verbose headers   age: '66',
+934 verbose headers   'cache-control': 'public, max-age=300',
+934 verbose headers   etag: '"8a93435ee65e27a8afd513d4ed5923ce"',
+934 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:09:23 GMT',
+934 verbose headers   vary: 'Accept-Encoding',
+934 verbose headers   'cf-cache-status': 'HIT',
+934 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+934 verbose headers   'x-amz-replication-status': 'COMPLETED',
+934 verbose headers   server: 'cloudflare' }
+935 silly get cb [ 304,
+935 silly get   { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+935 silly get     connection: 'keep-alive',
+935 silly get     'cf-ray': '6b2b7777ddda2ffc-BOS',
+935 silly get     age: '66',
+935 silly get     'cache-control': 'public, max-age=300',
+935 silly get     etag: '"8a93435ee65e27a8afd513d4ed5923ce"',
+935 silly get     'last-modified': 'Mon, 22 Nov 2021 20:09:23 GMT',
+935 silly get     vary: 'Accept-Encoding',
+935 silly get     'cf-cache-status': 'HIT',
+935 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+935 silly get     'x-amz-replication-status': 'COMPLETED',
+935 silly get     server: 'cloudflare' } ]
+936 verbose etag https://registry.npmjs.org/@firebase%2fauth-types from cache
+937 verbose get saving @firebase/auth-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fauth-types/.cache.json
+938 silly resolveWithNewModule @firebase/auth-types@0.10.3 checking installable status
+939 silly cache add args [ '@firebase/auth-types@0.10.3', null ]
+940 verbose cache add spec @firebase/auth-types@0.10.3
+941 silly cache add parsed spec Result {
+941 silly cache add   raw: '@firebase/auth-types@0.10.3',
+941 silly cache add   scope: '@firebase',
+941 silly cache add   name: '@firebase/auth-types',
+941 silly cache add   rawSpec: '0.10.3',
+941 silly cache add   spec: '0.10.3',
+941 silly cache add   type: 'version' }
+942 silly addNamed @firebase/auth-types@0.10.3
+943 verbose addNamed "0.10.3" is a plain semver version for @firebase/auth-types
+944 silly mapToRegistry name @firebase/auth-types
+945 silly mapToRegistry scope (from package name) @firebase
+946 verbose mapToRegistry no registry URL found in name for scope @firebase
+947 silly mapToRegistry using default registry
+948 silly mapToRegistry registry https://registry.npmjs.org/
+949 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fauth-types
+950 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fauth-types not in flight; fetching
+951 verbose get https://registry.npmjs.org/@firebase%2fauth-types not expired, no request
+952 silly cache afterAdd @firebase/auth-types@0.10.3
+953 verbose afterAdd /home/whorehay/.npm/@firebase/auth-types/0.10.3/package/package.json not in flight; writing
+954 verbose afterAdd /home/whorehay/.npm/@firebase/auth-types/0.10.3/package/package.json written
+955 silly fetchNamedPackageData @firebase/database-types
+956 silly mapToRegistry name @firebase/database-types
+957 silly mapToRegistry scope (from package name) @firebase
+958 verbose mapToRegistry no registry URL found in name for scope @firebase
+959 silly mapToRegistry using default registry
+960 silly mapToRegistry registry https://registry.npmjs.org/
+961 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fdatabase-types
+962 silly fetchNamedPackageData @firebase/auth-interop-types
+963 silly mapToRegistry name @firebase/auth-interop-types
+964 silly mapToRegistry scope (from package name) @firebase
+965 verbose mapToRegistry no registry URL found in name for scope @firebase
+966 silly mapToRegistry using default registry
+967 silly mapToRegistry registry https://registry.npmjs.org/
+968 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fauth-interop-types
+969 silly fetchNamedPackageData faye-websocket
+970 silly mapToRegistry name faye-websocket
+971 silly mapToRegistry using default registry
+972 silly mapToRegistry registry https://registry.npmjs.org/
+973 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket
+974 verbose request uri https://registry.npmjs.org/faye-websocket
+975 verbose request no auth needed
+976 info attempt registry request try #1 at 10:35:18 AM
+977 verbose etag W/"df34d883c2655f641484b363a235bd1d"
+978 verbose lastModified Mon, 24 May 2021 22:11:41 GMT
+979 http request GET https://registry.npmjs.org/faye-websocket
+980 verbose request uri https://registry.npmjs.org/@firebase%2fauth-interop-types
+981 verbose request no auth needed
+982 info attempt registry request try #1 at 10:35:18 AM
+983 verbose etag W/"01539a5c690b5aff33c14d5c422702bf"
+984 verbose lastModified Mon, 22 Nov 2021 20:09:42 GMT
+985 http request GET https://registry.npmjs.org/@firebase%2fauth-interop-types
+986 verbose request uri https://registry.npmjs.org/@firebase%2fdatabase-types
+987 verbose request no auth needed
+988 info attempt registry request try #1 at 10:35:18 AM
+989 verbose etag W/"d7d2c83a24f1ee58f27b973a5fbe999b"
+990 verbose lastModified Mon, 22 Nov 2021 20:11:42 GMT
+991 http request GET https://registry.npmjs.org/@firebase%2fdatabase-types
+992 http 304 https://registry.npmjs.org/faye-websocket
+993 verbose headers { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+993 verbose headers   connection: 'keep-alive',
+993 verbose headers   'cf-ray': '6b2b777a6c61ae06-BOS',
+993 verbose headers   age: '151',
+993 verbose headers   'cache-control': 'public, max-age=300',
+993 verbose headers   etag: '"df34d883c2655f641484b363a235bd1d"',
+993 verbose headers   'last-modified': 'Mon, 24 May 2021 22:11:41 GMT',
+993 verbose headers   vary: 'Accept-Encoding',
+993 verbose headers   'cf-cache-status': 'HIT',
+993 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+993 verbose headers   server: 'cloudflare' }
+994 silly get cb [ 304,
+994 silly get   { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+994 silly get     connection: 'keep-alive',
+994 silly get     'cf-ray': '6b2b777a6c61ae06-BOS',
+994 silly get     age: '151',
+994 silly get     'cache-control': 'public, max-age=300',
+994 silly get     etag: '"df34d883c2655f641484b363a235bd1d"',
+994 silly get     'last-modified': 'Mon, 24 May 2021 22:11:41 GMT',
+994 silly get     vary: 'Accept-Encoding',
+994 silly get     'cf-cache-status': 'HIT',
+994 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+994 silly get     server: 'cloudflare' } ]
+995 verbose etag https://registry.npmjs.org/faye-websocket from cache
+996 verbose get saving faye-websocket to /home/whorehay/.npm/registry.npmjs.org/faye-websocket/.cache.json
+997 silly resolveWithNewModule faye-websocket@0.11.3 checking installable status
+998 silly cache add args [ 'faye-websocket@0.11.3', null ]
+999 verbose cache add spec faye-websocket@0.11.3
+1000 silly cache add parsed spec Result {
+1000 silly cache add   raw: 'faye-websocket@0.11.3',
+1000 silly cache add   scope: null,
+1000 silly cache add   name: 'faye-websocket',
+1000 silly cache add   rawSpec: '0.11.3',
+1000 silly cache add   spec: '0.11.3',
+1000 silly cache add   type: 'version' }
+1001 silly addNamed faye-websocket@0.11.3
+1002 verbose addNamed "0.11.3" is a plain semver version for faye-websocket
+1003 silly mapToRegistry name faye-websocket
+1004 silly mapToRegistry using default registry
+1005 silly mapToRegistry registry https://registry.npmjs.org/
+1006 silly mapToRegistry uri https://registry.npmjs.org/faye-websocket
+1007 verbose addNameVersion registry:https://registry.npmjs.org/faye-websocket not in flight; fetching
+1008 verbose get https://registry.npmjs.org/faye-websocket not expired, no request
+1009 silly cache afterAdd faye-websocket@0.11.3
+1010 verbose afterAdd /home/whorehay/.npm/faye-websocket/0.11.3/package/package.json not in flight; writing
+1011 verbose afterAdd /home/whorehay/.npm/faye-websocket/0.11.3/package/package.json written
+1012 http 304 https://registry.npmjs.org/@firebase%2fauth-interop-types
+1013 verbose headers { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+1013 verbose headers   connection: 'keep-alive',
+1013 verbose headers   'cf-ray': '6b2b777a9d423021-BOS',
+1013 verbose headers   age: '63',
+1013 verbose headers   'cache-control': 'public, max-age=300',
+1013 verbose headers   etag: '"01539a5c690b5aff33c14d5c422702bf"',
+1013 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:09:42 GMT',
+1013 verbose headers   vary: 'Accept-Encoding',
+1013 verbose headers   'cf-cache-status': 'HIT',
+1013 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1013 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1013 verbose headers   server: 'cloudflare' }
+1014 silly get cb [ 304,
+1014 silly get   { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+1014 silly get     connection: 'keep-alive',
+1014 silly get     'cf-ray': '6b2b777a9d423021-BOS',
+1014 silly get     age: '63',
+1014 silly get     'cache-control': 'public, max-age=300',
+1014 silly get     etag: '"01539a5c690b5aff33c14d5c422702bf"',
+1014 silly get     'last-modified': 'Mon, 22 Nov 2021 20:09:42 GMT',
+1014 silly get     vary: 'Accept-Encoding',
+1014 silly get     'cf-cache-status': 'HIT',
+1014 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1014 silly get     'x-amz-replication-status': 'COMPLETED',
+1014 silly get     server: 'cloudflare' } ]
+1015 verbose etag https://registry.npmjs.org/@firebase%2fauth-interop-types from cache
+1016 verbose get saving @firebase/auth-interop-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fauth-interop-types/.cache.json
+1017 silly resolveWithNewModule @firebase/auth-interop-types@0.1.6 checking installable status
+1018 silly cache add args [ '@firebase/auth-interop-types@0.1.6', null ]
+1019 verbose cache add spec @firebase/auth-interop-types@0.1.6
+1020 silly cache add parsed spec Result {
+1020 silly cache add   raw: '@firebase/auth-interop-types@0.1.6',
+1020 silly cache add   scope: '@firebase',
+1020 silly cache add   name: '@firebase/auth-interop-types',
+1020 silly cache add   rawSpec: '0.1.6',
+1020 silly cache add   spec: '0.1.6',
+1020 silly cache add   type: 'version' }
+1021 silly addNamed @firebase/auth-interop-types@0.1.6
+1022 verbose addNamed "0.1.6" is a plain semver version for @firebase/auth-interop-types
+1023 silly mapToRegistry name @firebase/auth-interop-types
+1024 silly mapToRegistry scope (from package name) @firebase
+1025 verbose mapToRegistry no registry URL found in name for scope @firebase
+1026 silly mapToRegistry using default registry
+1027 silly mapToRegistry registry https://registry.npmjs.org/
+1028 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fauth-interop-types
+1029 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fauth-interop-types not in flight; fetching
+1030 http 304 https://registry.npmjs.org/@firebase%2fdatabase-types
+1031 verbose headers { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+1031 verbose headers   connection: 'keep-alive',
+1031 verbose headers   'cf-ray': '6b2b777affdc3049-BOS',
+1031 verbose headers   age: '63',
+1031 verbose headers   'cache-control': 'public, max-age=300',
+1031 verbose headers   etag: '"d7d2c83a24f1ee58f27b973a5fbe999b"',
+1031 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:11:42 GMT',
+1031 verbose headers   vary: 'Accept-Encoding',
+1031 verbose headers   'cf-cache-status': 'HIT',
+1031 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1031 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1031 verbose headers   server: 'cloudflare' }
+1032 silly get cb [ 304,
+1032 silly get   { date: 'Tue, 23 Nov 2021 15:35:19 GMT',
+1032 silly get     connection: 'keep-alive',
+1032 silly get     'cf-ray': '6b2b777affdc3049-BOS',
+1032 silly get     age: '63',
+1032 silly get     'cache-control': 'public, max-age=300',
+1032 silly get     etag: '"d7d2c83a24f1ee58f27b973a5fbe999b"',
+1032 silly get     'last-modified': 'Mon, 22 Nov 2021 20:11:42 GMT',
+1032 silly get     vary: 'Accept-Encoding',
+1032 silly get     'cf-cache-status': 'HIT',
+1032 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1032 silly get     'x-amz-replication-status': 'COMPLETED',
+1032 silly get     server: 'cloudflare' } ]
+1033 verbose etag https://registry.npmjs.org/@firebase%2fdatabase-types from cache
+1034 verbose get saving @firebase/database-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fdatabase-types/.cache.json
+1035 verbose get https://registry.npmjs.org/@firebase%2fauth-interop-types not expired, no request
+1036 silly cache afterAdd @firebase/auth-interop-types@0.1.6
+1037 verbose afterAdd /home/whorehay/.npm/@firebase/auth-interop-types/0.1.6/package/package.json not in flight; writing
+1038 verbose afterAdd /home/whorehay/.npm/@firebase/auth-interop-types/0.1.6/package/package.json written
+1039 silly resolveWithNewModule @firebase/database-types@0.8.0 checking installable status
+1040 silly cache add args [ '@firebase/database-types@0.8.0', null ]
+1041 verbose cache add spec @firebase/database-types@0.8.0
+1042 silly cache add parsed spec Result {
+1042 silly cache add   raw: '@firebase/database-types@0.8.0',
+1042 silly cache add   scope: '@firebase',
+1042 silly cache add   name: '@firebase/database-types',
+1042 silly cache add   rawSpec: '0.8.0',
+1042 silly cache add   spec: '0.8.0',
+1042 silly cache add   type: 'version' }
+1043 silly addNamed @firebase/database-types@0.8.0
+1044 verbose addNamed "0.8.0" is a plain semver version for @firebase/database-types
+1045 silly mapToRegistry name @firebase/database-types
+1046 silly mapToRegistry scope (from package name) @firebase
+1047 verbose mapToRegistry no registry URL found in name for scope @firebase
+1048 silly mapToRegistry using default registry
+1049 silly mapToRegistry registry https://registry.npmjs.org/
+1050 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fdatabase-types
+1051 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fdatabase-types not in flight; fetching
+1052 verbose get https://registry.npmjs.org/@firebase%2fdatabase-types not expired, no request
+1053 silly cache afterAdd @firebase/database-types@0.8.0
+1054 verbose afterAdd /home/whorehay/.npm/@firebase/database-types/0.8.0/package/package.json not in flight; writing
+1055 verbose afterAdd /home/whorehay/.npm/@firebase/database-types/0.8.0/package/package.json written
+1056 silly fetchNamedPackageData websocket-driver
+1057 silly mapToRegistry name websocket-driver
+1058 silly mapToRegistry using default registry
+1059 silly mapToRegistry registry https://registry.npmjs.org/
+1060 silly mapToRegistry uri https://registry.npmjs.org/websocket-driver
+1061 verbose request uri https://registry.npmjs.org/websocket-driver
+1062 verbose request no auth needed
+1063 info attempt registry request try #1 at 10:35:19 AM
+1064 verbose etag W/"03eb38158b1971da25a872726b8c0b28"
+1065 verbose lastModified Fri, 22 May 2020 15:02:22 GMT
+1066 http request GET https://registry.npmjs.org/websocket-driver
+1067 http 304 https://registry.npmjs.org/websocket-driver
+1068 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1068 verbose headers   connection: 'keep-alive',
+1068 verbose headers   'cf-ray': '6b2b777fcfa7303d-BOS',
+1068 verbose headers   age: '152',
+1068 verbose headers   'cache-control': 'public, max-age=300',
+1068 verbose headers   etag: '"03eb38158b1971da25a872726b8c0b28"',
+1068 verbose headers   'last-modified': 'Fri, 22 May 2020 15:02:22 GMT',
+1068 verbose headers   vary: 'Accept-Encoding',
+1068 verbose headers   'cf-cache-status': 'HIT',
+1068 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1068 verbose headers   server: 'cloudflare' }
+1069 silly get cb [ 304,
+1069 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1069 silly get     connection: 'keep-alive',
+1069 silly get     'cf-ray': '6b2b777fcfa7303d-BOS',
+1069 silly get     age: '152',
+1069 silly get     'cache-control': 'public, max-age=300',
+1069 silly get     etag: '"03eb38158b1971da25a872726b8c0b28"',
+1069 silly get     'last-modified': 'Fri, 22 May 2020 15:02:22 GMT',
+1069 silly get     vary: 'Accept-Encoding',
+1069 silly get     'cf-cache-status': 'HIT',
+1069 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1069 silly get     server: 'cloudflare' } ]
+1070 verbose etag https://registry.npmjs.org/websocket-driver from cache
+1071 verbose get saving websocket-driver to /home/whorehay/.npm/registry.npmjs.org/websocket-driver/.cache.json
+1072 silly resolveWithNewModule websocket-driver@0.7.4 checking installable status
+1073 silly cache add args [ 'websocket-driver@>=0.5.1', null ]
+1074 verbose cache add spec websocket-driver@>=0.5.1
+1075 silly cache add parsed spec Result {
+1075 silly cache add   raw: 'websocket-driver@>=0.5.1',
+1075 silly cache add   scope: null,
+1075 silly cache add   name: 'websocket-driver',
+1075 silly cache add   rawSpec: '>=0.5.1',
+1075 silly cache add   spec: '>=0.5.1',
+1075 silly cache add   type: 'range' }
+1076 silly addNamed websocket-driver@>=0.5.1
+1077 verbose addNamed ">=0.5.1" is a valid semver range for websocket-driver
+1078 silly addNameRange { name: 'websocket-driver', range: '>=0.5.1', hasData: false }
+1079 silly mapToRegistry name websocket-driver
+1080 silly mapToRegistry using default registry
+1081 silly mapToRegistry registry https://registry.npmjs.org/
+1082 silly mapToRegistry uri https://registry.npmjs.org/websocket-driver
+1083 verbose addNameRange registry:https://registry.npmjs.org/websocket-driver not in flight; fetching
+1084 verbose get https://registry.npmjs.org/websocket-driver not expired, no request
+1085 silly addNameRange number 2 { name: 'websocket-driver', range: '>=0.5.1', hasData: true }
+1086 silly addNameRange versions [ 'websocket-driver',
+1086 silly addNameRange   [ '0.1.0',
+1086 silly addNameRange     '0.2.0',
+1086 silly addNameRange     '0.2.1',
+1086 silly addNameRange     '0.2.2',
+1086 silly addNameRange     '0.3.0',
+1086 silly addNameRange     '0.3.1',
+1086 silly addNameRange     '0.3.2',
+1086 silly addNameRange     '0.3.3',
+1086 silly addNameRange     '0.3.4',
+1086 silly addNameRange     '0.3.5',
+1086 silly addNameRange     '0.3.6',
+1086 silly addNameRange     '0.4.0',
+1086 silly addNameRange     '0.5.0',
+1086 silly addNameRange     '0.5.1',
+1086 silly addNameRange     '0.5.2',
+1086 silly addNameRange     '0.5.3',
+1086 silly addNameRange     '0.5.4',
+1086 silly addNameRange     '0.6.0',
+1086 silly addNameRange     '0.6.1',
+1086 silly addNameRange     '0.6.2',
+1086 silly addNameRange     '0.6.3',
+1086 silly addNameRange     '0.6.4',
+1086 silly addNameRange     '0.6.5',
+1086 silly addNameRange     '0.7.0',
+1086 silly addNameRange     '0.7.1',
+1086 silly addNameRange     '0.7.3',
+1086 silly addNameRange     '0.7.4' ] ]
+1087 silly addNamed websocket-driver@0.7.4
+1088 verbose addNamed "0.7.4" is a plain semver version for websocket-driver
+1089 silly cache afterAdd websocket-driver@0.7.4
+1090 verbose afterAdd /home/whorehay/.npm/websocket-driver/0.7.4/package/package.json not in flight; writing
+1091 verbose afterAdd /home/whorehay/.npm/websocket-driver/0.7.4/package/package.json written
+1092 silly fetchNamedPackageData http-parser-js
+1093 silly mapToRegistry name http-parser-js
+1094 silly mapToRegistry using default registry
+1095 silly mapToRegistry registry https://registry.npmjs.org/
+1096 silly mapToRegistry uri https://registry.npmjs.org/http-parser-js
+1097 silly fetchNamedPackageData websocket-extensions
+1098 silly mapToRegistry name websocket-extensions
+1099 silly mapToRegistry using default registry
+1100 silly mapToRegistry registry https://registry.npmjs.org/
+1101 silly mapToRegistry uri https://registry.npmjs.org/websocket-extensions
+1102 verbose request uri https://registry.npmjs.org/http-parser-js
+1103 verbose request no auth needed
+1104 info attempt registry request try #1 at 10:35:19 AM
+1105 verbose etag W/"7326776ef4e1255002d3d27e6b4ceabf"
+1106 verbose lastModified Fri, 01 Jan 2021 22:51:39 GMT
+1107 http request GET https://registry.npmjs.org/http-parser-js
+1108 verbose request uri https://registry.npmjs.org/websocket-extensions
+1109 verbose request no auth needed
+1110 info attempt registry request try #1 at 10:35:19 AM
+1111 verbose etag W/"d4c2fff4b6890c662f60fe89be8e383c"
+1112 verbose lastModified Tue, 02 Jun 2020 13:00:14 GMT
+1113 http request GET https://registry.npmjs.org/websocket-extensions
+1114 http 304 https://registry.npmjs.org/websocket-extensions
+1115 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1115 verbose headers   connection: 'keep-alive',
+1115 verbose headers   'cf-ray': '6b2b77803ec33b7b-BOS',
+1115 verbose headers   age: '116',
+1115 verbose headers   'cache-control': 'public, max-age=300',
+1115 verbose headers   etag: '"d4c2fff4b6890c662f60fe89be8e383c"',
+1115 verbose headers   'last-modified': 'Tue, 02 Jun 2020 13:00:14 GMT',
+1115 verbose headers   vary: 'Accept-Encoding',
+1115 verbose headers   'cf-cache-status': 'HIT',
+1115 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1115 verbose headers   server: 'cloudflare' }
+1116 silly get cb [ 304,
+1116 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1116 silly get     connection: 'keep-alive',
+1116 silly get     'cf-ray': '6b2b77803ec33b7b-BOS',
+1116 silly get     age: '116',
+1116 silly get     'cache-control': 'public, max-age=300',
+1116 silly get     etag: '"d4c2fff4b6890c662f60fe89be8e383c"',
+1116 silly get     'last-modified': 'Tue, 02 Jun 2020 13:00:14 GMT',
+1116 silly get     vary: 'Accept-Encoding',
+1116 silly get     'cf-cache-status': 'HIT',
+1116 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1116 silly get     server: 'cloudflare' } ]
+1117 verbose etag https://registry.npmjs.org/websocket-extensions from cache
+1118 verbose get saving websocket-extensions to /home/whorehay/.npm/registry.npmjs.org/websocket-extensions/.cache.json
+1119 http 304 https://registry.npmjs.org/http-parser-js
+1120 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1120 verbose headers   connection: 'keep-alive',
+1120 verbose headers   'cf-ray': '6b2b778049ba300c-BOS',
+1120 verbose headers   age: '107',
+1120 verbose headers   'cache-control': 'public, max-age=300',
+1120 verbose headers   etag: '"7326776ef4e1255002d3d27e6b4ceabf"',
+1120 verbose headers   'last-modified': 'Fri, 01 Jan 2021 22:51:39 GMT',
+1120 verbose headers   vary: 'Accept-Encoding',
+1120 verbose headers   'cf-cache-status': 'HIT',
+1120 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1120 verbose headers   server: 'cloudflare' }
+1121 silly get cb [ 304,
+1121 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1121 silly get     connection: 'keep-alive',
+1121 silly get     'cf-ray': '6b2b778049ba300c-BOS',
+1121 silly get     age: '107',
+1121 silly get     'cache-control': 'public, max-age=300',
+1121 silly get     etag: '"7326776ef4e1255002d3d27e6b4ceabf"',
+1121 silly get     'last-modified': 'Fri, 01 Jan 2021 22:51:39 GMT',
+1121 silly get     vary: 'Accept-Encoding',
+1121 silly get     'cf-cache-status': 'HIT',
+1121 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1121 silly get     server: 'cloudflare' } ]
+1122 verbose etag https://registry.npmjs.org/http-parser-js from cache
+1123 verbose get saving http-parser-js to /home/whorehay/.npm/registry.npmjs.org/http-parser-js/.cache.json
+1124 silly resolveWithNewModule websocket-extensions@0.1.4 checking installable status
+1125 silly cache add args [ 'websocket-extensions@>=0.1.1', null ]
+1126 verbose cache add spec websocket-extensions@>=0.1.1
+1127 silly cache add parsed spec Result {
+1127 silly cache add   raw: 'websocket-extensions@>=0.1.1',
+1127 silly cache add   scope: null,
+1127 silly cache add   name: 'websocket-extensions',
+1127 silly cache add   rawSpec: '>=0.1.1',
+1127 silly cache add   spec: '>=0.1.1',
+1127 silly cache add   type: 'range' }
+1128 silly addNamed websocket-extensions@>=0.1.1
+1129 verbose addNamed ">=0.1.1" is a valid semver range for websocket-extensions
+1130 silly addNameRange { name: 'websocket-extensions',
+1130 silly addNameRange   range: '>=0.1.1',
+1130 silly addNameRange   hasData: false }
+1131 silly mapToRegistry name websocket-extensions
+1132 silly mapToRegistry using default registry
+1133 silly mapToRegistry registry https://registry.npmjs.org/
+1134 silly mapToRegistry uri https://registry.npmjs.org/websocket-extensions
+1135 verbose addNameRange registry:https://registry.npmjs.org/websocket-extensions not in flight; fetching
+1136 verbose get https://registry.npmjs.org/websocket-extensions not expired, no request
+1137 silly addNameRange number 2 { name: 'websocket-extensions', range: '>=0.1.1', hasData: true }
+1138 silly addNameRange versions [ 'websocket-extensions',
+1138 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4' ] ]
+1139 silly addNamed websocket-extensions@0.1.4
+1140 verbose addNamed "0.1.4" is a plain semver version for websocket-extensions
+1141 silly resolveWithNewModule http-parser-js@0.5.3 checking installable status
+1142 silly cache add args [ 'http-parser-js@>=0.5.1', null ]
+1143 verbose cache add spec http-parser-js@>=0.5.1
+1144 silly cache add parsed spec Result {
+1144 silly cache add   raw: 'http-parser-js@>=0.5.1',
+1144 silly cache add   scope: null,
+1144 silly cache add   name: 'http-parser-js',
+1144 silly cache add   rawSpec: '>=0.5.1',
+1144 silly cache add   spec: '>=0.5.1',
+1144 silly cache add   type: 'range' }
+1145 silly addNamed http-parser-js@>=0.5.1
+1146 verbose addNamed ">=0.5.1" is a valid semver range for http-parser-js
+1147 silly addNameRange { name: 'http-parser-js', range: '>=0.5.1', hasData: false }
+1148 silly mapToRegistry name http-parser-js
+1149 silly mapToRegistry using default registry
+1150 silly mapToRegistry registry https://registry.npmjs.org/
+1151 silly mapToRegistry uri https://registry.npmjs.org/http-parser-js
+1152 verbose addNameRange registry:https://registry.npmjs.org/http-parser-js not in flight; fetching
+1153 silly cache afterAdd websocket-extensions@0.1.4
+1154 verbose afterAdd /home/whorehay/.npm/websocket-extensions/0.1.4/package/package.json not in flight; writing
+1155 verbose get https://registry.npmjs.org/http-parser-js not expired, no request
+1156 silly addNameRange number 2 { name: 'http-parser-js', range: '>=0.5.1', hasData: true }
+1157 silly addNameRange versions [ 'http-parser-js',
+1157 silly addNameRange   [ '0.0.0',
+1157 silly addNameRange     '0.1.0',
+1157 silly addNameRange     '0.2.0',
+1157 silly addNameRange     '0.2.1',
+1157 silly addNameRange     '0.2.2',
+1157 silly addNameRange     '0.2.3',
+1157 silly addNameRange     '0.3.0',
+1157 silly addNameRange     '0.4.0',
+1157 silly addNameRange     '0.4.1',
+1157 silly addNameRange     '0.4.2',
+1157 silly addNameRange     '0.4.3',
+1157 silly addNameRange     '0.4.4',
+1157 silly addNameRange     '0.4.5',
+1157 silly addNameRange     '0.4.6',
+1157 silly addNameRange     '0.4.7',
+1157 silly addNameRange     '0.4.8',
+1157 silly addNameRange     '0.4.9',
+1157 silly addNameRange     '0.4.10',
+1157 silly addNameRange     '0.4.11',
+1157 silly addNameRange     '0.4.12',
+1157 silly addNameRange     '0.4.13',
+1157 silly addNameRange     '0.5.0',
+1157 silly addNameRange     '0.5.1',
+1157 silly addNameRange     '0.5.2',
+1157 silly addNameRange     '0.5.3' ] ]
+1158 silly addNamed http-parser-js@0.5.3
+1159 verbose addNamed "0.5.3" is a plain semver version for http-parser-js
+1160 verbose afterAdd /home/whorehay/.npm/websocket-extensions/0.1.4/package/package.json written
+1161 silly cache afterAdd http-parser-js@0.5.3
+1162 verbose afterAdd /home/whorehay/.npm/http-parser-js/0.5.3/package/package.json not in flight; writing
+1163 verbose afterAdd /home/whorehay/.npm/http-parser-js/0.5.3/package/package.json written
+1164 silly fetchNamedPackageData @firebase/firestore-types
+1165 silly mapToRegistry name @firebase/firestore-types
+1166 silly mapToRegistry scope (from package name) @firebase
+1167 verbose mapToRegistry no registry URL found in name for scope @firebase
+1168 silly mapToRegistry using default registry
+1169 silly mapToRegistry registry https://registry.npmjs.org/
+1170 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2ffirestore-types
+1171 silly fetchNamedPackageData @firebase/webchannel-wrapper
+1172 silly mapToRegistry name @firebase/webchannel-wrapper
+1173 silly mapToRegistry scope (from package name) @firebase
+1174 verbose mapToRegistry no registry URL found in name for scope @firebase
+1175 silly mapToRegistry using default registry
+1176 silly mapToRegistry registry https://registry.npmjs.org/
+1177 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fwebchannel-wrapper
+1178 silly fetchNamedPackageData @grpc/grpc-js
+1179 silly mapToRegistry name @grpc/grpc-js
+1180 silly mapToRegistry scope (from package name) @grpc
+1181 verbose mapToRegistry no registry URL found in name for scope @grpc
+1182 silly mapToRegistry using default registry
+1183 silly mapToRegistry registry https://registry.npmjs.org/
+1184 silly mapToRegistry uri https://registry.npmjs.org/@grpc%2fgrpc-js
+1185 silly fetchNamedPackageData @grpc/proto-loader
+1186 silly mapToRegistry name @grpc/proto-loader
+1187 silly mapToRegistry scope (from package name) @grpc
+1188 verbose mapToRegistry no registry URL found in name for scope @grpc
+1189 silly mapToRegistry using default registry
+1190 silly mapToRegistry registry https://registry.npmjs.org/
+1191 silly mapToRegistry uri https://registry.npmjs.org/@grpc%2fproto-loader
+1192 silly fetchNamedPackageData node-fetch
+1193 silly mapToRegistry name node-fetch
+1194 silly mapToRegistry using default registry
+1195 silly mapToRegistry registry https://registry.npmjs.org/
+1196 silly mapToRegistry uri https://registry.npmjs.org/node-fetch
+1197 verbose request uri https://registry.npmjs.org/@grpc%2fgrpc-js
+1198 verbose request no auth needed
+1199 info attempt registry request try #1 at 10:35:19 AM
+1200 verbose etag W/"4fa4fc45a13c4cbdf9676248c5281b4a"
+1201 verbose lastModified Mon, 08 Nov 2021 18:15:39 GMT
+1202 http request GET https://registry.npmjs.org/@grpc%2fgrpc-js
+1203 verbose request uri https://registry.npmjs.org/@grpc%2fproto-loader
+1204 verbose request no auth needed
+1205 info attempt registry request try #1 at 10:35:19 AM
+1206 verbose etag W/"f0ed0bf4659b9b8971d81868e809bf17"
+1207 verbose lastModified Tue, 16 Nov 2021 17:36:13 GMT
+1208 http request GET https://registry.npmjs.org/@grpc%2fproto-loader
+1209 verbose request uri https://registry.npmjs.org/node-fetch
+1210 verbose request no auth needed
+1211 info attempt registry request try #1 at 10:35:19 AM
+1212 verbose etag W/"39174db23eb097726d7f5a968f530a30"
+1213 verbose lastModified Mon, 08 Nov 2021 18:16:59 GMT
+1214 http request GET https://registry.npmjs.org/node-fetch
+1215 verbose request uri https://registry.npmjs.org/@firebase%2ffirestore-types
+1216 verbose request no auth needed
+1217 info attempt registry request try #1 at 10:35:19 AM
+1218 verbose etag W/"6c22517d6d23fc316fa42429add7ac82"
+1219 verbose lastModified Mon, 22 Nov 2021 20:12:32 GMT
+1220 http request GET https://registry.npmjs.org/@firebase%2ffirestore-types
+1221 verbose request uri https://registry.npmjs.org/@firebase%2fwebchannel-wrapper
+1222 verbose request no auth needed
+1223 info attempt registry request try #1 at 10:35:19 AM
+1224 verbose etag W/"4d092843fcaf5a0ac667843f47697c2b"
+1225 verbose lastModified Mon, 22 Nov 2021 20:12:00 GMT
+1226 http request GET https://registry.npmjs.org/@firebase%2fwebchannel-wrapper
+1227 http 304 https://registry.npmjs.org/@grpc%2fproto-loader
+1228 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1228 verbose headers   connection: 'keep-alive',
+1228 verbose headers   'cf-ray': '6b2b7780ae51306b-BOS',
+1228 verbose headers   age: '62',
+1228 verbose headers   'cache-control': 'public, max-age=300',
+1228 verbose headers   etag: '"f0ed0bf4659b9b8971d81868e809bf17"',
+1228 verbose headers   'last-modified': 'Tue, 16 Nov 2021 17:36:13 GMT',
+1228 verbose headers   vary: 'Accept-Encoding',
+1228 verbose headers   'cf-cache-status': 'HIT',
+1228 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1228 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1228 verbose headers   server: 'cloudflare' }
+1229 silly get cb [ 304,
+1229 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1229 silly get     connection: 'keep-alive',
+1229 silly get     'cf-ray': '6b2b7780ae51306b-BOS',
+1229 silly get     age: '62',
+1229 silly get     'cache-control': 'public, max-age=300',
+1229 silly get     etag: '"f0ed0bf4659b9b8971d81868e809bf17"',
+1229 silly get     'last-modified': 'Tue, 16 Nov 2021 17:36:13 GMT',
+1229 silly get     vary: 'Accept-Encoding',
+1229 silly get     'cf-cache-status': 'HIT',
+1229 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1229 silly get     'x-amz-replication-status': 'COMPLETED',
+1229 silly get     server: 'cloudflare' } ]
+1230 verbose etag https://registry.npmjs.org/@grpc%2fproto-loader from cache
+1231 verbose get saving @grpc/proto-loader to /home/whorehay/.npm/registry.npmjs.org/_40grpc_252fproto-loader/.cache.json
+1232 http 304 https://registry.npmjs.org/@grpc%2fgrpc-js
+1233 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1233 verbose headers   connection: 'keep-alive',
+1233 verbose headers   'cf-ray': '6b2b77809c373b94-BOS',
+1233 verbose headers   age: '62',
+1233 verbose headers   'cache-control': 'public, max-age=300',
+1233 verbose headers   etag: '"4fa4fc45a13c4cbdf9676248c5281b4a"',
+1233 verbose headers   'last-modified': 'Mon, 08 Nov 2021 18:15:39 GMT',
+1233 verbose headers   vary: 'Accept-Encoding',
+1233 verbose headers   'cf-cache-status': 'HIT',
+1233 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1233 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1233 verbose headers   server: 'cloudflare' }
+1234 silly get cb [ 304,
+1234 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1234 silly get     connection: 'keep-alive',
+1234 silly get     'cf-ray': '6b2b77809c373b94-BOS',
+1234 silly get     age: '62',
+1234 silly get     'cache-control': 'public, max-age=300',
+1234 silly get     etag: '"4fa4fc45a13c4cbdf9676248c5281b4a"',
+1234 silly get     'last-modified': 'Mon, 08 Nov 2021 18:15:39 GMT',
+1234 silly get     vary: 'Accept-Encoding',
+1234 silly get     'cf-cache-status': 'HIT',
+1234 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1234 silly get     'x-amz-replication-status': 'COMPLETED',
+1234 silly get     server: 'cloudflare' } ]
+1235 verbose etag https://registry.npmjs.org/@grpc%2fgrpc-js from cache
+1236 verbose get saving @grpc/grpc-js to /home/whorehay/.npm/registry.npmjs.org/_40grpc_252fgrpc-js/.cache.json
+1237 silly resolveWithNewModule @grpc/proto-loader@0.6.7 checking installable status
+1238 silly cache add args [ '@grpc/proto-loader@^0.6.0', null ]
+1239 verbose cache add spec @grpc/proto-loader@^0.6.0
+1240 silly cache add parsed spec Result {
+1240 silly cache add   raw: '@grpc/proto-loader@^0.6.0',
+1240 silly cache add   scope: '@grpc',
+1240 silly cache add   name: '@grpc/proto-loader',
+1240 silly cache add   rawSpec: '^0.6.0',
+1240 silly cache add   spec: '>=0.6.0 <0.7.0',
+1240 silly cache add   type: 'range' }
+1241 silly addNamed @grpc/proto-loader@>=0.6.0 <0.7.0
+1242 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for @grpc/proto-loader
+1243 silly addNameRange { name: '@grpc/proto-loader',
+1243 silly addNameRange   range: '>=0.6.0 <0.7.0',
+1243 silly addNameRange   hasData: false }
+1244 silly mapToRegistry name @grpc/proto-loader
+1245 silly mapToRegistry scope (from package name) @grpc
+1246 verbose mapToRegistry no registry URL found in name for scope @grpc
+1247 silly mapToRegistry using default registry
+1248 silly mapToRegistry registry https://registry.npmjs.org/
+1249 silly mapToRegistry uri https://registry.npmjs.org/@grpc%2fproto-loader
+1250 verbose addNameRange registry:https://registry.npmjs.org/@grpc%2fproto-loader not in flight; fetching
+1251 verbose get https://registry.npmjs.org/@grpc%2fproto-loader not expired, no request
+1252 silly addNameRange number 2 { name: '@grpc/proto-loader',
+1252 silly addNameRange   range: '>=0.6.0 <0.7.0',
+1252 silly addNameRange   hasData: true }
+1253 silly addNameRange versions [ '@grpc/proto-loader',
+1253 silly addNameRange   [ '0.1.0',
+1253 silly addNameRange     '0.3.0',
+1253 silly addNameRange     '0.4.0',
+1253 silly addNameRange     '0.5.0',
+1253 silly addNameRange     '0.5.1',
+1253 silly addNameRange     '0.5.2',
+1253 silly addNameRange     '0.5.3',
+1253 silly addNameRange     '0.5.4',
+1253 silly addNameRange     '0.6.0-pre1',
+1253 silly addNameRange     '0.6.0-pre2',
+1253 silly addNameRange     '0.6.0-pre3',
+1253 silly addNameRange     '0.6.0-pre4',
+1253 silly addNameRange     '0.6.0-pre5',
+1253 silly addNameRange     '0.6.0-pre6',
+1253 silly addNameRange     '0.6.0-pre7',
+1253 silly addNameRange     '0.5.5',
+1253 silly addNameRange     '0.6.0-pre8',
+1253 silly addNameRange     '0.6.0-pre9',
+1253 silly addNameRange     '0.6.0-pre10',
+1253 silly addNameRange     '0.6.0-pre11',
+1253 silly addNameRange     '0.6.0-pre12',
+1253 silly addNameRange     '0.6.0-pre13',
+1253 silly addNameRange     '0.6.0-pre14',
+1253 silly addNameRange     '0.6.0-pre15',
+1253 silly addNameRange     '0.6.0-pre16',
+1253 silly addNameRange     '0.6.0-pre17',
+1253 silly addNameRange     '0.5.6',
+1253 silly addNameRange     '0.6.0-pre18',
+1253 silly addNameRange     '0.6.0',
+1253 silly addNameRange     '0.6.1',
+1253 silly addNameRange     '0.6.2',
+1253 silly addNameRange     '0.6.3',
+1253 silly addNameRange     '0.6.4',
+1253 silly addNameRange     '0.6.5',
+1253 silly addNameRange     '0.6.6',
+1253 silly addNameRange     '0.6.7' ] ]
+1254 silly addNamed @grpc/proto-loader@0.6.7
+1255 verbose addNamed "0.6.7" is a plain semver version for @grpc/proto-loader
+1256 silly resolveWithNewModule @grpc/grpc-js@1.4.4 checking installable status
+1257 silly cache add args [ '@grpc/grpc-js@^1.3.2', null ]
+1258 verbose cache add spec @grpc/grpc-js@^1.3.2
+1259 silly cache add parsed spec Result {
+1259 silly cache add   raw: '@grpc/grpc-js@^1.3.2',
+1259 silly cache add   scope: '@grpc',
+1259 silly cache add   name: '@grpc/grpc-js',
+1259 silly cache add   rawSpec: '^1.3.2',
+1259 silly cache add   spec: '>=1.3.2 <2.0.0',
+1259 silly cache add   type: 'range' }
+1260 silly addNamed @grpc/grpc-js@>=1.3.2 <2.0.0
+1261 verbose addNamed ">=1.3.2 <2.0.0" is a valid semver range for @grpc/grpc-js
+1262 silly addNameRange { name: '@grpc/grpc-js',
+1262 silly addNameRange   range: '>=1.3.2 <2.0.0',
+1262 silly addNameRange   hasData: false }
+1263 silly mapToRegistry name @grpc/grpc-js
+1264 silly mapToRegistry scope (from package name) @grpc
+1265 verbose mapToRegistry no registry URL found in name for scope @grpc
+1266 silly mapToRegistry using default registry
+1267 silly mapToRegistry registry https://registry.npmjs.org/
+1268 silly mapToRegistry uri https://registry.npmjs.org/@grpc%2fgrpc-js
+1269 verbose addNameRange registry:https://registry.npmjs.org/@grpc%2fgrpc-js not in flight; fetching
+1270 silly cache afterAdd @grpc/proto-loader@0.6.7
+1271 verbose afterAdd /home/whorehay/.npm/@grpc/proto-loader/0.6.7/package/package.json not in flight; writing
+1272 verbose get https://registry.npmjs.org/@grpc%2fgrpc-js not expired, no request
+1273 silly addNameRange number 2 { name: '@grpc/grpc-js', range: '>=1.3.2 <2.0.0', hasData: true }
+1274 silly addNameRange versions [ '@grpc/grpc-js',
+1274 silly addNameRange   [ '0.1.0',
+1274 silly addNameRange     '0.2.0',
+1274 silly addNameRange     '0.3.0',
+1274 silly addNameRange     '0.3.1',
+1274 silly addNameRange     '0.3.2',
+1274 silly addNameRange     '0.3.3',
+1274 silly addNameRange     '0.3.4',
+1274 silly addNameRange     '0.3.5',
+1274 silly addNameRange     '0.3.6',
+1274 silly addNameRange     '0.4.0',
+1274 silly addNameRange     '0.4.2',
+1274 silly addNameRange     '0.4.3',
+1274 silly addNameRange     '0.5.0',
+1274 silly addNameRange     '0.5.1',
+1274 silly addNameRange     '0.5.2',
+1274 silly addNameRange     '0.5.3',
+1274 silly addNameRange     '0.5.4',
+1274 silly addNameRange     '0.6.0',
+1274 silly addNameRange     '0.6.1',
+1274 silly addNameRange     '0.6.2',
+1274 silly addNameRange     '0.6.3',
+1274 silly addNameRange     '0.6.4',
+1274 silly addNameRange     '0.6.5',
+1274 silly addNameRange     '0.6.6',
+1274 silly addNameRange     '0.6.7',
+1274 silly addNameRange     '0.6.8',
+1274 silly addNameRange     '0.6.9',
+1274 silly addNameRange     '0.6.10',
+1274 silly addNameRange     '0.6.11',
+1274 silly addNameRange     '0.6.12',
+1274 silly addNameRange     '0.6.13',
+1274 silly addNameRange     '0.6.14',
+1274 silly addNameRange     '0.6.15',
+1274 silly addNameRange     '0.6.16',
+1274 silly addNameRange     '0.6.17',
+1274 silly addNameRange     '0.6.18',
+1274 silly addNameRange     '0.7.0',
+1274 silly addNameRange     '0.7.1',
+1274 silly addNameRange     '0.7.2',
+1274 silly addNameRange     '0.7.3',
+1274 silly addNameRange     '0.7.4',
+1274 silly addNameRange     '0.7.5',
+1274 silly addNameRange     '0.7.6',
+1274 silly addNameRange     '0.7.7',
+1274 silly addNameRange     '0.7.8',
+1274 silly addNameRange     '0.7.9',
+1274 silly addNameRange     '0.8.0',
+1274 silly addNameRange     '0.8.1',
+1274 silly addNameRange     '1.0.0',
+1274 silly addNameRange     '1.0.1',
+1274 silly addNameRange     '1.0.2',
+1274 silly addNameRange     '1.0.3',
+1274 silly addNameRange     '1.0.4',
+1274 silly addNameRange     '1.0.5',
+1274 silly addNameRange     '1.1.0',
+1274 silly addNameRange     '1.1.1',
+1274 silly addNameRange     '1.1.2',
+1274 silly addNameRange     '1.1.3',
+1274 silly addNameRange     '1.1.4',
+1274 silly addNameRange     '1.1.5',
+1274 silly addNameRange     '1.1.6',
+1274 silly addNameRange     '1.1.7',
+1274 silly addNameRange     '1.1.8',
+1274 silly addNameRange     '1.2.0',
+1274 silly addNameRange     '1.2.1',
+1274 silly addNameRange     '1.2.2',
+1274 silly addNameRange     '1.2.3',
+1274 silly addNameRange     '1.2.4',
+1274 silly addNameRange     '1.2.5',
+1274 silly addNameRange     '1.2.6',
+1274 silly addNameRange     '1.2.7',
+1274 silly addNameRange     '1.2.8',
+1274 silly addNameRange     '1.2.9',
+1274 silly addNameRange     '1.2.10',
+1274 silly addNameRange     '1.2.11',
+1274 silly addNameRange     '1.2.12',
+1274 silly addNameRange     '1.3.0',
+1274 silly addNameRange     '1.3.1',
+1274 silly addNameRange     '1.3.2',
+1274 silly addNameRange     '1.3.3',
+1274 silly addNameRange     '1.3.4',
+1274 silly addNameRange     '1.3.5',
+1274 silly addNameRange     '1.3.6',
+1274 silly addNameRange     '1.3.7',
+1274 silly addNameRange     '1.3.8',
+1274 silly addNameRange     '1.4.0',
+1274 silly addNameRange     '1.4.1',
+1274 silly addNameRange     '1.4.2',
+1274 silly addNameRange     '1.4.3',
+1274 silly addNameRange     '1.4.4' ] ]
+1275 silly addNamed @grpc/grpc-js@1.4.4
+1276 verbose addNamed "1.4.4" is a plain semver version for @grpc/grpc-js
+1277 http 304 https://registry.npmjs.org/node-fetch
+1278 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1278 verbose headers   connection: 'keep-alive',
+1278 verbose headers   'cf-ray': '6b2b7781795d3b7c-BOS',
+1278 verbose headers   age: '205',
+1278 verbose headers   'cache-control': 'public, max-age=300',
+1278 verbose headers   etag: '"39174db23eb097726d7f5a968f530a30"',
+1278 verbose headers   'last-modified': 'Mon, 08 Nov 2021 18:16:59 GMT',
+1278 verbose headers   vary: 'Accept-Encoding',
+1278 verbose headers   'cf-cache-status': 'HIT',
+1278 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1278 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1278 verbose headers   server: 'cloudflare' }
+1279 silly get cb [ 304,
+1279 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1279 silly get     connection: 'keep-alive',
+1279 silly get     'cf-ray': '6b2b7781795d3b7c-BOS',
+1279 silly get     age: '205',
+1279 silly get     'cache-control': 'public, max-age=300',
+1279 silly get     etag: '"39174db23eb097726d7f5a968f530a30"',
+1279 silly get     'last-modified': 'Mon, 08 Nov 2021 18:16:59 GMT',
+1279 silly get     vary: 'Accept-Encoding',
+1279 silly get     'cf-cache-status': 'HIT',
+1279 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1279 silly get     'x-amz-replication-status': 'COMPLETED',
+1279 silly get     server: 'cloudflare' } ]
+1280 verbose etag https://registry.npmjs.org/node-fetch from cache
+1281 verbose get saving node-fetch to /home/whorehay/.npm/registry.npmjs.org/node-fetch/.cache.json
+1282 verbose afterAdd /home/whorehay/.npm/@grpc/proto-loader/0.6.7/package/package.json written
+1283 silly cache afterAdd @grpc/grpc-js@1.4.4
+1284 verbose afterAdd /home/whorehay/.npm/@grpc/grpc-js/1.4.4/package/package.json not in flight; writing
+1285 verbose afterAdd /home/whorehay/.npm/@grpc/grpc-js/1.4.4/package/package.json written
+1286 silly resolveWithNewModule node-fetch@2.6.1 checking installable status
+1287 silly cache add args [ 'node-fetch@2.6.1', null ]
+1288 verbose cache add spec node-fetch@2.6.1
+1289 silly cache add parsed spec Result {
+1289 silly cache add   raw: 'node-fetch@2.6.1',
+1289 silly cache add   scope: null,
+1289 silly cache add   name: 'node-fetch',
+1289 silly cache add   rawSpec: '2.6.1',
+1289 silly cache add   spec: '2.6.1',
+1289 silly cache add   type: 'version' }
+1290 silly addNamed node-fetch@2.6.1
+1291 verbose addNamed "2.6.1" is a plain semver version for node-fetch
+1292 silly mapToRegistry name node-fetch
+1293 silly mapToRegistry using default registry
+1294 silly mapToRegistry registry https://registry.npmjs.org/
+1295 silly mapToRegistry uri https://registry.npmjs.org/node-fetch
+1296 verbose addNameVersion registry:https://registry.npmjs.org/node-fetch not in flight; fetching
+1297 verbose get https://registry.npmjs.org/node-fetch not expired, no request
+1298 silly cache afterAdd node-fetch@2.6.1
+1299 verbose afterAdd /home/whorehay/.npm/node-fetch/2.6.1/package/package.json not in flight; writing
+1300 verbose afterAdd /home/whorehay/.npm/node-fetch/2.6.1/package/package.json written
+1301 http 304 https://registry.npmjs.org/@firebase%2fwebchannel-wrapper
+1302 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1302 verbose headers   connection: 'keep-alive',
+1302 verbose headers   'cf-ray': '6b2b7781788c3b82-BOS',
+1302 verbose headers   age: '61',
+1302 verbose headers   'cache-control': 'public, max-age=300',
+1302 verbose headers   etag: '"4d092843fcaf5a0ac667843f47697c2b"',
+1302 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:12:00 GMT',
+1302 verbose headers   vary: 'Accept-Encoding',
+1302 verbose headers   'cf-cache-status': 'HIT',
+1302 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1302 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1302 verbose headers   server: 'cloudflare' }
+1303 silly get cb [ 304,
+1303 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1303 silly get     connection: 'keep-alive',
+1303 silly get     'cf-ray': '6b2b7781788c3b82-BOS',
+1303 silly get     age: '61',
+1303 silly get     'cache-control': 'public, max-age=300',
+1303 silly get     etag: '"4d092843fcaf5a0ac667843f47697c2b"',
+1303 silly get     'last-modified': 'Mon, 22 Nov 2021 20:12:00 GMT',
+1303 silly get     vary: 'Accept-Encoding',
+1303 silly get     'cf-cache-status': 'HIT',
+1303 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1303 silly get     'x-amz-replication-status': 'COMPLETED',
+1303 silly get     server: 'cloudflare' } ]
+1304 verbose etag https://registry.npmjs.org/@firebase%2fwebchannel-wrapper from cache
+1305 verbose get saving @firebase/webchannel-wrapper to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252fwebchannel-wrapper/.cache.json
+1306 http 304 https://registry.npmjs.org/@firebase%2ffirestore-types
+1307 verbose headers { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1307 verbose headers   connection: 'keep-alive',
+1307 verbose headers   'cf-ray': '6b2b7781794f3b88-BOS',
+1307 verbose headers   age: '62',
+1307 verbose headers   'cache-control': 'public, max-age=300',
+1307 verbose headers   etag: '"6c22517d6d23fc316fa42429add7ac82"',
+1307 verbose headers   'last-modified': 'Mon, 22 Nov 2021 20:12:32 GMT',
+1307 verbose headers   vary: 'Accept-Encoding',
+1307 verbose headers   'cf-cache-status': 'HIT',
+1307 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1307 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1307 verbose headers   server: 'cloudflare' }
+1308 silly get cb [ 304,
+1308 silly get   { date: 'Tue, 23 Nov 2021 15:35:20 GMT',
+1308 silly get     connection: 'keep-alive',
+1308 silly get     'cf-ray': '6b2b7781794f3b88-BOS',
+1308 silly get     age: '62',
+1308 silly get     'cache-control': 'public, max-age=300',
+1308 silly get     etag: '"6c22517d6d23fc316fa42429add7ac82"',
+1308 silly get     'last-modified': 'Mon, 22 Nov 2021 20:12:32 GMT',
+1308 silly get     vary: 'Accept-Encoding',
+1308 silly get     'cf-cache-status': 'HIT',
+1308 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1308 silly get     'x-amz-replication-status': 'COMPLETED',
+1308 silly get     server: 'cloudflare' } ]
+1309 verbose etag https://registry.npmjs.org/@firebase%2ffirestore-types from cache
+1310 verbose get saving @firebase/firestore-types to /home/whorehay/.npm/registry.npmjs.org/_40firebase_252ffirestore-types/.cache.json
+1311 silly resolveWithNewModule @firebase/webchannel-wrapper@0.5.1 checking installable status
+1312 silly cache add args [ '@firebase/webchannel-wrapper@0.5.1', null ]
+1313 verbose cache add spec @firebase/webchannel-wrapper@0.5.1
+1314 silly cache add parsed spec Result {
+1314 silly cache add   raw: '@firebase/webchannel-wrapper@0.5.1',
+1314 silly cache add   scope: '@firebase',
+1314 silly cache add   name: '@firebase/webchannel-wrapper',
+1314 silly cache add   rawSpec: '0.5.1',
+1314 silly cache add   spec: '0.5.1',
+1314 silly cache add   type: 'version' }
+1315 silly addNamed @firebase/webchannel-wrapper@0.5.1
+1316 verbose addNamed "0.5.1" is a plain semver version for @firebase/webchannel-wrapper
+1317 silly mapToRegistry name @firebase/webchannel-wrapper
+1318 silly mapToRegistry scope (from package name) @firebase
+1319 verbose mapToRegistry no registry URL found in name for scope @firebase
+1320 silly mapToRegistry using default registry
+1321 silly mapToRegistry registry https://registry.npmjs.org/
+1322 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2fwebchannel-wrapper
+1323 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2fwebchannel-wrapper not in flight; fetching
+1324 verbose get https://registry.npmjs.org/@firebase%2fwebchannel-wrapper not expired, no request
+1325 silly resolveWithNewModule @firebase/firestore-types@2.4.0 checking installable status
+1326 silly cache add args [ '@firebase/firestore-types@2.4.0', null ]
+1327 verbose cache add spec @firebase/firestore-types@2.4.0
+1328 silly cache add parsed spec Result {
+1328 silly cache add   raw: '@firebase/firestore-types@2.4.0',
+1328 silly cache add   scope: '@firebase',
+1328 silly cache add   name: '@firebase/firestore-types',
+1328 silly cache add   rawSpec: '2.4.0',
+1328 silly cache add   spec: '2.4.0',
+1328 silly cache add   type: 'version' }
+1329 silly addNamed @firebase/firestore-types@2.4.0
+1330 verbose addNamed "2.4.0" is a plain semver version for @firebase/firestore-types
+1331 silly mapToRegistry name @firebase/firestore-types
+1332 silly mapToRegistry scope (from package name) @firebase
+1333 verbose mapToRegistry no registry URL found in name for scope @firebase
+1334 silly mapToRegistry using default registry
+1335 silly mapToRegistry registry https://registry.npmjs.org/
+1336 silly mapToRegistry uri https://registry.npmjs.org/@firebase%2ffirestore-types
+1337 verbose addNameVersion registry:https://registry.npmjs.org/@firebase%2ffirestore-types not in flight; fetching
+1338 silly cache afterAdd @firebase/webchannel-wrapper@0.5.1
+1339 verbose afterAdd /home/whorehay/.npm/@firebase/webchannel-wrapper/0.5.1/package/package.json not in flight; writing
+1340 verbose get https://registry.npmjs.org/@firebase%2ffirestore-types not expired, no request
+1341 verbose afterAdd /home/whorehay/.npm/@firebase/webchannel-wrapper/0.5.1/package/package.json written
+1342 silly cache afterAdd @firebase/firestore-types@2.4.0
+1343 verbose afterAdd /home/whorehay/.npm/@firebase/firestore-types/2.4.0/package/package.json not in flight; writing
+1344 verbose afterAdd /home/whorehay/.npm/@firebase/firestore-types/2.4.0/package/package.json written
+1345 silly fetchNamedPackageData @types/node
+1346 silly mapToRegistry name @types/node
+1347 silly mapToRegistry scope (from package name) @types
+1348 verbose mapToRegistry no registry URL found in name for scope @types
+1349 silly mapToRegistry using default registry
+1350 silly mapToRegistry registry https://registry.npmjs.org/
+1351 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+1352 verbose request uri https://registry.npmjs.org/@types%2fnode
+1353 verbose request no auth needed
+1354 info attempt registry request try #1 at 10:35:20 AM
+1355 verbose etag W/"2603d44ba8187460198ac5f6d716acc3"
+1356 verbose lastModified Fri, 19 Nov 2021 08:32:27 GMT
+1357 http request GET https://registry.npmjs.org/@types%2fnode
+1358 http 304 https://registry.npmjs.org/@types%2fnode
+1359 verbose headers { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1359 verbose headers   connection: 'keep-alive',
+1359 verbose headers   'cf-ray': '6b2b7786c88f3035-BOS',
+1359 verbose headers   age: '105',
+1359 verbose headers   'cache-control': 'public, max-age=300',
+1359 verbose headers   etag: '"2603d44ba8187460198ac5f6d716acc3"',
+1359 verbose headers   'last-modified': 'Fri, 19 Nov 2021 08:32:27 GMT',
+1359 verbose headers   vary: 'Accept-Encoding',
+1359 verbose headers   'cf-cache-status': 'HIT',
+1359 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1359 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1359 verbose headers   server: 'cloudflare' }
+1360 silly get cb [ 304,
+1360 silly get   { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1360 silly get     connection: 'keep-alive',
+1360 silly get     'cf-ray': '6b2b7786c88f3035-BOS',
+1360 silly get     age: '105',
+1360 silly get     'cache-control': 'public, max-age=300',
+1360 silly get     etag: '"2603d44ba8187460198ac5f6d716acc3"',
+1360 silly get     'last-modified': 'Fri, 19 Nov 2021 08:32:27 GMT',
+1360 silly get     vary: 'Accept-Encoding',
+1360 silly get     'cf-cache-status': 'HIT',
+1360 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1360 silly get     'x-amz-replication-status': 'COMPLETED',
+1360 silly get     server: 'cloudflare' } ]
+1361 verbose etag https://registry.npmjs.org/@types%2fnode from cache
+1362 verbose get saving @types/node to /home/whorehay/.npm/registry.npmjs.org/_40types_252fnode/.cache.json
+1363 silly resolveWithNewModule @types/node@16.11.9 checking installable status
+1364 silly cache add args [ '@types/node@>=12.12.47', null ]
+1365 verbose cache add spec @types/node@>=12.12.47
+1366 silly cache add parsed spec Result {
+1366 silly cache add   raw: '@types/node@>=12.12.47',
+1366 silly cache add   scope: '@types',
+1366 silly cache add   name: '@types/node',
+1366 silly cache add   rawSpec: '>=12.12.47',
+1366 silly cache add   spec: '>=12.12.47',
+1366 silly cache add   type: 'range' }
+1367 silly addNamed @types/node@>=12.12.47
+1368 verbose addNamed ">=12.12.47" is a valid semver range for @types/node
+1369 silly addNameRange { name: '@types/node', range: '>=12.12.47', hasData: false }
+1370 silly mapToRegistry name @types/node
+1371 silly mapToRegistry scope (from package name) @types
+1372 verbose mapToRegistry no registry URL found in name for scope @types
+1373 silly mapToRegistry using default registry
+1374 silly mapToRegistry registry https://registry.npmjs.org/
+1375 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+1376 verbose addNameRange registry:https://registry.npmjs.org/@types%2fnode not in flight; fetching
+1377 verbose get https://registry.npmjs.org/@types%2fnode not expired, no request
+1378 silly addNameRange number 2 { name: '@types/node', range: '>=12.12.47', hasData: true }
+1379 silly addNameRange versions [ '@types/node',
+1379 silly addNameRange   [ '4.0.15-alpha',
+1379 silly addNameRange     '4.0.16-alpha',
+1379 silly addNameRange     '4.0.21-alpha',
+1379 silly addNameRange     '4.0.22-alpha',
+1379 silly addNameRange     '4.0.23-alpha',
+1379 silly addNameRange     '4.0.24-alpha',
+1379 silly addNameRange     '4.0.25-alpha',
+1379 silly addNameRange     '4.0.26-alpha',
+1379 silly addNameRange     '4.0.27-alpha',
+1379 silly addNameRange     '4.0.28-alpha',
+1379 silly addNameRange     '4.0.29',
+1379 silly addNameRange     '4.0.30',
+1379 silly addNameRange     '6.0.31',
+1379 silly addNameRange     '6.0.32',
+1379 silly addNameRange     '6.0.33',
+1379 silly addNameRange     '6.0.34',
+1379 silly addNameRange     '6.0.35',
+1379 silly addNameRange     '6.0.36',
+1379 silly addNameRange     '6.0.37',
+1379 silly addNameRange     '6.0.38',
+1379 silly addNameRange     '6.0.39',
+1379 silly addNameRange     '6.0.40',
+1379 silly addNameRange     '6.0.41',
+1379 silly addNameRange     '6.0.42',
+1379 silly addNameRange     '6.0.43',
+1379 silly addNameRange     '6.0.44',
+1379 silly addNameRange     '6.0.45',
+1379 silly addNameRange     '6.0.46',
+1379 silly addNameRange     '6.0.47',
+1379 silly addNameRange     '6.0.48',
+1379 silly addNameRange     '6.0.49',
+1379 silly addNameRange     '6.0.50',
+1379 silly addNameRange     '6.0.51',
+1379 silly addNameRange     '0.0.0',
+1379 silly addNameRange     '0.0.1',
+1379 silly addNameRange     '0.0.2',
+1379 silly addNameRange     '0.0.3',
+1379 silly addNameRange     '6.0.52',
+1379 silly addNameRange     '6.0.53',
+1379 silly addNameRange     '6.0.54',
+1379 silly addNameRange     '6.0.55',
+1379 silly addNameRange     '6.0.56',
+1379 silly addNameRange     '6.0.57',
+1379 silly addNameRange     '6.0.58',
+1379 silly addNameRange     '6.0.59',
+1379 silly addNameRange     '4.2.0',
+1379 silly addNameRange     '0.12.0',
+1379 silly addNameRange     '7.0.0',
+1379 silly addNameRange     '6.0.60',
+1379 silly addNameRange     '7.0.1',
+1379 silly addNameRange     '6.0.61',
+1379 silly addNameRange     '7.0.2',
+1379 silly addNameRange     '7.0.3',
+1379 silly addNameRange     '7.0.4',
+1379 silly addNameRange     '4.2.1',
+1379 silly addNameRange     '6.0.62',
+1379 silly addNameRange     '7.0.5',
+1379 silly addNameRange     '6.0.63',
+1379 silly addNameRange     '4.2.2',
+1379 silly addNameRange     '0.12.1',
+1379 silly addNameRange     '4.2.3',
+1379 silly addNameRange     '6.0.64',
+1379 silly addNameRange     '7.0.6',
+1379 silly addNameRange     '6.0.65',
+1379 silly addNameRange     '7.0.7',
+1379 silly addNameRange     '7.0.8',
+1379 silly addNameRange     '4.2.4',
+1379 silly addNameRange     '0.12.2',
+1379 silly addNameRange     '6.0.66',
+1379 silly addNameRange     '7.0.9',
+1379 silly addNameRange     '7.0.10',
+1379 silly addNameRange     '7.0.11',
+1379 silly addNameRange     '6.0.67',
+1379 silly addNameRange     '6.0.68',
+1379 silly addNameRange     '7.0.12',
+1379 silly addNameRange     '4.2.5',
+1379 silly addNameRange     '0.12.3',
+1379 silly addNameRange     '6.0.69',
+1379 silly addNameRange     '0.12.4',
+1379 silly addNameRange     '4.2.6',
+1379 silly addNameRange     '6.0.70',
+1379 silly addNameRange     '7.0.13',
+1379 silly addNameRange     '7.0.14',
+1379 silly addNameRange     '6.0.71',
+1379 silly addNameRange     '7.0.15',
+1379 silly addNameRange     '4.2.7',
+1379 silly addNameRange     '6.0.72',
+1379 silly addNameRange     '7.0.16',
+1379 silly addNameRange     '7.0.17',
+1379 silly addNameRange     '7.0.18',
+1379 silly addNameRange     '4.2.8',
+1379 silly addNameRange     '6.0.73',
+1379 silly addNameRange     '7.0.19',
+1379 silly addNameRange     '7.0.20',
+1379 silly addNameRange     '7.0.21',
+1379 silly addNameRange     '7.0.22',
+1379 silly addNameRange     '6.0.74',
+1379 silly addNameRange     '7.0.23',
+1379 silly addNameRange     '7.0.24',
+1379 silly addNameRange     '6.0.75',
+1379 silly addNameRange     ... 1145 more items ] ]
+1380 silly addNamed @types/node@16.11.9
+1381 verbose addNamed "16.11.9" is a plain semver version for @types/node
+1382 silly cache afterAdd @types/node@16.11.9
+1383 verbose afterAdd /home/whorehay/.npm/@types/node/16.11.9/package/package.json not in flight; writing
+1384 verbose afterAdd /home/whorehay/.npm/@types/node/16.11.9/package/package.json written
+1385 silly fetchNamedPackageData @types/long
+1386 silly mapToRegistry name @types/long
+1387 silly mapToRegistry scope (from package name) @types
+1388 verbose mapToRegistry no registry URL found in name for scope @types
+1389 silly mapToRegistry using default registry
+1390 silly mapToRegistry registry https://registry.npmjs.org/
+1391 silly mapToRegistry uri https://registry.npmjs.org/@types%2flong
+1392 silly fetchNamedPackageData lodash.camelcase
+1393 silly mapToRegistry name lodash.camelcase
+1394 silly mapToRegistry using default registry
+1395 silly mapToRegistry registry https://registry.npmjs.org/
+1396 silly mapToRegistry uri https://registry.npmjs.org/lodash.camelcase
+1397 silly fetchNamedPackageData long
+1398 silly mapToRegistry name long
+1399 silly mapToRegistry using default registry
+1400 silly mapToRegistry registry https://registry.npmjs.org/
+1401 silly mapToRegistry uri https://registry.npmjs.org/long
+1402 silly fetchNamedPackageData protobufjs
+1403 silly mapToRegistry name protobufjs
+1404 silly mapToRegistry using default registry
+1405 silly mapToRegistry registry https://registry.npmjs.org/
+1406 silly mapToRegistry uri https://registry.npmjs.org/protobufjs
+1407 silly fetchNamedPackageData yargs
+1408 silly mapToRegistry name yargs
+1409 silly mapToRegistry using default registry
+1410 silly mapToRegistry registry https://registry.npmjs.org/
+1411 silly mapToRegistry uri https://registry.npmjs.org/yargs
+1412 verbose request uri https://registry.npmjs.org/@types%2flong
+1413 verbose request no auth needed
+1414 info attempt registry request try #1 at 10:35:21 AM
+1415 verbose etag W/"bf8fc6753639b757e66056acf357aeee"
+1416 verbose lastModified Thu, 18 Nov 2021 20:01:28 GMT
+1417 http request GET https://registry.npmjs.org/@types%2flong
+1418 verbose request uri https://registry.npmjs.org/lodash.camelcase
+1419 verbose request no auth needed
+1420 info attempt registry request try #1 at 10:35:21 AM
+1421 verbose etag W/"ea910959dc28f7f58ab3aecff406bc6d"
+1422 verbose lastModified Sun, 27 May 2018 06:58:16 GMT
+1423 http request GET https://registry.npmjs.org/lodash.camelcase
+1424 verbose request uri https://registry.npmjs.org/long
+1425 verbose request no auth needed
+1426 info attempt registry request try #1 at 10:35:21 AM
+1427 verbose etag W/"9184ec62310b5797dab999dbc09131db"
+1428 verbose lastModified Sat, 30 Oct 2021 00:59:13 GMT
+1429 http request GET https://registry.npmjs.org/long
+1430 verbose request uri https://registry.npmjs.org/protobufjs
+1431 verbose request no auth needed
+1432 info attempt registry request try #1 at 10:35:21 AM
+1433 verbose etag W/"ead0d72051d56cf62b704b7fa9c4d7f7"
+1434 verbose lastModified Fri, 30 Apr 2021 17:31:09 GMT
+1435 http request GET https://registry.npmjs.org/protobufjs
+1436 verbose request uri https://registry.npmjs.org/yargs
+1437 verbose request no auth needed
+1438 info attempt registry request try #1 at 10:35:21 AM
+1439 verbose etag W/"0ad32258c05e0a1c4a58389bf8c50454"
+1440 verbose lastModified Sat, 25 Sep 2021 21:19:25 GMT
+1441 http request GET https://registry.npmjs.org/yargs
+1442 http 304 https://registry.npmjs.org/lodash.camelcase
+1443 verbose headers { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1443 verbose headers   connection: 'keep-alive',
+1443 verbose headers   'cf-ray': '6b2b77891afbebec-BOS',
+1443 verbose headers   age: '247',
+1443 verbose headers   'cache-control': 'public, max-age=300',
+1443 verbose headers   etag: '"ea910959dc28f7f58ab3aecff406bc6d"',
+1443 verbose headers   'last-modified': 'Sun, 27 May 2018 06:58:16 GMT',
+1443 verbose headers   vary: 'Accept-Encoding',
+1443 verbose headers   'cf-cache-status': 'HIT',
+1443 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1443 verbose headers   server: 'cloudflare' }
+1444 silly get cb [ 304,
+1444 silly get   { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1444 silly get     connection: 'keep-alive',
+1444 silly get     'cf-ray': '6b2b77891afbebec-BOS',
+1444 silly get     age: '247',
+1444 silly get     'cache-control': 'public, max-age=300',
+1444 silly get     etag: '"ea910959dc28f7f58ab3aecff406bc6d"',
+1444 silly get     'last-modified': 'Sun, 27 May 2018 06:58:16 GMT',
+1444 silly get     vary: 'Accept-Encoding',
+1444 silly get     'cf-cache-status': 'HIT',
+1444 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1444 silly get     server: 'cloudflare' } ]
+1445 verbose etag https://registry.npmjs.org/lodash.camelcase from cache
+1446 verbose get saving lodash.camelcase to /home/whorehay/.npm/registry.npmjs.org/lodash.camelcase/.cache.json
+1447 http 304 https://registry.npmjs.org/long
+1448 verbose headers { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1448 verbose headers   connection: 'keep-alive',
+1448 verbose headers   'cf-ray': '6b2b77891e4a2ffc-BOS',
+1448 verbose headers   age: '244',
+1448 verbose headers   'cache-control': 'public, max-age=300',
+1448 verbose headers   etag: '"9184ec62310b5797dab999dbc09131db"',
+1448 verbose headers   'last-modified': 'Sat, 30 Oct 2021 00:59:13 GMT',
+1448 verbose headers   vary: 'Accept-Encoding',
+1448 verbose headers   'cf-cache-status': 'HIT',
+1448 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1448 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1448 verbose headers   server: 'cloudflare' }
+1449 silly get cb [ 304,
+1449 silly get   { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1449 silly get     connection: 'keep-alive',
+1449 silly get     'cf-ray': '6b2b77891e4a2ffc-BOS',
+1449 silly get     age: '244',
+1449 silly get     'cache-control': 'public, max-age=300',
+1449 silly get     etag: '"9184ec62310b5797dab999dbc09131db"',
+1449 silly get     'last-modified': 'Sat, 30 Oct 2021 00:59:13 GMT',
+1449 silly get     vary: 'Accept-Encoding',
+1449 silly get     'cf-cache-status': 'HIT',
+1449 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1449 silly get     'x-amz-replication-status': 'COMPLETED',
+1449 silly get     server: 'cloudflare' } ]
+1450 verbose etag https://registry.npmjs.org/long from cache
+1451 verbose get saving long to /home/whorehay/.npm/registry.npmjs.org/long/.cache.json
+1452 silly resolveWithNewModule lodash.camelcase@4.3.0 checking installable status
+1453 silly cache add args [ 'lodash.camelcase@^4.3.0', null ]
+1454 verbose cache add spec lodash.camelcase@^4.3.0
+1455 silly cache add parsed spec Result {
+1455 silly cache add   raw: 'lodash.camelcase@^4.3.0',
+1455 silly cache add   scope: null,
+1455 silly cache add   name: 'lodash.camelcase',
+1455 silly cache add   rawSpec: '^4.3.0',
+1455 silly cache add   spec: '>=4.3.0 <5.0.0',
+1455 silly cache add   type: 'range' }
+1456 silly addNamed lodash.camelcase@>=4.3.0 <5.0.0
+1457 verbose addNamed ">=4.3.0 <5.0.0" is a valid semver range for lodash.camelcase
+1458 silly addNameRange { name: 'lodash.camelcase',
+1458 silly addNameRange   range: '>=4.3.0 <5.0.0',
+1458 silly addNameRange   hasData: false }
+1459 silly mapToRegistry name lodash.camelcase
+1460 silly mapToRegistry using default registry
+1461 silly mapToRegistry registry https://registry.npmjs.org/
+1462 silly mapToRegistry uri https://registry.npmjs.org/lodash.camelcase
+1463 verbose addNameRange registry:https://registry.npmjs.org/lodash.camelcase not in flight; fetching
+1464 http 304 https://registry.npmjs.org/protobufjs
+1465 verbose headers { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1465 verbose headers   connection: 'keep-alive',
+1465 verbose headers   'cf-ray': '6b2b77891c3fae06-BOS',
+1465 verbose headers   age: '59',
+1465 verbose headers   'cache-control': 'public, max-age=300',
+1465 verbose headers   etag: '"ead0d72051d56cf62b704b7fa9c4d7f7"',
+1465 verbose headers   'last-modified': 'Fri, 30 Apr 2021 17:31:09 GMT',
+1465 verbose headers   vary: 'Accept-Encoding',
+1465 verbose headers   'cf-cache-status': 'HIT',
+1465 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1465 verbose headers   server: 'cloudflare' }
+1466 silly get cb [ 304,
+1466 silly get   { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1466 silly get     connection: 'keep-alive',
+1466 silly get     'cf-ray': '6b2b77891c3fae06-BOS',
+1466 silly get     age: '59',
+1466 silly get     'cache-control': 'public, max-age=300',
+1466 silly get     etag: '"ead0d72051d56cf62b704b7fa9c4d7f7"',
+1466 silly get     'last-modified': 'Fri, 30 Apr 2021 17:31:09 GMT',
+1466 silly get     vary: 'Accept-Encoding',
+1466 silly get     'cf-cache-status': 'HIT',
+1466 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1466 silly get     server: 'cloudflare' } ]
+1467 verbose etag https://registry.npmjs.org/protobufjs from cache
+1468 verbose get saving protobufjs to /home/whorehay/.npm/registry.npmjs.org/protobufjs/.cache.json
+1469 silly resolveWithNewModule long@4.0.0 checking installable status
+1470 silly cache add args [ 'long@^4.0.0', null ]
+1471 verbose cache add spec long@^4.0.0
+1472 silly cache add parsed spec Result {
+1472 silly cache add   raw: 'long@^4.0.0',
+1472 silly cache add   scope: null,
+1472 silly cache add   name: 'long',
+1472 silly cache add   rawSpec: '^4.0.0',
+1472 silly cache add   spec: '>=4.0.0 <5.0.0',
+1472 silly cache add   type: 'range' }
+1473 silly addNamed long@>=4.0.0 <5.0.0
+1474 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for long
+1475 silly addNameRange { name: 'long', range: '>=4.0.0 <5.0.0', hasData: false }
+1476 silly mapToRegistry name long
+1477 silly mapToRegistry using default registry
+1478 silly mapToRegistry registry https://registry.npmjs.org/
+1479 silly mapToRegistry uri https://registry.npmjs.org/long
+1480 verbose addNameRange registry:https://registry.npmjs.org/long not in flight; fetching
+1481 http 304 https://registry.npmjs.org/@types%2flong
+1482 verbose headers { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1482 verbose headers   connection: 'keep-alive',
+1482 verbose headers   'cf-ray': '6b2b77891ee0ff90-BOS',
+1482 verbose headers   age: '58',
+1482 verbose headers   'cache-control': 'public, max-age=300',
+1482 verbose headers   etag: '"bf8fc6753639b757e66056acf357aeee"',
+1482 verbose headers   'last-modified': 'Thu, 18 Nov 2021 20:01:28 GMT',
+1482 verbose headers   vary: 'Accept-Encoding',
+1482 verbose headers   'cf-cache-status': 'HIT',
+1482 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1482 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1482 verbose headers   server: 'cloudflare' }
+1483 silly get cb [ 304,
+1483 silly get   { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1483 silly get     connection: 'keep-alive',
+1483 silly get     'cf-ray': '6b2b77891ee0ff90-BOS',
+1483 silly get     age: '58',
+1483 silly get     'cache-control': 'public, max-age=300',
+1483 silly get     etag: '"bf8fc6753639b757e66056acf357aeee"',
+1483 silly get     'last-modified': 'Thu, 18 Nov 2021 20:01:28 GMT',
+1483 silly get     vary: 'Accept-Encoding',
+1483 silly get     'cf-cache-status': 'HIT',
+1483 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1483 silly get     'x-amz-replication-status': 'COMPLETED',
+1483 silly get     server: 'cloudflare' } ]
+1484 verbose etag https://registry.npmjs.org/@types%2flong from cache
+1485 verbose get saving @types/long to /home/whorehay/.npm/registry.npmjs.org/_40types_252flong/.cache.json
+1486 verbose get https://registry.npmjs.org/lodash.camelcase not expired, no request
+1487 silly addNameRange number 2 { name: 'lodash.camelcase',
+1487 silly addNameRange   range: '>=4.3.0 <5.0.0',
+1487 silly addNameRange   hasData: true }
+1488 silly addNameRange versions [ 'lodash.camelcase',
+1488 silly addNameRange   [ '3.0.0',
+1488 silly addNameRange     '3.0.1',
+1488 silly addNameRange     '4.0.0',
+1488 silly addNameRange     '4.0.1',
+1488 silly addNameRange     '4.1.0',
+1488 silly addNameRange     '4.1.1',
+1488 silly addNameRange     '4.2.0',
+1488 silly addNameRange     '4.3.0' ] ]
+1489 silly addNamed lodash.camelcase@4.3.0
+1490 verbose addNamed "4.3.0" is a plain semver version for lodash.camelcase
+1491 verbose get https://registry.npmjs.org/long not expired, no request
+1492 silly addNameRange number 2 { name: 'long', range: '>=4.0.0 <5.0.0', hasData: true }
+1493 silly addNameRange versions [ 'long',
+1493 silly addNameRange   [ '1.0.0',
+1493 silly addNameRange     '1.0.1',
+1493 silly addNameRange     '1.1.0',
+1493 silly addNameRange     '1.1.1',
+1493 silly addNameRange     '1.1.2',
+1493 silly addNameRange     '1.1.4',
+1493 silly addNameRange     '1.1.5',
+1493 silly addNameRange     '1.2.0',
+1493 silly addNameRange     '1.2.1',
+1493 silly addNameRange     '1.2.3',
+1493 silly addNameRange     '2.0.0',
+1493 silly addNameRange     '2.0.1',
+1493 silly addNameRange     '2.1.0',
+1493 silly addNameRange     '2.2.0',
+1493 silly addNameRange     '2.2.1',
+1493 silly addNameRange     '2.2.2',
+1493 silly addNameRange     '2.2.3',
+1493 silly addNameRange     '2.2.4',
+1493 silly addNameRange     '2.2.5',
+1493 silly addNameRange     '2.3.0',
+1493 silly addNameRange     '2.4.0',
+1493 silly addNameRange     '3.0.0',
+1493 silly addNameRange     '3.0.1',
+1493 silly addNameRange     '3.0.3',
+1493 silly addNameRange     '3.1.0',
+1493 silly addNameRange     '3.2.0',
+1493 silly addNameRange     '4.0.0',
+1493 silly addNameRange     '5.0.0',
+1493 silly addNameRange     '5.0.1',
+1493 silly addNameRange     '5.1.0' ] ]
+1494 silly addNamed long@4.0.0
+1495 verbose addNamed "4.0.0" is a plain semver version for long
+1496 silly cache afterAdd lodash.camelcase@4.3.0
+1497 verbose afterAdd /home/whorehay/.npm/lodash.camelcase/4.3.0/package/package.json not in flight; writing
+1498 silly cache afterAdd long@4.0.0
+1499 verbose afterAdd /home/whorehay/.npm/long/4.0.0/package/package.json not in flight; writing
+1500 silly resolveWithNewModule protobufjs@6.11.2 checking installable status
+1501 silly cache add args [ 'protobufjs@^6.10.0', null ]
+1502 verbose cache add spec protobufjs@^6.10.0
+1503 silly cache add parsed spec Result {
+1503 silly cache add   raw: 'protobufjs@^6.10.0',
+1503 silly cache add   scope: null,
+1503 silly cache add   name: 'protobufjs',
+1503 silly cache add   rawSpec: '^6.10.0',
+1503 silly cache add   spec: '>=6.10.0 <7.0.0',
+1503 silly cache add   type: 'range' }
+1504 silly addNamed protobufjs@>=6.10.0 <7.0.0
+1505 verbose addNamed ">=6.10.0 <7.0.0" is a valid semver range for protobufjs
+1506 silly addNameRange { name: 'protobufjs', range: '>=6.10.0 <7.0.0', hasData: false }
+1507 silly mapToRegistry name protobufjs
+1508 silly mapToRegistry using default registry
+1509 silly mapToRegistry registry https://registry.npmjs.org/
+1510 silly mapToRegistry uri https://registry.npmjs.org/protobufjs
+1511 verbose addNameRange registry:https://registry.npmjs.org/protobufjs not in flight; fetching
+1512 silly resolveWithNewModule @types/long@4.0.1 checking installable status
+1513 silly cache add args [ '@types/long@^4.0.1', null ]
+1514 verbose cache add spec @types/long@^4.0.1
+1515 silly cache add parsed spec Result {
+1515 silly cache add   raw: '@types/long@^4.0.1',
+1515 silly cache add   scope: '@types',
+1515 silly cache add   name: '@types/long',
+1515 silly cache add   rawSpec: '^4.0.1',
+1515 silly cache add   spec: '>=4.0.1 <5.0.0',
+1515 silly cache add   type: 'range' }
+1516 silly addNamed @types/long@>=4.0.1 <5.0.0
+1517 verbose addNamed ">=4.0.1 <5.0.0" is a valid semver range for @types/long
+1518 silly addNameRange { name: '@types/long', range: '>=4.0.1 <5.0.0', hasData: false }
+1519 silly mapToRegistry name @types/long
+1520 silly mapToRegistry scope (from package name) @types
+1521 verbose mapToRegistry no registry URL found in name for scope @types
+1522 silly mapToRegistry using default registry
+1523 silly mapToRegistry registry https://registry.npmjs.org/
+1524 silly mapToRegistry uri https://registry.npmjs.org/@types%2flong
+1525 verbose addNameRange registry:https://registry.npmjs.org/@types%2flong not in flight; fetching
+1526 http 304 https://registry.npmjs.org/yargs
+1527 verbose headers { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1527 verbose headers   connection: 'keep-alive',
+1527 verbose headers   'cf-ray': '6b2b77893dfd3021-BOS',
+1527 verbose headers   age: '205',
+1527 verbose headers   'cache-control': 'public, max-age=300',
+1527 verbose headers   etag: '"0ad32258c05e0a1c4a58389bf8c50454"',
+1527 verbose headers   'last-modified': 'Sat, 25 Sep 2021 21:19:25 GMT',
+1527 verbose headers   vary: 'Accept-Encoding',
+1527 verbose headers   'cf-cache-status': 'HIT',
+1527 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1527 verbose headers   'x-amz-replication-status': 'COMPLETED',
+1527 verbose headers   server: 'cloudflare' }
+1528 silly get cb [ 304,
+1528 silly get   { date: 'Tue, 23 Nov 2021 15:35:21 GMT',
+1528 silly get     connection: 'keep-alive',
+1528 silly get     'cf-ray': '6b2b77893dfd3021-BOS',
+1528 silly get     age: '205',
+1528 silly get     'cache-control': 'public, max-age=300',
+1528 silly get     etag: '"0ad32258c05e0a1c4a58389bf8c50454"',
+1528 silly get     'last-modified': 'Sat, 25 Sep 2021 21:19:25 GMT',
+1528 silly get     vary: 'Accept-Encoding',
+1528 silly get     'cf-cache-status': 'HIT',
+1528 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+1528 silly get     'x-amz-replication-status': 'COMPLETED',
+1528 silly get     server: 'cloudflare' } ]
+1529 verbose etag https://registry.npmjs.org/yargs from cache
+1530 verbose get saving yargs to /home/whorehay/.npm/registry.npmjs.org/yargs/.cache.json
+1531 verbose afterAdd /home/whorehay/.npm/lodash.camelcase/4.3.0/package/package.json written
+1532 verbose afterAdd /home/whorehay/.npm/long/4.0.0/package/package.json written
+1533 verbose get https://registry.npmjs.org/protobufjs not expired, no request
+1534 silly addNameRange number 2 { name: 'protobufjs', range: '>=6.10.0 <7.0.0', hasData: true }
+1535 silly addNameRange versions [ 'protobufjs',
+1535 silly addNameRange   [ '0.0.0',
+1535 silly addNameRange     '0.9.1',
+1535 silly addNameRange     '0.9.3',
+1535 silly addNameRange     '0.9.4',
+1535 silly addNameRange     '0.9.5',
+1535 silly addNameRange     '0.9.6',
+1535 silly addNameRange     '0.9.7',
+1535 silly addNameRange     '0.9.8',
+1535 silly addNameRange     '0.9.9',
+1535 silly addNameRange     '0.9.10',
+1535 silly addNameRange     '0.9.11',
+1535 silly addNameRange     '0.9.12',
+1535 silly addNameRange     '0.9.13',
+1535 silly addNameRange     '0.10.0',
+1535 silly addNameRange     '0.11.0',
+1535 silly addNameRange     '0.11.1',
+1535 silly addNameRange     '0.11.2',
+1535 silly addNameRange     '0.12.0',
+1535 silly addNameRange     '0.12.1',
+1535 silly addNameRange     '0.12.2',
+1535 silly addNameRange     '0.12.3',
+1535 silly addNameRange     '0.12.4',
+1535 silly addNameRange     '0.12.5',
+1535 silly addNameRange     '0.12.6',
+1535 silly addNameRange     '0.12.7',
+1535 silly addNameRange     '0.12.8',
+1535 silly addNameRange     '0.12.9',
+1535 silly addNameRange     '0.12.10',
+1535 silly addNameRange     '0.12.11',
+1535 silly addNameRange     '0.12.12',
+1535 silly addNameRange     '0.12.13',
+1535 silly addNameRange     '1.0.0-b1',
+1535 silly addNameRange     '1.0.0-b2',
+1535 silly addNameRange     '1.0.0-b4',
+1535 silly addNameRange     '1.0.0-b5',
+1535 silly addNameRange     '1.0.0-b6',
+1535 silly addNameRange     '1.0.0',
+1535 silly addNameRange     '1.0.1',
+1535 silly addNameRange     '1.0.2',
+1535 silly addNameRange     '1.0.3',
+1535 silly addNameRange     '1.0.4',
+1535 silly addNameRange     '1.1.0',
+1535 silly addNameRange     '1.1.1',
+1535 silly addNameRange     '1.1.2',
+1535 silly addNameRange     '1.1.3',
+1535 silly addNameRange     '1.1.4',
+1535 silly addNameRange     '1.1.6',
+1535 silly addNameRange     '1.1.7',
+1535 silly addNameRange     '1.1.8',
+1535 silly addNameRange     '1.1.9',
+1535 silly addNameRange     '1.3.0',
+1535 silly addNameRange     '1.3.1',
+1535 silly addNameRange     '1.3.2',
+1535 silly addNameRange     '1.5.0',
+1535 silly addNameRange     '1.5.1',
+1535 silly addNameRange     '2.0.0-rc1',
+1535 silly addNameRange     '2.0.0-rc2',
+1535 silly addNameRange     '2.0.0-rc4',
+1535 silly addNameRange     '2.0.0',
+1535 silly addNameRange     '2.0.1',
+1535 silly addNameRange     '2.0.2',
+1535 silly addNameRange     '2.0.3',
+1535 silly addNameRange     '2.0.4',
+1535 silly addNameRange     '2.0.5',
+1535 silly addNameRange     '2.2.1',
+1535 silly addNameRange     '3.0.0',
+1535 silly addNameRange     '3.2.0',
+1535 silly addNameRange     '3.2.1',
+1535 silly addNameRange     '3.2.2',
+1535 silly addNameRange     '3.2.4',
+1535 silly addNameRange     '3.3.0',
+1535 silly addNameRange     '3.3.1',
+1535 silly addNameRange     '3.4.0',
+1535 silly addNameRange     '3.4.1',
+1535 silly addNameRange     '3.5.1',
+1535 silly addNameRange     '3.5.2',
+1535 silly addNameRange     '3.5.4',
+1535 silly addNameRange     '3.5.5',
+1535 silly addNameRange     '3.6.0',
+1535 silly addNameRange     '3.7.0',
+1535 silly addNameRange     '3.8.0',
+1535 silly addNameRange     '3.8.1',
+1535 silly addNameRange     '3.8.2',
+1535 silly addNameRange     '4.0.0-b2',
+1535 silly addNameRange     '4.0.0-b3',
+1535 silly addNameRange     '4.0.0-b4',
+1535 silly addNameRange     '4.0.0-b5',
+1535 silly addNameRange     '4.0.0',
+1535 silly addNameRange     '4.1.0',
+1535 silly addNameRange     '4.1.1',
+1535 silly addNameRange     '4.1.2',
+1535 silly addNameRange     '5.0.0',
+1535 silly addNameRange     '4.1.3',
+1535 silly addNameRange     '5.0.1',
+1535 silly addNameRange     '6.0.0',
+1535 silly addNameRange     '6.0.1',
+1535 silly addNameRange     '6.0.2',
+1535 silly addNameRange     '6.1.0',
+1535 silly addNameRange     '6.1.1',
+1535 silly addNameRange     '6.2.0',
+1535 silly addNameRange     ... 49 more items ] ]
+1536 silly addNamed protobufjs@6.11.2
+1537 verbose addNamed "6.11.2" is a plain semver version for protobufjs
+1538 verbose get https://registry.npmjs.org/@types%2flong not expired, no request
+1539 silly addNameRange number 2 { name: '@types/long', range: '>=4.0.1 <5.0.0', hasData: true }
+1540 silly addNameRange versions [ '@types/long',
+1540 silly addNameRange   [ '3.0.14-alpha',
+1540 silly addNameRange     '3.0.15-alpha',
+1540 silly addNameRange     '3.0.20-alpha',
+1540 silly addNameRange     '3.0.21-alpha',
+1540 silly addNameRange     '3.0.22-alpha',
+1540 silly addNameRange     '3.0.23-alpha',
+1540 silly addNameRange     '3.0.24-alpha',
+1540 silly addNameRange     '3.0.25-alpha',
+1540 silly addNameRange     '3.0.26-alpha',
+1540 silly addNameRange     '3.0.27',
+1540 silly addNameRange     '3.0.28',
+1540 silly addNameRange     '3.0.29',
+1540 silly addNameRange     '3.0.30',
+1540 silly addNameRange     '3.0.31',
+1540 silly addNameRange     '3.0.32',
+1540 silly addNameRange     '4.0.0',
+1540 silly addNameRange     '4.0.1' ] ]
+1541 silly addNamed @types/long@4.0.1
+1542 verbose addNamed "4.0.1" is a plain semver version for @types/long
+1543 verbose stack Error: Missing required argument #1
+1543 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+1543 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+1543 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+1543 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+1543 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+1543 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+1543 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+1543 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+1543 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+1543 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+1544 verbose cwd /home/whorehay/Desktop/github/Cyber_Security_Project-/website
+1545 error Linux 5.4.0-90-generic
+1546 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+1547 error node v8.10.0
+1548 error npm  v3.5.2
+1549 error code EMISSINGARG
+1550 error typeerror Error: Missing required argument #1
+1550 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+1550 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+1550 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+1550 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+1550 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+1550 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+1550 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+1550 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+1550 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+1550 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+1551 error typeerror This is an error with npm itself. Please report this error at:
+1551 error typeerror     <http://github.com/npm/npm/issues>
+1552 verbose exit [ 1, true ]

@@ -23,6 +23,15 @@
 }
 .form{
   align-items: center;
+  border-color: black;
+  border-width: medium;
+  border-radius: 5px;
+  border-style: solid;
+  position: relative;
+  top: 20%;
+  left: 10%;
+  width: 40%;
+  height: 15%;
 }
 .link{
   color: blue;

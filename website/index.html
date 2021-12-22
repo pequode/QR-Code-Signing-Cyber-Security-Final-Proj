@@ -1,52 +1,57 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 <title>QRteacher</title>
 <link rel="stylesheet" href="styles.css">
+
 </head>
 <body class="body">
   <div class="mainPage">
-    <h1 class="title">
-        YSSQCYDT (You Shouldn't Scan QR Codes You Don't Trust)
-    </h1>
+    <center>
+      <h1 class="title">
+          YSSQCYDT (You Shouldn't Scan QR Codes You Don't Trust)
+      </h1>
+    </center>
+      <p class="text">
+         QR codes are a media for storing arbitrary information. <br>
+         They contain no security at all. <br>
+         Scanning them blindly may leave you vulnerable to:
+      </p>
+      <ul>
+        <li>Malicious Javascript
+        <li>Malware downloads
+        <li>BotNets( an attack that uses your computer or phone for its processing power, i.e. to mine bitcoin)
+        <li>Man-in-the-middle attacks( an attack where the attacker pretends to be the website you expected and steals your inputs and the websites outputs)
+        <li>Cross site scripting attacks ( an attack that allows websites to steal your cookies)
+        <li>Phishing scams
+        <li>Cross site Request forgery( an attack that uses your cookies to gain access to a different site you are authenticated to.)
+        <li>Arbitrary code execution.
+        <li> And Many more
+      </ul>
 
-    <p class="text">
-       QR codes are a media for storing arbitrary information. <br>
-       They contain no security at all. <br>
-       Scanning them blindly may leave you vulnerable to:
-    </p>
-    <ul>
-      <li>Malicious Javascript
-      <li>Malware downloads
-      <li>BotNets( an attack that uses your computer or phone for its processing power, i.e. to mine bitcoin)
-      <li>Man-in-the-middle attacks( an attack where the attacker pretends to be the website you expected and steals your inputs and the websites outputs)
-      <li>Cross site scripting attacks ( an attack that allows websites to steal your cookies)
-      <li>Phishing scams
-      <li>Cross site Request forgery( an attack that uses your cookies to gain access to a different site you are authenticated to.)
-      <li>Arbitrary code execution.
-      <li> And Many more
-    </ul>
     <p class="text">
       We are interested in finding out why you scanned this QR code. <br>
       Please fill out the below form to help us get an idea of who you are in the context of our research.<br>
     </p>
-    <form class="form" action="index.html" method="post">
+    <form class="form" action="/formSubmit" method="POST" onsubmit="window.location.replace(\"./index.html\")";>
         <label for="cars">How did you get this link?:</label>
         <select id="from" name="other">
           <option value="Other">Other</option>
-          <option value="bar">Resturant/bar</option>
-          <option value="bu">BU Flyer</option>
-          <option value="party">Party Flyer</option>
-          <option value="mail">Mailbox Sticker</option>
-          <option value="link">Link to game</option>
+          <option value="restaurant/bar">Resturant/bar</option>
+          <option value="bu_flyer">BU Flyer</option>
+          <option value="party_flyer">Party Flyer</option>
+          <option value="mailbox">Mailbox Sticker</option>
+          <option value="game_link">Link to game</option>
         </select><br>
         <label for="cars">What is your level of techinical understanding?:</label>
         <select id="from" name="other">
           <option value="Other">NA</option>
-          <option value="e1">Low</option>
-          <option value="e2">Some</option>
-          <option value="e3">More</option>
-          <option value="e4">High</option>
+          <option value="low">Low</option>
+          <option value="some">Some</option>
+          <option value="more">More</option>
+          <option value="high">High</option>
         </select><br>
         <label for="misc">(optional)Thoughts on the experiment?</label><br>
         <input type="text" id="misc" name="misc"><br>
@@ -56,8 +61,10 @@
     </p>
     <a href="./gotcha.html" class="link">https://www.washingtonpost.com/technology/2021/10/07/are-qr-codes-safe/</a>
     <p class="text">play the game</p>
-    <a href="./game.html" class="link"> <img src="./play.png" height="100px"> </a>
+    <a href="./game.html" class="link"> <img src="./images/play.png" height="100px"> </a>
   </div>
+
+
 </body>
 <footer>
   <h2 class="foot">

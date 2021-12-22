@@ -1,0 +1,27 @@
+{
+  "name": "Cyber_Security_Project-",
+  "version": "1.0.0",
+  "description": "A study on how QR code cyber security needs to be improved.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pequode/Cyber_Security_Project-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pequode/Cyber_Security_Project-/issues"
+  },
+  "homepage": "https://github.com/pequode/Cyber_Security_Project-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^8.10.0"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}

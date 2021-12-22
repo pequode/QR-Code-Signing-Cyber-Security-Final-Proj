@@ -334,11 +334,11 @@ class PresFuckUps extends movingObject{
 }
 
 const back = new background();
-
+var padding = playerSize + 10;
 const player1 = new player(10,0,canvDems[0]/2,canvDems[1]/2);
 const pressBrown1 = new pressBrown(2,1,0,canvDems[1]/2);
 const Alum1 = new Alumi(3);
-const Covid = new PresFuckUps(getRandomInt(20,50),getRandomInt(0,canvDems[0]),getRandomInt(0,canvDems[1]))
+const Covid = new PresFuckUps(getRandomInt(20,50),getRandomInt(0+padding,canvDems[0]-padding),getRandomInt(0+padding,canvDems[1]-padding))
 
 function drawEndGame(ctx,gameState){
   var str = "";
@@ -388,7 +388,7 @@ function drawStart(ctx){
   ctx.font = "20px Arial";
   ctx.fillText(str2, canvDems[0]/2 - 200,centver+40);
   ctx.fillText(str3, canvDems[0]/2 - 200,centver+70);
-  ctx.fillText("{c} to increaseDrops {d} to decreaseDrop. {s} to start", canvDems[0]/2 - 200,centver+100);
+  ctx.fillText("{x} to increaseDrops {z} to decreaseDrop. {s} to start", canvDems[0]/2 - 200,centver+100);
   ctx.fillText("{arrow keys} to move and restart at any time with {r}. Enjoy!", canvDems[0]/2 - 200,centver+130);
 }
 

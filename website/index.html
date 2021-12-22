@@ -13,6 +13,9 @@
       <h1 class="title">
           YSSQCYDT (You Shouldn't Scan QR Codes You Don't Trust)
       </h1>
+      <h4 class = "title">
+        Also you shouldn't click on all links that you see.
+      </h4>
     </center>
       <p class="text">
          QR codes are a media for storing arbitrary information. <br>
@@ -34,33 +37,59 @@
     <p class="text">
       We are interested in finding out why you scanned this QR code. <br>
       Please fill out the below form to help us get an idea of who you are in the context of our research.<br>
+      To be clear there is not a $100 amazon gift card giveaway, that advertising was an attempt to see which<br>
+      source of qr codes people are most likely to click on. Thank you for helping us with our study!<br>
     </p>
-    <form class="form" action="/formSubmit" method="POST" onsubmit="window.location.replace(\"./index.html\")";>
-        <label for="cars">How did you get this link?:</label>
-        <select id="from" name="other">
-          <option value="Other">Other</option>
-          <option value="restaurant/bar">Resturant/bar</option>
-          <option value="bu_flyer">BU Flyer</option>
-          <option value="party_flyer">Party Flyer</option>
-          <option value="mailbox">Mailbox Sticker</option>
-          <option value="game_link">Link to game</option>
-        </select><br>
-        <label for="cars">What is your level of techinical understanding?:</label>
-        <select id="from" name="other">
-          <option value="Other">NA</option>
-          <option value="low">Low</option>
-          <option value="some">Some</option>
-          <option value="more">More</option>
-          <option value="high">High</option>
-        </select><br>
-        <label for="misc">(optional)Thoughts on the experiment?</label><br>
-        <input type="text" id="misc" name="misc"><br>
-        <input type="submit" value="Submit">
-    </form>
+
+    <script>
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+      function onSub(){
+        setCookie("submitedForm", "True", 100);
+        window.location.replace("./P2_P1.html");
+      }
+    </script>
+    <div id = "GFG_DIV">
+        <form class="form" action="/formSubmit" method="POST" onsubmit="onSub()";>
+            <label for="cars">How did you get this link?:</label>
+            <select id="from" name="other">
+              <option value="Other">Other</option>
+              <option value="restaurant/bar">Resturant/bar</option>
+              <option value="amazon">Amazon Giftcard</option>
+              <option value="bb_flyer">Basketball Flyer</option>
+              <option value="bu_flyer">BU Flyer</option>
+              <option value="party_flyer">Party Flyer</option>
+              <option value="mailbox">Mailbox Sticker</option>
+              <option value="game_link">Link to game</option>
+            </select><br>
+            <label for="cars">What is your level of techinical understanding?:</label>
+            <select id="from" name="other">
+              <option value="Other">NA</option>
+              <option value="low">Low</option>
+              <option value="some">Some</option>
+              <option value="more">More</option>
+              <option value="high">High</option>
+            </select><br>
+            <label for="misc">(optional)Thoughts on the experiment?</label><br>
+            <input type="text" id="misc" name="misc"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="source2.js"></script>
+    <script>
+      // function backToWind(){
+      //   window.location.replace("./index.html");
+      // }
+      main();
+    </script>
     <p>Click below to read more about the problem
     </p>
     <a href="./gotcha.html" class="link">https://www.washingtonpost.com/technology/2021/10/07/are-qr-codes-safe/</a>
-    <p class="text">play the game</p>
+    <p class="text">play the game (if your on a computer) </p>
     <a href="./game.html" class="link"> <img src="./images/play.png" height="100px"> </a>
   </div>
 

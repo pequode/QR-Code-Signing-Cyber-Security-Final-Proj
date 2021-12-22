@@ -1,4 +1,4 @@
-debug = false
+debug = false// used to toggle conditionally writing to database and page forwarding
 async function postData(url = '', data = {}) {
   // Default options are marked with *
   parsedData = data
@@ -22,11 +22,11 @@ async function postData(url = '', data = {}) {
     });
 
 }
-
-
+// sends data to web server
 async function sendData(srcs,data){
   await postData(srcs,data)
 }
+// used to get client IP with the given api
 async function getIP() {
     dat = "";
     const ip = await $.getJSON("https://api.ipify.org?format=json",function(data) {
@@ -34,6 +34,7 @@ async function getIP() {
     });
     return dat;
 }
+// creates a data object
 async function getData(){
       var data = {};
       ip = await getIP();
@@ -77,7 +78,7 @@ async function getData(){
       });
       return JSON.stringify(data);
 }
-
+// gets a cookie if it exists
 function getCookie(name) {
     var dc = document.cookie;
     var prefix = name + "=";
@@ -96,12 +97,14 @@ function getCookie(name) {
     }
     return decodeURI(dc.substring(begin + prefix.length, end));
 }
+// function that sets cookies
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
   let expires = "expires="+ d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+// checks to see if there is a cookie if there is it returns True otherwise it sets it and returns false
 function beenHere(src) {
     var myCookie = getCookie("beenToPage"+src);
     if (myCookie == null) {
@@ -112,6 +115,7 @@ function beenHere(src) {
       return true
     }
 }
+// the main function
 async function main(srcs,ind = 0){
   if(!beenHere(srcs)||debug){
     data1 = await getData();

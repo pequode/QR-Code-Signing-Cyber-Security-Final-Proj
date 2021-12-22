@@ -4,6 +4,7 @@ import xlwt
 from xlwt import Workbook
 import matplotlib.pyplot as plt
 import numpy as np
+# saves data as an exel spreadsheet
 wb = Workbook()
 sheet1 = wb.add_sheet('Result Data')
 style = xlwt.easyxf('font: bold 1, color orange;')
@@ -15,7 +16,7 @@ sheet1.write(0, 4, 'IP', style)
 
 # sheet1.write(1, 0, 'test')
 # wb.save('xlwt example.xls')
-path = "/home/whorehay/Desktop/github/salty-peak-17003/"
+path = "./"
 f = open(path + 'website/resultDoc.json', 'r')
 data = json.loads(f.read())
 
@@ -24,6 +25,7 @@ length = len(data)
 
 print(length)
 list_of_dicts = []
+# very specific code to get json data
 for i in range(0,length):
     source = data[i]['doc']['data']['value']['mapValue']['fields']['Source']['stringValue']
     # print(type(source))
@@ -55,6 +57,8 @@ for i in range(0,length):
     }
     list_of_dicts.append(dic)
 wb.save(path+'CyberSecData1.xls')
+# same function from readServeyData.py
+
 def HistogramFromDic(field,dics):
     newDic = {}
     for i in dics:
@@ -68,6 +72,7 @@ def HistogramFromDic(field,dics):
     vals = list(newDic.values())
     # print(labels,vals)
     return labels,vals
+#same function but does the formating of the strings
 def ipHistogram(listOfIps,ipmatchsection =1 ):
     dic = {}
     for ip in listOfIps:
@@ -80,7 +85,7 @@ def ipHistogram(listOfIps,ipmatchsection =1 ):
     labels = list(dic.keys())
     vals = list(dic.values())
     return labels,vals
-
+#creates the plot and saves it as an image
 def makeHistogram(labels,freqency,name,rotangle = -10):
     plt.title('Histogram of '+name, loc = 'left', fontsize = 18)
     x = range(len(labels))
@@ -89,6 +94,7 @@ def makeHistogram(labels,freqency,name,rotangle = -10):
     # plt.show()
     plt.savefig(path+'Hist{name}.png'.format(name=name))
 
+# run all functions
 [vers_lables,versN] = HistogramFromDic("device_V",list_of_dicts)
 vers_lables.sort()
 print(vers_lables)
@@ -97,6 +103,7 @@ print(vers_lables)
 print(ip_list)
 ip_list.sort()
 print(ip_list)
+# writes IPs to a list for manual sorting to determine provider
 f = open(path + "outIP.txt","w")
 for i in ip_list:
     f.write(i+"\n")

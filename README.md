@@ -24,6 +24,8 @@ For this we converted our data into a string(because the library we were using d
   - matplotlib - Library
   - qrcode - Library
   - openCV2 - Library
+  - xlwt - Library
+  - pyzbar - Library
   - RSA -	[signing-stackoverflow](https://stackoverflow.com/questions/4232389/signing-and-verifying-data-using-pycrypto-rsa)
 
 A study on how QR code Cyber Security needs to be improved.

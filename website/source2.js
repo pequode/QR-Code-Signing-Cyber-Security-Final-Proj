@@ -1,3 +1,4 @@
+// done so that the form vanishes after it is filled out so that the same user doesnt double enter a form
 var div = document.getElementById('GFG_DIV');
 function getCookie(name) {
     var dc = document.cookie;

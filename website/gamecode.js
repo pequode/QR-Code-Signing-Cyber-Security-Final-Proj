@@ -1,6 +1,7 @@
 var canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth*0.95;
 canvas.height = window.innerHeight*0.85;
+// intailize global vars
 var canvDems = [canvas.width, canvas.height];
 var playerSize = 50;
 var alumiSize = 50;
@@ -8,9 +9,11 @@ var prezSize = 20;
 var GameStarted = false;
 
 ctx = canvas.getContext('2d');
+
 function getRandomInt(min,max) {
   return min + Math.floor(Math.random() * max);
 }
+// used to help determine cost function
 function distance(x1,y1,x2,y2){
   var d = Math.sqrt(Math.pow((x1-x2),2)+Math.pow((y1-y2),2))
   if(d==0){
@@ -18,18 +21,22 @@ function distance(x1,y1,x2,y2){
   }
   return d;
 }
+// used to determine hit detection on bounds
 function INBounds(posX,posY){
   var k = [!(posX>canvas.width||posX<0), !(posY>canvas.height||posY<0)]
   return k;
 }
+// used to detect hit detection
 function checkIntersection (x,y,topx,topy,x1,y1,topx1,topy1){
   rangex = (x1 <=x+topx) && (x1+topx1 >= x)
   rangey = (y <= y1+topy1)&&(y+topy >=y1)
   return  rangex&&rangey;
 }
+// used to check object intersection
 function objectInter(ob1,ob2){
   return checkIntersection(ob1.x,ob1.y,ob1.topx,ob1.topy,ob2.x,ob2.y,ob2.topx,ob2.topy);
 }
+// creates background class
 class background{
     constructor(){
       this.x=0;
@@ -42,6 +49,7 @@ class background{
       this.cashimg.src = "./images/cash.png"
       this.OtherCash =[];
     }
+    // draws HUD
     draw(ctx,player){
       var str = "Tuition: "+ player.tuition.toString();
       var str1 = "Semester Payment: "+ player.dropAmt.toString();
@@ -56,6 +64,7 @@ class background{
       var n = player.moneyDrops.length;
       var CashInPlay = (n>0);
       var i = 0;
+      // checks all player money drop locations
       for (i=0;i<n;i++){
         var k = player.moneyDrops[i];
         ctx.drawImage(this.cashimg,k[0], k[1], k[2]*cashScaleFactor, k[2]*cashScaleFactor);
@@ -63,17 +72,19 @@ class background{
 
       n = this.OtherCash.length;
       i = 0;
+      // checks all other cash locations
       for (i=0;i<n;i++){
         var k = this.OtherCash[i];
         ctx.drawImage(this.cashimg,k[0], k[1], k[2], k[2]);
       }
+      // checks for end game
       if(!CashInPlay&&player.tuition<5){
         player.alive=false;
       }
 
     }
 }
-
+// inherited class for most object
 class movingObject{
   constructor(id,x,y,xwid,ywid,imgsrc) {
     this.id = id;
@@ -89,6 +100,7 @@ class movingObject{
       ctx.drawImage(this.sprite,this.x, this.y, this.topy, this.topx);
   }
 }
+// Alumni is a object that drops cash to make the game harder
 class Alumi extends movingObject {
   constructor(id) {
     var sidex= getRandomInt(1,2);
@@ -109,6 +121,7 @@ class Alumi extends movingObject {
     this.count = 0;
     this.in = true
   }
+  // randomly drop cash in a line
   dropAndDash(back){
     var k = INBounds(this.x,this.y)
     var inbounds = k[0]&&k[1];
@@ -128,6 +141,7 @@ class Alumi extends movingObject {
    }
   }
 }
+// player object
 class player extends movingObject{
   constructor(speed,id,startx,starty) {
     super(id,
@@ -143,6 +157,7 @@ class player extends movingObject{
     this.alive = true;
     this.moneyDrops = [];
   }
+  // given on key press
   moveVert(dir){
       if(dir==-1){
         if(this.y - this.speed > 0){
@@ -157,6 +172,7 @@ class player extends movingObject{
 
 
   };
+  // given on key press
   moveHorz(dir){
       if(dir==-1){
         if(this.x - this.speed > 0){
@@ -169,6 +185,7 @@ class player extends movingObject{
         }
       }
   };
+  // given on key press
   dropCash(){
     var i = 0;
     var val = [0,0,0]
@@ -178,6 +195,7 @@ class player extends movingObject{
         this.moneyDrops.push(val);
     }
   };
+
   increaseDrop(){
     if(this.dropAmt<this.tuition){
       this.dropAmt+=5;
@@ -189,6 +207,7 @@ class player extends movingObject{
     }
   };
 }
+// class for the main enemy
 class pressBrown extends movingObject{
   constructor(speed,id,startx,starty) {
     super(id,
@@ -204,6 +223,9 @@ class pressBrown extends movingObject{
     this.justPayed = false;
     this.alive = true;
   }
+  // the boss will chase all the dropped cash
+  // The boss will compair distance to the cash/amount of cash will head to the lowest value
+  // if the boss intersects the cash, reremoves it and inceases his health
   gobbleGobble(players,back){
     var amt = [this.topx/2,this.topy/2];
     var min = [1000,500,500];
@@ -277,6 +299,7 @@ class pressBrown extends movingObject{
         }
     }
   }
+  // if the boss steps on student protesters he loses money
   losingMoney(fuckUp){
      if(checkIntersection(this.x,this.y,this.topx,this.topy,fuckUp.x,fuckUp.y,fuckUp.topx,fuckUp.topy) ){
         this.justPayed = true;
@@ -294,6 +317,7 @@ class pressBrown extends movingObject{
        this.justPayed = false;
      }
   }
+  //draws the president with a health bar
   drawprez(ctx){
     this.draw(ctx)
     //lost Health =
@@ -320,6 +344,7 @@ class pressBrown extends movingObject{
     ctx.fillRect(xstart+width, this.y-this.topy,3,5);
   }
 }
+// class for the student protesters
 class PresFuckUps extends movingObject{
   constructor(size,x,y){
     super(2000,
@@ -332,14 +357,13 @@ class PresFuckUps extends movingObject{
     this.cost = 5;
   }
 }
-
+// initate all the objects
 const back = new background();
 var padding = playerSize + 10;
 const player1 = new player(10,0,canvDems[0]/2,canvDems[1]/2);
 const pressBrown1 = new pressBrown(2,1,0,canvDems[1]/2);
 const Alum1 = new Alumi(3);
 const Covid = new PresFuckUps(getRandomInt(20,50),getRandomInt(0+padding,canvDems[0]-padding),getRandomInt(0+padding,canvDems[1]-padding))
-
 function drawEndGame(ctx,gameState){
   var str = "";
   var centver = 300;
@@ -417,6 +441,7 @@ function update(){
     drawEndGame(ctx,gameOver);
   }
 }
+// this is done to take user inputs
 document.onkeydown = function (event) {
       switch (event.keyCode) {
          case 83:
@@ -450,6 +475,7 @@ document.onkeydown = function (event) {
       }
 
 };
+// update every 30 milliseconds.  
 const run = setInterval(function() {
   if(GameStarted){
     update();

@@ -6,7 +6,7 @@ from Crypto import Random
 from base64 import b64encode, b64decode
 
 hash = "SHA-256"
-
+# taken from stack overflow thanks @ Dennis
 def newkeys(keysize):
     random_generator = Random.new().read
     key = RSA.generate(keysize, random_generator)

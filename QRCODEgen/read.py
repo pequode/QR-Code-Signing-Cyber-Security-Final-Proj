@@ -5,8 +5,8 @@ from Crypto.PublicKey import RSA
 # read the QRCODE image
 from pyzbar.pyzbar import decode
 from pyzbar.pyzbar import ZBarSymbol
-
-def scanandverifiy(path="/home/whorehay/Desktop/github/salty-peak-17003/QRCODEgen/"):
+# used for text signed in QR codes
+def scanandverifiy(path="./QRCODEgen/"):
     pubKey = RSA.import_key(open(path+"pub_key.pem").read())
     url = ""
     verify = ""
@@ -23,14 +23,15 @@ def scanandverifiy(path="/home/whorehay/Desktop/github/salty-peak-17003/QRCODEge
     print(type(pubKey),pubKey)
     verify = rsa.verify(url, dec, pubKey)
     return url,verify
-
-def scanandverifiyPicture(path="/home/whorehay/Desktop/github/salty-peak-17003/QRCODEgen/"):
+# reads in byte data and trys to assemble it as a ppm
+#ppm correctly assembles but verification fails
+def scanandverifiyPicture(path="./QRCODEgen/"):
     pubKey = RSA.import_key(open(path+"pub_key.pem").read())
     url = ""
     verify = ""
     img = cv2.imread(path+"QROut.png")
     data = decode(img)[0].data
-
+    # a lot of nonsense from the fact that a string printing , a raw string and a byte are different
     stringData = str(data)[4:-2]
     stringData =stringData.replace("~","\\x")
     stringData=stringData.replace("^","00")
@@ -69,7 +70,7 @@ def scanandverifiyPicture(path="/home/whorehay/Desktop/github/salty-peak-17003/Q
     charlist = [char for char in data]
     newbytearray = []
     storedchar = False
-
+    # data is correctly written
     outByteFile = open(path+"imageOut.ppm","wb")
     bytesInfo = bytes("%%%", 'utf-8')
     for i in listOfBytes:
@@ -79,6 +80,7 @@ def scanandverifiyPicture(path="/home/whorehay/Desktop/github/salty-peak-17003/Q
     bytesInfo = bytesInfo[3:]
 
     data1 = str(bytesInfo)
+    # #the verify step underneath fails
     # sig = bytes(sig, encoding = "utf-8")
     print(type(sig),sig)
     print(type(data1),data1)
@@ -90,7 +92,8 @@ def scanandverifiyPicture(path="/home/whorehay/Desktop/github/salty-peak-17003/Q
     verify = rsa.verify(data1, b64decode(signature), pubKey)
     print(verify)
     return data1,verify
-# img = cv2.imread("/home/whorehay/Desktop/github/Cyber_Security_Project-/QRCODEgen/QROut.png")
+# saved to help remember other method of decoding
+# img = cv2.imread("./Cyber_Security_Project-/QRCODEgen/QROut.png")
 # data = decode(img)[0]
 # data =  b64decode(data.data)
 # strver = str(data)
@@ -103,7 +106,7 @@ def scanandverifiyPicture(path="/home/whorehay/Desktop/github/salty-peak-17003/Q
 # # print("\n",decode)
 # print(sig)
 # print(url[2:-1])
-# pubKey = RSA.import_key(open("/home/whorehay/Desktop/github/Cyber_Security_Project-/QRCODEgen/pub_key.pem").read())
+# pubKey = RSA.import_key(open("./Cyber_Security_Project-/QRCODEgen/pub_key.pem").read())
 # verify = rsa.verify(url[2:-1], b64decode(sig), pubKey)
 # print("Verify: %s" % verify)
 

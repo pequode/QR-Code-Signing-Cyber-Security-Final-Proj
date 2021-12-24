@@ -1,7 +1,7 @@
 # EC521 Final Cyber Security Project - QR codes and web Security
 ## Contents:
 * **QR Code Gen**
-  - A Series of python programs that allow users to generate and read QR codes that are RSA signed. Additionally there are a Series of supporting python scripts for generating QR codes. There are also basic assets that are uses as payloads for our demonstration. Currently the RSA signing feature only works on text based objects due to issues recovering the signature from the QR code in the Arbitrary bytes section.
+  - A Series of python programs that allow users to generate and read QR codes that are RSA signed. Additionally there are a Series of supporting python scripts for generating QR codes. There are also basic assets that are uses as payloads for our demonstration. Currently the R.S.A.signing feature only works on text based objects due to issues recovering the signature from the QR code in the Arbitrary bytes section.
 * **Report**
   - A collection of all the parts of our final report and presentation.
 * **Website**
